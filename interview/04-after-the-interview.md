@@ -4,7 +4,7 @@ What to do after completing the interview process - handling offers, rejections,
 
 ## Handling Rejections
 
-Don't take rejections personally. Treat them as learning experiences. Do a retrospective: understand what went wrong. Often nothing was wrong with you personally - someone was just better, or the company ran out of budget, or priorities changed. If you lack some skill, build a project to improve it.
+Don't take rejections personally. Treat them as learning experiences. Do a retrospective: understand what went wrong. Often nothing was wrong with you personally - someone was just better, or the company ran out of budget, or priorities changed. If you lack some skill, build a project or case study to improve it.
 
 ## Handling Offers
 

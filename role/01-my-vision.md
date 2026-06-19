@@ -1,79 +1,85 @@
-# My Vision of the AI Engineer Role
+# My Vision of the Product Manager Role
 
-Based on [What Is an AI Engineer? Alexey Grigorev's Experience-Based Definition](https://aishippinglabs.com/blog/what-is-an-ai-engineer-alexey-grigorev-perspective).
+Based on my experience as an Amazon AI/Robotics Lead PM, leading products from zero-to-one through scale.
 
 This is my personal vision of the role. To see how it compares with what companies actually look for, I analyzed 895 job descriptions - the rest of this [role section](README.md) is based on that research.
 
 
 ## Core Responsibility
 
-- Integrating AI into the product
-- Working with LLM providers (OpenAI, Anthropic) through their APIs
-- Working with product managers to identify real user problems AI can solve
-- Not "AI is cool, let's use it" - starts from a real problem
+- Owning the product end-to-end: from customer problem to shipped solution
+- Working with engineering, design, and data teams through every phase of the Discovery to Delivery lifecycle
+- Working with customers and stakeholders to identify real user problems worth solving
+- Not "this feature is cool, let's build it" - starts from a real problem with real data
 
 
-## Beyond "Just Call the API"
+## Beyond "Just Write a PRD"
 
-Even for a simple use case like extracting attributes from a picture, professional AI engineering requires:
+Even for a simple feature like adding a recommendation widget, professional product management requires:
 
-1. Prompt testing - tests with known inputs and expected outputs
-2. Evaluation dataset - set of inputs to verify quality, gives a metric
-3. Iterating on the prompt - change prompt, run eval set, verify no degradation
-4. Rolling out to users - A/B test with a small portion first
-5. Production monitoring - dashboard for error rates, failure cases
-6. Collecting logs - inspect inputs, outputs, find misalignments
-7. Human annotators - sample production data, verify quality, add problematic cases to eval set
-8. Model updates - new model from provider? Run eval set to check for regressions
-9. Prompt versioning - version control for prompts, experiment tracking (MLflow, Git)
-10. Feedback from users - explicit (thumbs up/down) and implicit (user corrects output)
-
-See the [Trova marketplace example](https://github.com/alexeygrigorev/simple-sell/) for a working implementation with tests and CI/CD.
+1. Problem validation - customer interviews with known pain points and expected outcomes
+2. Success metrics - a set of KPIs to verify impact, gives a measurable goal
+3. Iterating on the solution - change scope, run experiments, verify no degradation in core metrics
+4. Rolling out to users - A/B test with a small portion first, using RICE or ICE to prioritize
+5. Production monitoring - dashboard for adoption rates, error rates, edge cases
+6. Collecting signals - inspect usage patterns, funnel drop-offs, find misalignments
+7. Qualitative feedback - sample production users, verify experience, add problematic flows to backlog
+8. Competitive shifts - new competitor launches? Run your metrics framework to check for impact
+9. Roadmap versioning - version control for specs, experiment tracking, decision logs
+10. Feedback from users - explicit (NPS, surveys) and implicit (user abandons flow, engagement drops)
 
 
 ## Progressive Complexity
 
-- Simple case: user input -> prompt + LLM API -> response
-- RAG (~5x harder): add data pipelines, search engine (vector/text), retrieval, infrastructure, reliability
-- Agents (~10x harder): add tool calls, multiple LLM rounds, multi-step evaluation, trace instrumentation, tool rollout management
+- Simple case: user request -> PRD + eng sprint -> shipped feature
+- Platform product (~5x harder): add data pipelines, cross-team dependencies, API contracts, reliability, multi-stakeholder alignment
+- Strategic product (~10x harder): add market analysis, multi-quarter roadmaps, executive alignment, go-to-market, P&L ownership
 
 
 ## How It Compares to Other Roles
 
-### vs ML Engineer
+### vs TPM (Technical Program Manager)
 
-- Very similar roles
-- ML engineers own model weights, AI engineers use third-party models via APIs
-- Replace a call to a locally hosted model with a call to OpenAI - the rest is the same
-- Easiest transition path to AI engineering
-- ML engineers need to add: evaluation skills
+- Very similar roles in some companies
+- TPMs own execution and cross-team coordination, PMs own the "what" and "why"
+- Replace product vision with program execution - the stakeholder management is the same
+- Easiest transition path to product management
+- TPMs need to add: customer empathy, metrics-driven prioritization
 
-### vs Data Scientist
+### vs PMM (Product Marketing Manager)
 
-- Data scientists focus on model creation: translating requirements to ML, designing datasets, training
-- AI engineers do both science and engineering, but no real modeling - model already exists
-- Most effort goes to prompt tuning instead of model training
-- AI teams don't necessarily need a separate data scientist
-- Data scientists need to add: engineering skills (tests, CI/CD, deployment)
+- PMMs focus on positioning and go-to-market: translating product value to market messaging
+- PMs do both discovery and delivery, but no deep marketing - that's the PMM's domain
+- Most effort goes to user research and roadmap execution instead of campaign design
+- Product teams don't necessarily need a separate PMM at early stage
+- PMMs need to add: technical fluency, sprint-level delivery skills
 
-### What AI Engineers Don't Do
+### vs PGM (Product Growth Manager)
 
-- Create models from scratch
-- Build custom model architectures
-- Heavy feature engineering
+- PGMs focus on funnel optimization, growth loops, and experimentation at scale
+- PMs own the product surface; PGMs optimize how users find and adopt it
+- Overlap happens in experimentation - both run A/B tests, but PGMs go deeper on growth metrics
+- PGMs need to add: upstream discovery skills, roadmap sequencing, cross-functional leadership
 
-### What AI Engineers Focus On
+### What Product Managers Don't Do
 
-- Engineering best practices for AI systems
-- Prompt design and versioning
-- Integration of AI into products
-- Evaluation and monitoring
+- Write production code
+- Build custom data infrastructure from scratch
+- Heavy statistical modeling
+
+### What Product Managers Focus On
+
+- Discovery best practices for product decisions
+- Prioritization frameworks (RICE, ICE, opportunity scoring)
+- Integration of customer insight into product roadmaps
+- Metrics definition and outcome measurement
 
 
 ## In Bigger Organizations
 
-- AI responsibilities often split between existing data scientists and ML engineers
-- Data scientists: prompt tuning, validation framework
-- ML engineers: engineering aspects, deployment
-- Eventually a dedicated AI engineer might be hired
-- LLMs are not the answer to all problems - traditional ML work continues
+- Product responsibilities often split between PMs, TPMs, PMMs, and PGMs
+- TPMs: program execution, cross-team coordination
+- PMMs: positioning, go-to-market, competitive analysis
+- PGMs: growth loops, funnel optimization, experimentation
+- Eventually dedicated PMs own each product area
+- Not every product problem needs a PM - some are pure engineering or design problems

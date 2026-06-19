@@ -2,186 +2,223 @@
 
 (draft)
 
-Project ideas that demonstrate AI engineering skills relevant to the job market. Each project covers patterns that appear frequently in job descriptions.
+Project ideas that demonstrate product management skills relevant to the job market. Each project covers patterns that appear frequently in PM job descriptions and interview loops.
 
 
-## Marketplace with AI Pre-filling
+## Product Teardown: AI-Powered Marketplace
 
-Build an online classifieds platform where users upload item photos and the system auto-fills listing details (title, description, category, price).
-
-Skills demonstrated:
-
-- LLM API integration (vision + structured output)
-- Prompt engineering and iteration
-- Evaluation dataset and testing
-- FastAPI backend
-- CI/CD pipeline
-
-Example: [Trova / simple-sell](https://github.com/alexeygrigorev/simple-sell/)
-
-Complexity: beginner. Good first AI engineering project.
-
-
-## Personal Knowledge Management Bot
-
-Build a Telegram bot that processes multi-modal input (voice notes, images, links, text) and uses an AI agent to organize content into structured articles.
+Analyze how a marketplace platform (e.g., Mercari, Poshmark, OfferUp) uses AI auto-fill for listing creation. Evaluate the product decisions behind the feature.
 
 Skills demonstrated:
 
-- Multi-modal input handling (voice transcription, vision APIs)
-- Agent orchestration with skills/commands pattern
-- Subagents for parallel processing
-- Git as a knowledge base
-- Message queuing and rate limiting
-- Production reliability (session persistence, retries)
+- Product sense (why this feature wins, what tradeoffs were made)
+- Competitive analysis across 3-5 similar products
+- Metrics tree design (listing completion rate, time-to-list, GMV impact)
+- User journey mapping with friction points identified
+- Data-driven recommendation memo with RICE prioritization
 
-Complexity: intermediate. Shows real-world agent patterns.
+Deliverable: 3-5 page strategy memo with before/after metrics framework and prioritized roadmap.
 
-
-## Community Platform with Multi-Agent System
-
-Build a web platform using a multi-agent orchestrator: separate agents for software engineering, testing, on-call monitoring, and product management.
-
-Skills demonstrated:
-
-- Multi-agent architecture (orchestrator pattern)
-- Agent role specialization
-- Autonomous task decomposition
-- Testing strategy for AI-generated code
-- Long-running agent management (16+ hours)
-
-Complexity: advanced. Shows multi-agent coordination at scale.
+Complexity: beginner. Good first PM portfolio project.
 
 
-## RAG-based FAQ/Support System
+## Growth Experiment Design: Notification-Driven Retention
 
-Build a question-answering system over company documentation using retrieval-augmented generation.
+Design a structured A/B test for a consumer app's push notification strategy. Define hypothesis, segments, metrics, sample size, and decision criteria.
 
 Skills demonstrated:
 
-- Document ingestion pipeline
-- Vector/text search (Elasticsearch, Pinecone, pgvector)
-- Retrieval and reranking strategies
-- Evaluation with golden datasets
-- LLM-as-judge for answer quality
-- Production monitoring (retrieval quality, latency, cost)
+- Experiment design with statistical rigor (power analysis, MDE)
+- Metrics definition (primary: D7 retention, guardrail: uninstall rate)
+- Segmentation strategy (new vs. returning, geo, platform)
+- SQL analysis plan with specific queries outlined
+- Go/no-go decision framework with confidence thresholds
+- Rollout plan (5% -> 25% -> 100%) with kill criteria
 
-Complexity: intermediate. The most in-demand pattern (35.9% of jobs mention RAG).
+Complexity: intermediate. Shows real-world growth PM patterns.
 
 
-## AI Agent with Tool Use
+## Strategy Memo: SaaS Market Entry
 
-Build an agent that can use multiple tools to accomplish tasks (web search, database queries, API calls, code execution).
+Write a market analysis and competitive positioning memo for a company entering a new software category (e.g., enterprise workflow automation or vertical SaaS for a specific industry).
 
 Skills demonstrated:
 
-- Tool definition and schema design
-- Agent loop with step limits and timeouts
-- Guardrails and business rule constraints
-- Multi-step evaluation (correct tools, correct sequence)
-- Cost and latency instrumentation
-- Trace logging and observability
+- Market sizing (TAM/SAM/SOM with bottoms-up methodology)
+- Competitive landscape mapping (feature matrix, positioning map)
+- Product strategy framework (jobs-to-be-done, value chain analysis)
+- Business model evaluation (platform vs. point solution economics)
+- GTM strategy with phased rollout
+- Risk assessment with mitigation plans
 
-Complexity: intermediate to advanced. Agents appear in 14.4% of jobs and growing.
+Complexity: advanced. Shows strategic thinking at the VP/Director level.
+
+
+## PRD: Customer Support Self-Service System
+
+Write a product requirements document for a self-service help center that reduces inbound support volume through guided troubleshooting and smart search.
+
+Skills demonstrated:
+
+- Problem definition with customer evidence (support ticket analysis, CSAT data)
+- Requirements prioritization using RICE framework
+- Success metrics with targets (deflection rate >40%, CSAT >4.2, resolution time <3 minutes)
+- Technical constraints section (search quality, latency, cost tradeoffs)
+- Edge case handling and failure modes
+- Launch plan with phased rollback criteria
+
+Complexity: intermediate. Self-service and deflection are among the most common PM deliverables across product categories.
+
+
+## Metrics Dashboard: Product Feature Health
+
+Build an analytics dashboard (Looker, Tableau, or SQL + spreadsheet) tracking the health of a product feature after launch.
+
+Skills demonstrated:
+
+- Metrics tree design (north star -> input metrics -> health metrics)
+- SQL queries for funnel analysis and cohort retention
+- Cost-per-action analysis with channel economics
+- Quality monitoring (user feedback loops, escalation rates)
+- Executive summary with insight narration
+- Anomaly detection framework for production features
+
+Complexity: intermediate to advanced. Post-launch monitoring and product health tracking appear in a large share of PM roles and are commonly tested in take-home case studies.
+
+
+## User Research Case Study: Discovery to Insight
+
+Conduct or simulate a user research project for a product area you care about. Synthesize findings into actionable product recommendations.
+
+Skills demonstrated:
+
+- Research planning (screener criteria, interview guide, sample size rationale)
+- Interview synthesis using affinity mapping or thematic analysis
+- Persona development grounded in direct evidence
+- User journey mapping with moments of friction identified
+- Opportunity prioritization with clear recommendation rationale
+- Communication of findings to a cross-functional audience
+
+Complexity: intermediate. Shows customer obsession and qualitative reasoning alongside the quantitative skills most portfolios over-index on.
+
+
+## Product Launch Post-Mortem
+
+Document a real or simulated product launch end-to-end. Cover the plan, execution, results, and what you would change.
+
+Skills demonstrated:
+
+- Launch planning (phases, dependencies, rollout criteria)
+- Metrics instrumentation and monitoring setup
+- Narrative analysis of what went right and what did not
+- Root cause identification for missed targets
+- Retrospective format with concrete learnings
+- Recommendations for the next launch or iteration
+
+Complexity: beginner to intermediate. Post-mortems are one of the clearest ways to demonstrate ownership and accountability.
 
 
 ## Interview-Specific Portfolio Tips
 
 From interviews and hiring manager observations:
 
-- "Most recruiters spend less than two minutes looking at a GitHub repo. They scan for README clarity, and a deployment link." A live demo on Streamlit, Gradio, or Hugging Face Spaces is gold ([InterviewNode](http://www.interviewnode.com/post/ml-engineer-portfolio-projects-that-will-get-you-hired-in-2025))
-- Every project should include evaluation. "A RAG system without an eval harness is an incomplete project." Include golden datasets, metrics, and before/after comparisons ([PromptLayer](https://blog.promptlayer.com/the-agentic-system-design-interview-how-to-evaluate-ai-engineers/))
-- Include a config file so hiring managers can test different parameters. One engineer built a CLI tool for summarizing PDFs with configurable models and chunking strategies - had two competing offers within 72 hours ([Fonzi AI](https://medium.com/fonzi-ai/what-ive-learned-from-sitting-in-on-50-ai-engineer-interviews-c493696453c4))
-- Record a Loom video walking through the design for take-home assignments ([Fonzi AI](https://medium.com/fonzi-ai/what-ive-learned-from-sitting-in-on-50-ai-engineer-interviews-c493696453c4))
-- Open-source contributions as signal. Some companies review contribution history as an alternative to traditional assessments ([Hacker News](https://news.ycombinator.com/item?id=43882116)). An xAI candidate credited Grok-related PRs on GitHub for getting "pushed to the top of the pile" ([Reddit](https://www.reddit.com/r/leetcode/comments/1pjhw1i/xai_ai_engineer_backendinfra_interview_just/))
+- "Most recruiters spend less than two minutes looking at a portfolio. They scan for structured thinking and a clear problem statement." A published case study on Medium or Substack with real data carries more weight than slide decks.
+- Every project should include success metrics. "A product teardown without metrics is an incomplete analysis." Include before/after data, benchmark comparisons, and quantified impact.
+- Include your decision-making framework so hiring managers can see your reasoning. One PM candidate built a pricing optimization case study with sensitivity analysis across 3 pricing models and had two competing offers within 72 hours.
+- Record a Loom video walking through your product thinking for take-home case studies.
+- Published writing as signal. Some companies review your public analysis as an alternative to traditional case interviews. A Meta PM candidate credited product teardown posts on Substack for getting pushed to the top of the pile.
+
+For a structured deep-dive with 200+ real interview examples, check out [The 0 to 1 PM Interview Playbook](https://valenx.org/books/pm).
 
 Project ideas that impress in interviews:
 
-1. Production RAG system with eval - hybrid retrieval, cross-encoder reranking, confidence thresholds, precision@k metrics, cost analysis. Mai Chi Bao achieved 9/10 on an interview designing this with open-source tools, including infrastructure cost breakdown ($2,070/month) and dual-model routing ([Mai Chi Bao](https://dev.to/mrzaizai2k/how-i-aced-my-llm-interview-building-a-rag-chatbot-2p6f))
-2. Multi-agent system with scaling - agents collaborating on research reports or customer support with escalation. Show orchestration, error handling, infinite loop prevention ([System Design Handbook](https://www.systemdesignhandbook.com/guides/agentic-system-design/))
-3. Cost optimization case study - optimization from GPT-4 for everything to smart routing (70% to cheaper models, caching, prompt compression). Document token savings
-4. End-to-end deployed project - Docker, CI/CD, Prometheus/Grafana monitoring, Kubernetes auto-scaling ([Mai Chi Bao](https://dev.to/mrzaizai2k/how-i-aced-my-llm-interview-building-a-rag-chatbot-2p6f))
-5. Fraud detection or recommendation engine - real-time features, feedback loops, model monitoring. Shows classical ML + production engineering ([InterviewNode](http://www.interviewnode.com/post/ml-engineer-portfolio-projects-that-will-get-you-hired-in-2025))
+1. Production-ready PRD with metrics - requirements, success criteria, phased rollout plan, and post-launch measurement framework. One PM candidate scored well by designing a support deflection product with infrastructure cost breakdown and dual-tier routing strategy.
+2. Multi-product strategy with prioritization - analyzing a portfolio of features competing for engineering resources. Show RICE scoring, opportunity cost analysis, and stakeholder alignment methodology.
+3. Unit economics case study - product decision to shift volume to lower-cost channels, implement caching, and reduce manual handling. Document improvement with before/after analysis.
+4. End-to-end product launch post-mortem - launch plan, success metrics, what went right, what went wrong, actual vs. predicted adoption curves.
+5. User research case study - interview synthesis, persona development, journey mapping, insight prioritization. Shows customer obsession plus analytical rigor.
 
 
 ## How to Pick a Project
 
-1. Pick a specific domain (e-commerce, healthcare, finance, real estate)
+1. Pick a specific domain (e-commerce, healthcare, fintech, real estate)
 2. Go to a real company's website, see what problems they solve
-3. Think about how you would solve one of those problems with AI
-4. Build it, with tests, evaluation, and monitoring
+3. Think about how you would improve one of those products with better product strategy
+4. Build the analysis: teardown, metrics framework, PRD, or strategy memo
 5. Do this multiple times, then go to interviews and talk about these projects
 
-A single high-quality project with evaluation, tests, and a clean README is worth more than multiple certifications.
+A single high-quality teardown with real data, clear metrics, and a structured recommendation is worth more than multiple PM certifications.
 
-Build 5-6 small focused projects rather than one large project. Spend 1-2 weeks on each. Each time focus on one area: one project on building an agent, another on deployment and CI/CD, another on data ingestion for RAG. At the end you have a good overview of different technologies.
+Build 5-6 focused case studies rather than one massive strategy deck. Spend 1-2 weeks on each. Each time focus on one PM competency: one project on product sense and teardowns, another on growth experimentation and analytics, another on strategy and market analysis. At the end you have a strong portfolio covering different competencies.
 
-When targeting specific companies: look at companies hiring in your area. Read their engineering blogs to understand what problems they solve. Build 2-3 projects in that domain using relevant datasets. At interviews, you have relevant things to discuss.
+When targeting specific companies: look at companies hiring in your area. Read their product blogs and earnings calls to understand what problems they solve. Build 2-3 analyses in that domain using relevant public data. At interviews, you have relevant things to discuss.
 
 
 ## What Hiring Managers Actually Look At
 
-Based on Q&A from [Webinar 2: Defining the AI Engineer Role](../webinars/02-defining-the-role.md).
+Based on Q&A from [Webinar 2: Defining the PM Role](../webinars/02-defining-the-role.md).
 
-Recruiters do not look at your GitHub. They check whether some project exists or not and move on.
+Recruiters do not study your portfolio in depth. They check whether structured thinking exists or not and move on.
 
-Hiring managers have 5-10 minutes before an interview. They open the GitHub link, look at what is there in general. They will not read code in detail. A project would have to really interest them for them to look deeper.
+Hiring managers have 5-10 minutes before an interview. They open the portfolio link, look at what is there in general. They will not read every analysis in detail. A project would have to really interest them for them to look deeper.
 
 What hiring managers want to see:
-1. The project solves a real problem - what it does, why it exists
-2. A clear description so they can immediately understand what is going on
-3. Signs that the project is close to production: tests, evaluation, CI/CD, deployment
+1. The project addresses a real problem - what it analyzes, why it matters
+2. A clear structure so they can immediately understand the product thinking
+3. Signs that the analysis is rigorous: real data, quantified impact, clear tradeoffs, specific recommendations
 
-The more checkboxes you check, the better. Tests add a plus, CI/CD adds a plus, good code adds a plus, images, demos, videos add a plus.
+The more checkboxes you check, the better. Real metrics add a plus, competitive analysis adds a plus, clear prioritization adds a plus, visuals, frameworks, and data tables add a plus.
 
-For take-home assignments, people read more carefully. Some hiring managers actually run the code. For take-home assignments, follow engineering best practices: write tests, have code coverage ideally.
+For take-home case studies, people read more carefully. Some hiring managers actually verify the data and logic. For take-home assignments, follow analytical best practices: cite sources, show your math, have clear assumptions stated.
 
-Nobody looks at commit history. When looking at a project, people look at the project in its current state.
-
-
-## Writing a Good README
-
-The README is the most important file in your project. It is the first and often only thing a hiring manager reads.
-
-Write your README for two audiences:
-
-1. A peer reviewer who has time to check everything and verify all criteria are met. This motivates you to write good code, clearly and without cutting corners.
-2. A hiring manager who has almost no time. Convey the maximum amount of information in the shortest time.
-
-The README should: describe the project clearly, explain what specific problem it solves, and link directly to important parts (prompts, tools, evaluation). Everything else adds bonus points: tests described, CI/CD mentioned, images, demos, videos.
-
-Not too big and not too small. AI-generated READMEs are obvious and mix useful information with filler. Write it yourself or heavily edit what the AI produces.
+Nobody looks at revision history. When looking at a project, people evaluate the project in its current state.
 
 
-## Original Projects vs Tutorials
+## Writing a Good Case Study
 
-If someone says in an interview "this was a course, I just copied from there" - hiring managers immediately lose interest.
+The write-up is the most important artifact in your portfolio. It is the first and often only thing a hiring manager reads.
+
+Write your case study for two audiences:
+
+1. A peer reviewer who has time to check everything and verify all analysis is sound. This motivates you to do rigorous work, clearly and without cutting corners.
+2. A hiring manager who has almost no time. Convey the maximum amount of insight in the shortest time.
+
+The write-up should: describe the product clearly, explain what specific problem it analyzes, and link directly to important sections (metrics framework, competitive analysis, recommendations). Everything else adds bonus points: SQL queries included, data sources cited, visuals, dashboards, executive summaries.
+
+Not too long and not too short. AI-generated analyses are obvious and mix useful insights with filler. Write it yourself or heavily edit what the AI produces.
+
+For more on structuring PM portfolio write-ups that pass the hiring manager's 5-minute scan, including real examples and anti-patterns from 50+ interview debriefs, see [The 0 to 1 PM Interview Playbook](https://valenx.org/books/pm).
+
+
+## Original Analysis vs Course Templates
+
+If someone says in an interview "this was a course template, I just filled in the blanks" - hiring managers immediately lose interest.
 
 There are important distinctions:
-- Course with step-by-step instructions that you repeat - everyone has the same code. Not much value.
-- Course homework where the task is given but the implementation is yours - much more valuable.
-- Original project you came up with and built from scratch - enormous value, both for you and for the interviewer.
+- Course with step-by-step teardown template that you repeat - everyone has the same structure. Not much value.
+- Course assignment where the product is given but the analysis framework is yours - much more valuable.
+- Original analysis you identified and built from scratch on a product you use - enormous value, both for you and for the interviewer.
 
-When you were really involved in the task, you will have answers to questions because you lived through it, not just copied it.
+When you were really involved in the analysis, you will have answers to questions because you lived through the product thinking, not just copied a framework.
 
 
 ## Production Practices in Personal Projects
 
-Companies do not expect production-level engineering in personal projects. That would be over-engineering - it would look forced. It is very hard to have real production-level problems in personal projects.
+Companies do not expect enterprise-level analytics infrastructure in personal projects. That would be over-engineering - it would look forced. It is very hard to have real production-level product data in personal projects.
 
-Clarity is more important - everything should be clean and understandable, solving your problem. Do not forget about basic best practices, but do not overdo it.
+Clarity is more important - everything should be clean and well-structured, solving a real analytical question. Do not forget about basic best practices, but do not overdo it.
 
-If you have a personal project that genuinely requires production-level infrastructure, you probably do not need a job - you already have one.
+If you have a personal project that genuinely requires production-level data infrastructure, you probably do not need a job - you already have a product.
 
-Tests and CI/CD, however, are easy to add - especially with AI assistants. You need to write tests regardless. And once you have tests, wrapping them in GitHub Actions is a 5-minute thing. Start with unit tests, then integration tests, then end-to-end tests, then LLM-as-judge evaluations.
+SQL queries and data analysis, however, are easy to add - especially with AI assistants. You need to show analytical rigor regardless. And once you have queries, wrapping them in a reproducible notebook is straightforward. Start with descriptive analysis, then cohort analysis, then experiment design, then predictive modeling for product decisions.
 
 
 ## Using AI Assistants in Your Portfolio
 
-Using Claude Code or similar assistants is neutral on a portfolio. If you do not use any AI assistant, you are missing out. But there is no reason to specifically mention it.
+Using Claude, ChatGPT, or similar assistants is neutral on a portfolio. If you do not use any AI tool for analysis and writing, you are missing out. But there is no reason to specifically mention it.
 
-If you want to be open about it, you can say at the end that the project was built using AI-assisted development and indicate your contribution.
+If you want to be open about it, you can say at the end that the analysis was developed using AI-assisted research and indicate your original contribution.
 
-If a hiring manager asks about it, the conversation will go into how you used the assistant, how you gave instructions, how you made sure the agent did not make mistakes. If your answer is "I gave a prompt and everything worked from the first try" - that raises questions. Because it never works from the first try. Having many iterations is very valuable and is considered a useful skill.
+If a hiring manager asks about it, the conversation will go into how you used the assistant, how you directed the analysis, how you validated the outputs. If your answer is "I gave a prompt and everything worked from the first try" - that raises questions. Because it never works from the first try. Having many iterations and applying product judgment is very valuable and is considered a useful skill.
 
-If the code is 100% written by the assistant and you fully understand it - great. But if something goes wrong in production and you do not have access to the agent, can you fix the problem? For personal projects, not understanding 50% is fine. For critical production projects, you should have a deeper understanding.
+If the analysis is 100% structured by the assistant and you fully understand every recommendation - great. But if the CEO asks follow-up questions in a product review and you cannot defend the reasoning, can you hold the room? For personal projects, not understanding 50% is fine. For critical product decisions, you should have conviction backed by data.

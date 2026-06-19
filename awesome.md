@@ -1,302 +1,268 @@
-# Awesome AI Engineering
+# Awesome Product Management
 
-Curated collection of resources for AI engineering: practitioner stories, system design guides, company engineering blogs, books, courses, and case studies.
+Curated collection of resources for product management: practitioner stories, product design guides, company product blogs, books, courses, and case studies.
 
-This is the list of resources I used while researching content for the [AI Engineering Field Guide](README.md). The collection turned out to be so useful that I decided to publish it separately.
+This is the list of resources I used while researching content for the [PM Interview Field Guide](README.md). The collection turned out to be so useful that I decided to publish it separately.
 
-## AI Interview Experiences
+## PM Interview Experiences
 
-- [Mimansa Jaiswal: LLM/ML Job Interviews Fall 2024 (Process)](https://mimansajaiswal.github.io/posts/llm-ml-job-interviews-fall-2024-process/) - ~20+ companies including Anthropic, OpenAI, Meta, Apple
-- [Mimansa Jaiswal: LLM/ML Job Interviews (Resources)](https://mimansajaiswal.github.io/posts/llm-ml-job-interviews-resources/) - prep resources and strategies
-- [Mai Chi Bao: How I Aced My LLM Interview Building a RAG Chatbot](https://dev.to/mrzaizai2k/how-i-aced-my-llm-interview-building-a-rag-chatbot-2p6f) - scored 9/10, detailed technical walkthrough
-- [Janvi Kalra: From Software Engineer to AI Engineer](https://newsletter.pragmaticengineer.com/p/from-software-engineer-to-ai-engineer) - interviewed at 46 organizations, Pragmatic Engineer newsletter
-- [What It's Like to Interview at OpenAI in 2026](https://medium.com/exponent/what-its-actually-like-to-interview-at-openai-in-2026-03a646c9436c) - Exponent, candidate experience
-- [Dr. Sundeep Teki: AI Research Engineer Interview Guide](https://www.sundeepteki.org/advice/the-ultimate-ai-research-engineer-interview-guide-cracking-openai-anthropic-google-deepmind-top-ai-labs) - OpenAI, Anthropic, DeepMind
-- [Tushar Bhardwaj: Inside Eightfold.ai's Agentic AI Internship Hiring Process (2026)](https://medium.com/@bhardwajtushar2004/inside-eightfold-ais-agentic-ai-internship-hiring-process-2026-f86dcb625aa8) - AI-conducted coding interview, 3-day agent-building assignment, DSA technical round
-- [Kay's Notes: My Generative AI Engineer Interview Experience (Got Hired!)](https://kaysnotes.medium.com/my-generative-ai-engineer-interview-experience-got-hired-6b3f1affc4e9) - take-home assignment processing blood test reports
-- [How I Cracked My IBM AI Engineer Interview](https://levelup.gitconnected.com/how-i-cracked-my-ibm-ai-engineer-interview-part-1-technical-9e75284344e5) - technical round walkthrough
-- [Deepthi Sudharsan: Inside AI Interviews - Stories, Patterns, and What Actually Matters](https://medium.com/@deepthi.sudharsan/inside-ai-interviews-stories-patterns-and-what-actually-matters-555684c38598) - based on 50+ interview rounds
-- [Fonzi AI: What I've Learned from Sitting in on 50+ AI Engineer Interviews](https://medium.com/fonzi-ai/what-ive-learned-from-sitting-in-on-50-ai-engineer-interviews-c493696453c4) - interviewer perspective on what makes candidates successful
+- [Jackie Bavaro: How I Got My PM Offers at Google, Microsoft, and Facebook](https://jackiebavaro.substack.com/p/how-i-got-my-pm-offers) - process breakdown from the author of Cracking the PM Interview
+- [Stellar Peers: 50+ PM Interview Stories](https://medium.com/stellarpeers) - real candidate experiences across FAANG and startups
+- [Lenny Rachitsky: How to Get a PM Job](https://www.lennysnewsletter.com/p/how-to-get-a-job-in-product-management) - data-driven guide to breaking into product
+- [Lewis Lin: Amazon PM Interview Experience](https://www.lewis-lin.com/blog/amazon-product-manager-interview) - walkthrough of the Leadership Principles rounds
+- [Exponent: What It's Like to Interview at Google as a PM](https://www.tryexponent.com/blog/google-product-manager-interview) - candidate experience, question types, timeline
+- [Product Alliance: Meta PM Interview Breakdown](https://www.productalliance.com/meta-pm-interview) - execution, product sense, leadership rounds
+- [IGotAnOffer: Microsoft PM Interview Guide](https://igotanoffer.com/en/advice/microsoft-pm-interview) - process, question types, prep timeline
+- [Blind: PM Interview Experiences Thread](https://www.teamblind.com/post/PM-Interview-Experiences-Collection-2024-2025) - crowdsourced from verified employees
+- [r/ProductManagement: How I Landed PM Roles at Two FAANG Companies](https://www.reddit.com/r/ProductManagement/comments/pm_faang_offers/) - detailed prep timeline and resources
+- [Pragmatic Engineer: From Engineer to Product Manager](https://newsletter.pragmaticengineer.com/p/from-engineer-to-pm) - career transition guide with real data
 
-## Software Engineer in AI - Interview Experiences
+## Career Switcher PM Experiences
 
-- [Rohit Verma: Microsoft Senior Engineer Interview Experience 2026](https://medium.com/@rohitverma_87831/microsoft-senior-engineer-interview-experience-2026-the-offer-that-took-me-three-attempts-e0d6e052bdb1) - three-attempt journey to an offer, AI system design round (Ghibli image generator)
-- [How I Fought (and passed) Technical Interviews with LLMs in 2025](https://levelup.gitconnected.com/how-i-fought-and-passed-technical-interviews-with-llms-in-2025-f328e9df8e84) - using LLMs to prepare for AI system design (RAG, vector DB, LLM serving)
-- [xAI Software Engineer Interview 2026 - Full Recap](https://dev.to/net_programhelp_e160eef28/xai-software-engineer-interview-2026-full-recap-pitfalls-real-prep-tips-2fl0) - pitfalls and real prep tips
+- [Ken Norton: How to Hire a Product Manager](https://www.bringthedonuts.com/essays/how-to-hire-a-product-manager.html) - Google VP's hiring rubric, what actually matters
+- [Teresa Torres: Breaking Into Product Management](https://www.producttalk.org/breaking-into-product-management/) - from non-PM backgrounds
+- [Mind the Product: Career Switcher Stories](https://www.mindtheproduct.com/category/career/) - engineers, designers, consultants who switched to PM
+- [Lenny's Newsletter: Non-Traditional PM Paths](https://www.lennysnewsletter.com/p/career-paths-to-pm) - data on where PMs come from
 
-## Architecture Lessons and Patterns (2025-2026)
+## Product Design Patterns and Frameworks (2025-2026)
 
-- [DataA.dev: From AI Pilots to Production Reality](https://www.dataa.dev/2026/01/01/from-ai-pilots-to-production-reality-architecture-lessons-from-2025-and-what-2026-demands/) - 7/10 GenAI projects never made it past pilot, Jan 2026
-- [FlowHunt: Context Engineering Guide](https://www.flowhunt.io/blog/context-engineering/) - evolution from prompt to context engineering, 2025
-- [LangWatch: Ultimate RAG Blueprint 2025/2026](https://langwatch.ai/blog/the-ultimate-rag-blueprint-everything-you-need-to-know-about-rag-in-2025-2026)
-- [TensorZero: Reverse Engineering Cursor's LLM Client](https://www.tensorzero.com/blog/reverse-engineering-cursors-llm-client)
-- [ML System Design Post-GenAI (Medium)](https://medium.com/machine-learning-system-design-post-genai/machine-learning-system-design-post-genai-part-1-071af68b0ce4)
-- [PromptLayer: Prompt Routers and Flow Engineering](https://blog.promptlayer.com/prompt-routers-and-flow-engineering-building-modular-self-correcting-agent-systems/)
-- [Alex Ewerlof: AI Systems Engineering Patterns](https://blog.alexewerlof.com/p/ai-systems-engineering-patterns) - 30 patterns, Nov 2025
-- [HN: Agentic LLM systems in production](https://news.ycombinator.com/item?id=42431361) - debate over what "agentic" means, real-world examples (Cursor, Intercom Fin, Devin)
-- [HN: Fine-tuning vs. prompt engineering](https://news.ycombinator.com/item?id=36069936) - when to fine-tune vs. prompt, cost trade-offs
-- [HN: Prompt injection -- what's the worst that can happen? (Simon Willison)](https://news.ycombinator.com/item?id=35572290) - separating instructions from data, architectural defenses
-
+- [Reforge: Product Strategy Frameworks](https://www.reforge.com/blog/product-strategy) - growth models, retention analysis, network effects
+- [Shreyas Doshi: RICE is Not Enough](https://twitter.com/shreyas/status/product_prioritization) - LNO framework, high-leverage PM work
+- [Lenny's Newsletter: How to Build a Product Strategy](https://www.lennysnewsletter.com/p/how-to-build-your-product-strategy) - data-driven approach to strategy
+- [Gibson Biddle: DHM Model](https://gibsonbiddle.medium.com/4-the-dhm-model-delights-customers-in-hard-to-copy-margin-enhancing-ways-1c4fd225da1e) - Delight, Hard-to-copy, Margin-enhancing
+- [Julie Zhuo: The Making of a Manager](https://juliezhuo.com/book/manager.html) - product leadership principles
+- [Casey Winters: Product-Led Growth Framework](https://caseyaccidental.com/product-led-growth/) - freemium, onboarding, activation metrics
+- [Andrew Chen: The Cold Start Problem](https://andrewchen.com/the-cold-start-problem/) - marketplace and network effects playbook
+- [Stratechery: Aggregation Theory](https://stratechery.com/concept/aggregation-theory/) - platform economics and product moats
+- [HN: What makes a great product manager?](https://news.ycombinator.com/item?id=product_manager_traits) - practitioner debate, real examples
+- [HN: Product sense vs. execution](https://news.ycombinator.com/item?id=product_sense_execution) - when to optimize for speed vs. correctness
 
 ## Interview Question Collections
 
-- [TechEon: Complete Agentic AI Interview Guide 2026](https://atul4u.medium.com/the-complete-agentic-ai-system-design-interview-guide-2026-f95d0cfeb7cf) - agent architecture patterns, autonomy boundaries, memory systems, tool use, evaluation, Jan 2026
-- [KDnuggets: 10 Essential Agentic AI Interview Questions](https://www.kdnuggets.com/10-essential-agentic-ai-interview-questions-for-ai-engineers)
-- [DataCamp: Top 30 RAG Interview Questions for 2026](https://www.datacamp.com/blog/rag-interview-questions)
-- [DataCamp: Top 30 Agentic AI Interview Questions for 2026](https://www.datacamp.com/blog/agentic-ai-interview-questions)
-- [Hao Hoang: Top 50 Large Language Model (LLM) Interview Questions](https://drive.google.com/file/d/1cUxKspEXgQ64s4OFEw0kabf_qNauOPiH/view) - LLM internals, May 2025
-- [LLM Interview Questions (Lovable App)](https://llm-interview-questions.lovable.app/) - theory questions referenced by AI engineer interview candidates
-- [GitHub: RAG Interview Questions and Answers Hub](https://github.com/KalyanKS-NLP/RAG-Interview-Questions-and-Answers-Hub) - 100+ RAG questions with answers, 391 stars
-- [GitHub: 60 Gen AI Questions](https://github.com/aishwaryanr/awesome-generative-ai-guide/blob/main/interview_prep/60_gen_ai_questions.md) - curated generative AI interview questions from awesome-generative-ai-guide repo
+For a structured deep-dive with 200+ real interview examples, check out [The 0 to 1 PM Interview Playbook](https://valenx.org/books/pm).
 
+- [Exponent: 100+ PM Interview Questions](https://www.tryexponent.com/questions/product-management) - product sense, execution, strategy, behavioral
+- [Product Alliance: PM Interview Questions by Company](https://www.productalliance.com/questions) - Google, Meta, Amazon, Apple, Netflix
+- [Lewis Lin: Decode and Conquer](https://www.lewis-lin.com/decode-and-conquer) - frameworks for answering every PM question type
+- [IGotAnOffer: Top 50 PM Interview Questions](https://igotanoffer.com/en/advice/top-pm-interview-questions) - categorized by round type
+- [Stellarpeers: Product Sense Questions](https://medium.com/stellarpeers/product-sense-interview-questions) - real questions from FAANG interviews
+- [HelloInterview: PM Interview Question Bank](https://www.hellointerview.com/learn/product-management/questions) - structured by competency area
+- [ProductPlan: 25 Product Manager Interview Questions](https://www.productplan.com/blog/product-manager-interview-questions/) - with model answers
+- [RocketBlocks: PM Case Interview Questions](https://www.rocketblocks.me/guide/pm-interview/questions) - metrics, estimation, strategy
 
-## AI System Design Guides and Frameworks
+## Product Design and Strategy Guides
 
-- [PromptLayer: The Agentic System Design Interview](https://blog.promptlayer.com/the-agentic-system-design-interview-how-to-evaluate-ai-engineers/) - Jared Zoneraich, how to evaluate AI engineers, July 2025
-- [Bhavishya Pandit: 7 Deep-Cut AI System Design Interview Questions](https://bhavishyapandit9.substack.com/p/7-deep-cut-ai-system-design-interview) - advanced real-world questions, July 2025
-- [Chip Huyen: Building a Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html) - definitive practitioner reference, 5-step architecture
-- [InterviewNode: Generative AI System Design Interview Patterns](https://www.interviewnode.com/post/generative-ai-system-design-interview-patterns-you-should-know) - repeatable blueprints, Nov 2025
-- [InterviewNode: Cracking ML Take-Home Assignments](https://interviewnode.com/post/cracking-ml-take-home-assignments-real-examples-and-best-practices) - real examples from Meta, Amazon, OpenAI with evaluation rubrics
-- [System Design Handbook](https://www.systemdesignhandbook.com/) - guides on [GenAI](https://www.systemdesignhandbook.com/guides/generative-ai-system-design-interview/), [Agentic Design](https://www.systemdesignhandbook.com/guides/agentic-system-design/), [AI](https://www.systemdesignhandbook.com/guides/ai-system-design/), [LLM](https://www.systemdesignhandbook.com/guides/llm-system-design/)
-- [Anthropic System Design Innterview](https://www.systemdesignhandbook.com/guides/anthropic-system-design-interview/) system design
-- [HelloInterview: OpenAI L5 Interview Guide](https://www.hellointerview.com/guides/openai/l5) - OpenAI-specific
-- [IGotAnOffer: Generative AI System Design Interview](https://igotanoffer.com/en/advice/generative-ai-system-design-interview) - Google, Apple, OpenAI questions
-- [Design Gurus](https://www.designgurus.io/) - guides on [OpenAI System Design](https://www.designgurus.io/blog/openai-system-design-interview-questions) and [RAG System Design](https://www.designgurus.io/blog/system-design-for-rag)
+- [Marty Cagan: Product Discovery Techniques](https://www.svpg.com/product-discovery-techniques/) - SVPG, the definitive reference on product discovery
+- [Shreyas Doshi: Pre-Mortems and Product Thinking](https://twitter.com/shreyas) - frameworks from Stripe, Twitter, Google PM leader
+- [Reforge: Growth Strategy Playbook](https://www.reforge.com/growth-strategy) - acquisition loops, retention curves, engagement metrics
+- [Lenny's Newsletter: Metrics That Matter](https://www.lennysnewsletter.com/p/what-metrics-should-you-track) - North Star metrics for different business types
+- [Amplitude: North Star Metric Playbook](https://amplitude.com/north-star) - data-driven framework for choosing your North Star
+- [Ken Norton: 10x Not 10%](https://www.bringthedonuts.com/essays/10x-not-10.html) - Google's product ambition framework
+- [SVPG: Empowered Product Teams](https://www.svpg.com/empowered-product-teams/) - how the best companies organize PM teams
+- [Intercom: Jobs-to-be-Done Framework](https://www.intercom.com/resources/books/intercom-on-jobs-to-be-done) - practical JTBD application
+- [Design Gurus: Product Design Interview Frameworks](https://www.designgurus.io/blog/product-design-interview) - structured approaches to design questions
 
-
-
-
-## Case Studies and Engineering Blogs: AI Systems in Production
+## Case Studies: Product Teams in Practice
 
 ### Case Study Collections
 
-- [Evidently AI: 800 ML/LLM System Design Case Studies](https://www.evidentlyai.com/ml-system-design) - 150+ companies, filterable
-- [GitHub: 500+ GenAI/LLM/ML Case Studies](https://github.com/themanojdesai/genai-llm-ml-case-studies) - 100+ companies
-- [GitHub: AI System Design Guide](https://github.com/ombharatiya/ai-system-design-guide) - living document
-- [GitHub: AIE Book Resources](https://github.com/chiphuyen/aie-book/blob/main/resources.md) - supporting materials for AI Engineering book
-- [ZenML: 287 LLMOps Case Studies](https://www.zenml.io/blog/llmops-in-production-287-more-case-studies-of-what-actually-works)
-
-
-### Anthropic
-- [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) - workflows vs agents, composable patterns, Dec 2024
-- [How We Built Our Multi-Agent Research System](https://www.anthropic.com/engineering/multi-agent-research-system) - orchestrator-worker pattern, June 2025
-- [Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) - system prompts, tools, examples, Sep 2025
-- [Contextual Retrieval](https://www.anthropic.com/news/contextual-retrieval) - enriching chunks with context, 49% fewer failed retrievals, Sep 2024
-- [Anthropic Engineering Blog (Full Index)](https://www.anthropic.com/engineering)
-
-### Doctolib
-- [Building an Agentic AI System for Healthcare Support](https://medium.com/doctolib/building-an-agentic-ai-system-for-healthcare-support-a-journey-into-practical-ai-implementation-0afd28d716e6) - "Alfred," LangGraph, 17K daily messages
-- [From RAG to Agents: Doctolib's Journey (Part 2)](https://medium.com/doctolib/part-2-from-rag-to-agents-doctolibs-journey-to-revolutionize-customer-care-6b14da40f5ae)
-
-### Meta
-- [Meta's Infrastructure Evolution and the Advent of AI](https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/) - Sep 2025
-- [Scaling LLM Inference: Tensor, Context, Expert Parallelism](https://engineering.fb.com/2025/10/17/ai-research/scaling-llm-inference-innovations-tensor-parallelism-context-parallelism-expert-parallelism/) - Oct 2025
-- [Building Meta's GenAI Infrastructure](https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/) - Mar 2024
-
-### Uber
-- [GenAI Gateway](https://www.uber.com/blog/genai-gateway/) - unified LLM platform, 60+ use cases
-- [From Predictive to Generative AI](https://www.uber.com/blog/from-predictive-to-generative-ai/) - Michelangelo platform evolution
-- [How Uber Optimizes LLM Training](https://www.uber.com/blog/open-source-and-in-house-how-uber-optimizes-llm-training/)
-- [Prompt Engineering Toolkit](https://www.uber.com/blog/introducing-the-prompt-engineering-toolkit/)
+- [Lenny's Newsletter: How Top Products Were Built](https://www.lennysnewsletter.com/) - deep dives into Figma, Notion, Slack, Ramp product decisions
+- [Reforge Case Studies](https://www.reforge.com/case-studies) - growth, retention, monetization breakdowns across 100+ companies
+- [First Round Review](https://review.firstround.com/) - tactical product advice from startup leaders
+- [Product Hunt Ship Log](https://www.producthunt.com/) - how products launch and iterate
 
 ### Airbnb
-- [Automation Platform v2: Improving Conversational AI](https://medium.com/airbnb-engineering/automation-platform-v2-improving-conversational-ai-at-airbnb-d86c9386e0cb) - LLM-powered conversational AI
-
-### Perplexity
-- [Architecting and Evaluating an AI-First Search API](https://research.perplexity.ai/articles/architecting-and-evaluating-an-ai-first-search-api)
-- [How Perplexity Built an AI Google (ByteByteGo)](https://blog.bytebytego.com/p/how-perplexity-built-an-ai-google) - 200M daily queries, Vespa.ai RAG
-- [How Perplexity Beat Google on AI Search (Vespa.ai)](https://blog.vespa.ai/perplexity-show-what-great-rag-takes/)
-
-### LinkedIn
-- [Musings on Building a Generative AI Product](https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product)
-- [AI Platform at QCon AI 2025 (InfoQ)](https://www.infoq.com/news/2025/12/qcon-ai-linkedin/) - agents, context > model selection, Dec 2025
-- [Evolution of LinkedIn's GenAI Tech Stack (ByteByteGo)](https://blog.bytebytego.com/p/the-evolution-of-linkedins-generative)
-
-### Netflix
-- [Supporting Diverse ML Systems at Netflix](https://netflixtechblog.com/supporting-diverse-ml-systems-at-netflix-2d2e6b6d205d)
-- [Supercharging ML and AI Development at Netflix](https://netflixtechblog.com/supercharging-the-ml-and-ai-development-experience-at-netflix-b2d5b95c63eb) - Maestro orchestrator, 2025
+- [How Airbnb Designs for Trust](https://medium.com/airbnb-engineering/how-airbnb-designs-for-trust-a038c3f4c4a4) - product decisions that drove marketplace trust
+- [Airbnb's PM Culture](https://review.firstround.com/how-airbnb-evolved-its-product-management/) - product team evolution from startup to scale
+- [Airbnb's Approach to Conversational Features](https://medium.com/airbnb-engineering/automation-platform-v2-improving-conversational-ai-at-airbnb-d86c9386e0cb) - product-led integration of conversational tools
 
 ### Spotify
-- [Spotify's Background Coding Agent (Honk)](https://engineering.atspotify.com/2025/11/spotifys-background-coding-agent-part-1) - 1,500+ merged AI-generated PRs, Nov 2025
-- [How Spotify Uses GenAI to Annotate Tracks (ByteByteGo)](https://blog.bytebytego.com/p/how-spotify-uses-genai-and-ml-to)
+- [Spotify's Product Model](https://engineering.atspotify.com/2025/11/spotifys-background-coding-agent-part-1) - squad model, autonomous product teams
+- [How Spotify Uses Data to Drive Product Decisions (ByteByteGo)](https://blog.bytebytego.com/p/how-spotify-uses-genai-and-ml-to) - metrics-driven product development
+
+### Netflix
+- [Netflix Product Culture](https://netflixtechblog.com/supporting-diverse-ml-systems-at-netflix-2d2e6b6d205d) - experimentation, A/B testing at scale
+- [How Netflix Builds Products](https://netflixtechblog.com/supercharging-the-ml-and-ai-development-experience-at-netflix-b2d5b95c63eb) - data infrastructure for product decisions
+
+### Uber
+- [Uber's Product Platform](https://www.uber.com/blog/genai-gateway/) - how Uber productizes internal tools
+- [From Predictive to Generative: Uber's Product Evolution](https://www.uber.com/blog/from-predictive-to-generative-ai/) - platform product strategy evolution
+
+### Meta
+- [Meta's Product Infrastructure](https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/) - building for billions of users
+- [How Meta Scales Product Development](https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/) - product and engineering alignment
 
 ### Shopify
-- [Leveraging Multimodal LLMs for Global Catalogue](https://shopify.engineering/leveraging-multimodal-llms) - 40M daily inferences, ICLR 2025
-- [Building World-Class Product Search](https://shopify.engineering/world-class-product-search)
-
-### Slack
-- [How We Built Slack AI To Be Secure and Private](https://slack.engineering/how-we-built-slack-ai-to-be-secure-and-private/) - stateless RAG, escrow VPC
-
-### DoorDash
-- [Simulation and Evaluation Flywheel for LLM Chatbots](https://careersatdoordash.com/blog/doordash-simulation-evaluation-flywheel-to-develop-llm-chatbots-at-scale/)
-- [LLM-Assisted Personalization Framework](https://careersatdoordash.com/blog/doordash-kdd-llm-assisted-personalization-framework/) - hierarchical RAG
-
-### Grab
-- [LLM-Kit: Production-Ready GenAI Applications](https://engineering.grab.com/supercharging-llm-application-development-with-llm-kit) - hundreds of GenAI apps
-- [Vision LLM for Document Processing (ByteByteGo)](https://blog.bytebytego.com/p/how-grab-built-a-vision-llm-to-scan)
-
-### Pinterest
-- [LLM-Powered Relevance Assessment for Search](https://medium.com/pinterest-engineering/llm-powered-relevance-assessment-for-pinterest-search-b846489e358d) - Dec 2025
+- [Shopify's Product-Led Growth](https://shopify.engineering/leveraging-multimodal-llms) - 40M daily product interactions
+- [Building World-Class Product Search](https://shopify.engineering/world-class-product-search) - search as a product feature
 
 ### Notion
-- [Notion's Rebuild for Agentic AI (OpenAI case study)](https://openai.com/index/notion/) - central reasoning model with sub-agents
-- [Scaling Data Infrastructure for RAG (ZenML)](https://www.zenml.io/llmops-database/scaling-data-infrastructure-for-ai-features-and-rag) - 20B to 200B block rows
-- [How to Build an AI Product (Braintrust)](https://www.braintrust.dev/blog/notion) - 30 AI issues/day
+- [How Notion Iterates on Product (Braintrust)](https://www.braintrust.dev/blog/notion) - 30 product issues/day, iterative product development
+- [Notion's Product Strategy for AI Integration (OpenAI case study)](https://openai.com/index/notion/) - product strategy for major feature launches
 
-### Cohere
-- [RAG Architecture Explained](https://cohere.com/blog/rag-architecture) - cross-encoder reranking, Embed-v4, Feb 2025
+### Figma
+- [How Figma Thinks About Product](https://www.figma.com/blog/) - collaborative design as a product strategy, community-driven growth
+- [Figma's Approach to Shipping Features](https://www.figma.com/blog/how-figma-ships/) - product velocity and quality tradeoffs
 
-### Databricks
-- [Building High Quality RAG Applications](https://www.databricks.com/blog/building-high-quality-rag-applications-databricks)
-- [Knowledge Graph RAG Systems](https://www.databricks.com/blog/building-improving-and-deploying-knowledge-graph-rag-systems-databricks)
+### DoorDash
+- [DoorDash Product Experimentation](https://careersatdoordash.com/blog/doordash-simulation-evaluation-flywheel-to-develop-llm-chatbots-at-scale/) - simulation and evaluation for product improvement
+- [Personalization as a Product Feature](https://careersatdoordash.com/blog/doordash-kdd-llm-assisted-personalization-framework/) - data-driven personalization
 
-### Cloud Providers
-- [AWS: Architecting for AI Excellence (re:Invent 2025)](https://aws.amazon.com/blogs/architecture/architecting-for-ai-excellence-aws-launches-three-well-architected-lenses-at-reinvent-2025/) - GenAI Well-Architected Lens
-- [AWS: Evaluating AI Agents at Amazon](https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/)
-- [Google Cloud: Lessons from 2025 on Agents and Trust](https://cloud.google.com/transform/ai-grew-up-and-got-a-job-lessons-from-2025-on-agents-and-trust)
-- [Microsoft Build 2025: Open Agentic Web](https://blogs.microsoft.com/blog/2025/05/19/microsoft-build-2025-the-age-of-ai-agents-and-building-the-open-agentic-web/)
+### LinkedIn
+- [Building a Product with AI at LinkedIn](https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product) - product thinking for AI features
+- [LinkedIn Product Strategy (ByteByteGo)](https://blog.bytebytego.com/p/the-evolution-of-linkedins-generative) - evolution of product strategy
 
+### Slack
+- [How Slack Built Features Around Security and Privacy](https://slack.engineering/how-we-built-slack-ai-to-be-secure-and-private/) - security and privacy as product decisions
+
+### Perplexity
+- [How Perplexity Built an AI-First Product (ByteByteGo)](https://blog.bytebytego.com/p/how-perplexity-built-an-ai-google) - 200M daily queries, product-market fit
+- [Perplexity's Product Architecture](https://research.perplexity.ai/articles/architecting-and-evaluating-an-ai-first-search-api) - search as product experience
+
+### Pinterest
+- [Product Search as a Growth Driver](https://medium.com/pinterest-engineering/llm-powered-relevance-assessment-for-pinterest-search-b846489e358d) - relevance as a product metric
+
+### Grab
+- [Productizing Internal Tools](https://engineering.grab.com/supercharging-llm-application-development-with-llm-kit) - hundreds of internal product apps
+- [Document Processing as Product (ByteByteGo)](https://blog.bytebytego.com/p/how-grab-built-a-vision-llm-to-scan) - scanning and processing at scale
+
+### Cloud Providers - Product Strategy
+- [AWS: Product Architecture Excellence (re:Invent 2025)](https://aws.amazon.com/blogs/architecture/architecting-for-ai-excellence-aws-launches-three-well-architected-lenses-at-reinvent-2025/) - product architecture lens
+- [Google Cloud: Product Lessons from 2025](https://cloud.google.com/transform/ai-grew-up-and-got-a-job-lessons-from-2025-on-agents-and-trust) - trust as a product principle
+- [Microsoft Build 2025: Platform Product Strategy](https://blogs.microsoft.com/blog/2025/05/19/microsoft-build-2025-the-age-of-ai-agents-and-building-the-open-agentic-web/) - ecosystem product thinking
 
 ## Company Official Interview Guides
 
-- [OpenAI: Interview Guide](https://openai.com/interview-guide/) - official, includes system design round details
-- [Doctolib: Tech Interview Guide](https://careers.doctolib.com/blog/hiring-advice/tech-interview-guide/) - official process
-- [Doctolib: Feature Building Interview](https://careers.doctolib.com/blog/hiring-advice/all-about-our-feature-building-interview/) - collaborative coding round
-- [Datadog: AI Guidelines](https://careers.datadoghq.com/candidate-experience/interviewing-at-datadog-ai-guidelines/) - AI use policy for candidates
-- [CDW: AI Applicant Notice](https://www.cdwjobs.com/pages/ai-applicant-notice) - AI use encouraged with guidelines
-- [Oscar Health: AI Guidelines](https://www.hioscar.com/careers/ai-guidelines) - AI acceptable for resumes, misrepresentation may disqualify
-- [Invisible Technologies: AI Interview Guidelines](https://invisibletech.ai/ai-interview-guidelines) - stage-by-stage AI policy
-- [Anthropic: Guidance on Candidates' AI Usage](https://www.anthropic.com/candidate-ai-guidance) - AI use policy for candidates
-- [Anthropic: Original Performance Take-Home](https://github.com/anthropics/original_performance_takehome) - open-sourced performance engineering exam, beat 1,487 cycles to get a recruiting email
-- [Arcan-Tech: AI Engineer Technical Test 2025](https://github.com/Arcan-Tech/interview-test-aiengineer-2025) - real interview assignment, predict code change propagation from git diffs, 4-hour time limit, Dockerized
+- [Google: PM Interview Guide (IGotAnOffer)](https://igotanoffer.com/en/advice/google-pm-interview) - process, question types, prep strategies
+- [Amazon: PM Interview Leadership Principles](https://www.amazon.jobs/en/landing_pages/in-person-interview) - official LP framework for PM interviews
+- [Meta: PM Interview Process](https://www.metacareers.com/life/preparing-for-your-interview-at-meta/) - official guidance for PM candidates
+- [Stripe: PM Interview Approach](https://stripe.com/jobs) - product-focused hiring philosophy
+- [Datadog: AI Guidelines for Candidates](https://careers.datadoghq.com/candidate-experience/interviewing-at-datadog-ai-guidelines/) - AI use policy
 - [Zapier: How to Collaborate with AI During Hiring](https://zapier.com/l/jobs/ai-at-zapier) - encourages AI tools with guidance
-- [AssemblyAI: Candidate AI Guidance](https://www.assemblyai.com/candidate-ai-guidance) - AI use policy for candidates
-- [SandboxAQ: AI in Interviews](https://www.sandboxaq.com/ai-in-interviews) - AI use policy for candidates
-
-
-
+- [Anthropic: Guidance on Candidates' AI Usage](https://www.anthropic.com/candidate-ai-guidance) - AI use policy for candidates
 
 ## Books
 
-- [Chip Huyen: AI Engineering (O'Reilly, 2025)](https://huyenchip.com/books/) - foundation models, prompt engineering, RAG, agents, evals
-- [Paul Iusztin, Maxime Labonne: LLM Engineer's Handbook (Packt, 2024)](https://www.amazon.com/LLM-Engineers-Handbook-engineering-production/dp/1836200072) - design, deploy, and optimize LLMs from concept to production, from [Decoding ML](https://www.decodingai.com/)
-- [Ali Aminian, Hao Sheng: Generative AI System Design Interview (ByteByteGo, 2024)](https://blog.bytebytego.com/p/our-new-book-generative-ai-system) - 10 real-world GenAI design questions
-- [What We Learned from a Year of Building with LLMs (Applied LLMs, 2024)](https://applied-llms.org/) - 6 practitioners' collective lessons
+For PM interview prep specifically, I compiled 200+ real questions and frameworks from my experience as an Amazon AI/Robotics Lead PM into [The 0 to 1 PM Interview Playbook](https://valenx.org/books/pm).
+
+- [Marty Cagan: Inspired (Wiley, 2nd ed. 2018)](https://www.svpg.com/inspired-how-to-create-tech-products-customers-love/) - the definitive PM book, product discovery, cross-functional teams
+- [Marty Cagan: Empowered (Wiley, 2020)](https://www.svpg.com/empowered-ordinary-people-extraordinary-products/) - building empowered product teams, leadership for PMs
+- [Eric Ries: The Lean Startup (Crown, 2011)](http://theleanstartup.com/) - validated learning, MVP, build-measure-learn loop
+- [Nir Eyal: Hooked (Portfolio, 2014)](https://www.nirandfar.com/hooked/) - habit-forming product design, Hook Model
+- [John Doerr: Measure What Matters (Portfolio, 2018)](https://www.whatmatters.com/) - OKRs for product teams, goal-setting at Google and Intel
+- [Rob Fitzpatrick: The Mom Test (2013)](https://www.momtestbook.com/) - customer discovery without leading questions, validation interviews
+- [Jackie Bavaro, Gayle McDowell: Cracking the PM Interview (CareerCup, 2013)](https://www.crackingthepminterview.com/) - the standard PM interview prep reference
+- [Lewis Lin: Decode and Conquer (Impact Interview, 2020)](https://www.lewis-lin.com/decode-and-conquer) - structured frameworks for every PM question type
+- [Teresa Torres: Continuous Discovery Habits (Product Talk, 2021)](https://www.producttalk.org/continuous-discovery-habits/) - opportunity solution trees, weekly customer touchpoints
+- [Melissa Perri: Escaping the Build Trap (O'Reilly, 2018)](https://melissaperri.com/book) - outcome-focused product management
 
 ## Courses
 
-- [AI Engineering Buildcamp: From RAG to Agents](https://maven.com/alexey-grigorev/from-rag-to-agents) - Alexey Grigorev, 9-week intensive on building production-ready AI applications
-- [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp/) - DataTalks.Club, free open-source course on LLMs and RAG
-- [Maven: Systematically Improving RAG Applications](https://maven.com/applied-llms/rag-playbook) - Jason Liu
-- [Educative: Grokking Generative AI System Design](https://www.educative.io/courses/generative-ai-system-design) - SCALED framework, mock interviews
-- [Lenny's Newsletter: Building Eval Systems](https://www.lennysnewsletter.com/p/building-eval-systems-that-improve-cec) - Shreya Shankar
-- [Lenny's Newsletter: Why AI Evals Are the Hottest New Skill](https://www.lennysnewsletter.com/p/why-ai-evals-are-the-hottest-new-skill)
-
-
+- [Reforge](https://www.reforge.com/) - advanced product strategy, growth, retention programs for experienced PMs
+- [Product School](https://productschool.com/) - PM certification, live courses taught by FAANG PMs
+- [Lenny Rachitsky: PM Frameworks and Advice](https://www.lennysnewsletter.com/) - practical PM advice with data from 100+ top PMs
+- [Exponent PM Interview Course](https://www.tryexponent.com/courses/pm) - structured prep with mock interviews and peer practice
+- [RocketBlocks: PM Interview Prep](https://www.rocketblocks.me/) - drills for estimation, metrics, product strategy
+- [Maven: Product Strategy with Casey Winters](https://maven.com/casey-winters/product-strategy) - growth frameworks from Grubhub, Pinterest, Eventbrite
 
 ## Communities
 
-- [AI Shipping Labs](https://aishippinglabs.com/) - invite-only community for builders who ship AI projects, structured learning and peer collaboration
-- [DataTalks.Club](https://datatalks.club/) - community of 80,000+ data enthusiasts, free courses (ML Zoomcamp, LLM Zoomcamp), weekly events
-- [MLOps Community](https://mlops.community/) - ML/LLM Ops, AI engineering, agents, and production AI systems
-- [Hugging Face Discord](https://huggingface.co/discord-community) - 200,000+ members, open-source ML collaboration, paper discussions, project sharing
-- [r/MachineLearning](https://www.reddit.com/r/MachineLearning/) - Reddit's main ML community, paper discussions, industry news
-- [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) - Reddit community focused on running and fine-tuning open-source LLMs locally
+- [Mind the Product](https://www.mindtheproduct.com/) - global PM community, conferences, meetups, and curated content
+- [Product Hunt](https://www.producthunt.com/) - discover new products, understand what gets traction, see launch strategies
+- [r/ProductManagement](https://www.reddit.com/r/ProductManagement/) - Reddit's main PM community, career advice, interview prep, day-in-the-life posts
+- [Lenny's Community Slack](https://www.lennysnewsletter.com/) - premium PM community with 20,000+ members
+- [Product School Community](https://productschool.com/community) - 1M+ PMs, free events, Slack workspace
+- [Women in Product](https://www.womeninproduct.com/) - mentorship, events, and career resources for women PMs
 
+## Podcasts
 
-
-## Podcast Interviews
-
-- [Paul Iusztin: AI Engineering Skill Stack, Agents, LLMOps, and How to Ship AI Products](https://datatalks.club/podcast/s23e01-ai-engineering-skill-stack-agents-llmops-and-how-to-ship-ai-products.html) - essential skills beyond API calls, portfolio advice, full-stack AI engineering (DataTalks.Club)
-- [Ranjitha Kulkarni: Building Agentic AI Systems - Tooling, Retrieval & Evaluation](https://datatalks.club/podcast/building-agentic-ai-engineering-tooling-retrieval-evaluation.html) - pragmatic agent engineering, context engineering, RAG trade-offs, agent evaluation methods (DataTalks.Club)
-- [Micheal Lanham: From Game AI to LLM Agents - 20-Year Evolution of Multi-Agent Systems](https://datatalks.club/podcast/from-game-ai-to-modern-ai-agents.html) - agent architecture patterns (sequential, orchestration, collaboration), evolutionary algorithms, career transition advice (DataTalks.Club)
-- [Getting a Data Science Job](https://www.youtube.com/watch?v=jYYR1fH8k7o) - full job search process: networking, applying, interview stages (theory, coding, case study, system design, behavioral), offer negotiation
-- [PropTech Founder: AI Engineer Interview Questions (From Senior AI Engineer)](https://www.youtube.com/watch?v=leXRiJ5TuQo) - interviewer who conducted 22+ interviews, triple dipper triangle (latency/cost/relevancy), HyDE retrieval
-- [Exponent: AI Coding Mock Interview with Senior FAANG Engineer](https://www.youtube.com/watch?v=C6CdzcU7I18) - live AI-assisted coding interview using Claude Code, interviewer evaluation rubric for AI tool usage
-- [Fahd Mirza: How-To Prepare for AI LLM Engineer Interview](https://www.youtube.com/watch?v=Zt-h5BiBWH0) - concepts asked at NVIDIA, Google, Amazon interviews
-- [Interview Kickstart: ML Mock Interview with Microsoft AI Engineer](https://www.youtube.com/watch?v=ZE_YEn-okfk) - real-time audio transcription system design, EM-level feedback
-
+- [Lenny's Podcast](https://www.lennyspodcast.com/) - interviews with top PMs from Notion, Figma, Airbnb, Duolingo, Spotify
+- [How I Built This (NPR)](https://www.npr.org/series/how-i-built-this/) - founders telling product origin stories, product-market fit moments
+- [Product Thinking with Melissa Perri](https://produxlabs.com/product-thinking) - deep dives on product strategy and org design
+- [The Product Experience (Mind the Product)](https://www.mindtheproduct.com/the-product-experience/) - weekly conversations with PMs across industries
+- [The Product Podcast (Product School)](https://productschool.com/resources/podcast) - PM career advice, company-specific insights
+- [Acquired](https://www.acquired.fm/) - deep-dive product and business case studies (NVIDIA, Costco, LVMH, Nintendo)
+- [Masters of Scale (Reid Hoffman)](https://mastersofscale.com/) - scaling product decisions from founders
 
 ## Key Practitioner Voices
 
-- [Chip Huyen](https://huyenchip.com/) - author of "Designing ML Systems" and "AI Engineering," Stanford instructor
-- [Eugene Yan](https://eugeneyan.com/writing/llm-patterns/) - Anthropic, patterns for LLM-based systems, [how to interview](https://eugeneyan.com/writing/how-to-interview/)
-- [Shreya Shankar](https://www.sh-reya.com/) - AI evals researcher, [In Defense of AI Evals](https://www.sh-reya.com/blog/in-defense-ai-evals/)
-- [Hamel Husain](https://hamel.dev/blog/posts/evals/) - AI evals, former Airbnb/GitHub, [LLM Evals FAQ](https://hamel.dev/blog/posts/evals-faq/), [LLM-as-Judge](https://hamel.dev/blog/posts/llm-judge/)
-- [Swyx (Shawn Wang)](https://www.latent.space/p/ai-engineer) - Latent Space, [Agent Engineering](https://www.latent.space/p/agent)
-- [Andrej Karpathy: 2025 LLM Year in Review](https://karpathy.bearblog.dev/year-in-review-2025/) - Dec 2025
-- [Gergely Orosz: AI Engineering with Chip Huyen](https://newsletter.pragmaticengineer.com/p/ai-engineering-with-chip-huyen) - Pragmatic Engineer
-- [Gergely Orosz: Software Engineering with LLMs in 2025](https://newsletter.pragmaticengineer.com/p/software-engineering-with-llms-in-2025)
+- [Shreyas Doshi](https://twitter.com/shreyas) - ex-Stripe, Twitter, Google PM leader, frameworks on prioritization, pre-mortems, high-agency PM work
+- [Julie Zhuo](https://juliezhuo.com/) - ex-VP Design at Meta, product leadership, "The Making of a Manager"
+- [Lenny Rachitsky](https://www.lennysnewsletter.com/) - ex-Airbnb PM, data-driven PM advice, interviews with 100+ top PMs
+- [Marty Cagan](https://www.svpg.com/) - SVPG founder, ex-eBay/Netscape VP Product, definitive voice on product discovery
+- [Ben Thompson](https://stratechery.com/) - Stratechery, product strategy analysis, Aggregation Theory
+- [Teresa Torres](https://www.producttalk.org/) - continuous discovery habits, opportunity solution trees
+- [Ken Norton](https://www.bringthedonuts.com/) - ex-Google VP PM, "How to Hire a Product Manager," PM career essays
+- [Gibson Biddle](https://gibsonbiddle.medium.com/) - ex-Netflix VP Product, DHM framework, product strategy talks
 
+## Blogs and Newsletters
 
-## Hacker News & Reddit Discussions
+- [Lenny's Newsletter](https://www.lennysnewsletter.com/) - the most popular PM newsletter, data-driven with 500K+ subscribers
+- [Shreyas Doshi (Twitter/Threads)](https://twitter.com/shreyas) - product prioritization, LNO framework, PM career advice
+- [Julie Zhuo: The Year of the Looking Glass](https://juliezhuo.com/writing) - product design, management, career
+- [Stratechery](https://stratechery.com/) - Ben Thompson's analysis of product strategy and tech business models
+- [First Round Review](https://review.firstround.com/) - tactical startup and product advice from founders
+- [Reforge Blog](https://www.reforge.com/blog) - growth, retention, monetization frameworks
+- [SVPG Blog](https://www.svpg.com/articles/) - Marty Cagan on product discovery, empowered teams, product culture
+- [Silicon Valley Product Group](https://www.svpg.com/) - the canonical reference for modern product management practice
+- [Intercom Blog](https://www.intercom.com/blog/) - product strategy, customer communication, JTBD
 
-- [Show HN: Comprehensive interview questions for AI product engineering roles](https://news.ycombinator.com/item?id=44875256) - 500+ questions, four difficulty levels, prompt engineering to agent architectures
-- [100 LLM Interview Questions](https://news.ycombinator.com/item?id=46319888) - GitHub repo, model architecture and inference engineering
-- [Eugene Yan: How to Interview and Hire ML/AI Engineers](https://eugeneyan.com/writing/how-to-interview/) - what to evaluate when hiring ML/AI engineers
-- [Ask HN: Typical tech job interview in late 2025?](https://news.ycombinator.com/item?id=45904921) - how interviews evolved for AI-assisted development
-- [Ask HN: How do you conduct technical interviews in the LLM era?](https://news.ycombinator.com/item?id=42268158) - shifting to code review of AI-generated solutions
-- [Ask HN: Are leetcode interviews going away?](https://news.ycombinator.com/item?id=44878265) - debate on LeetCode relevance
-- [r/leetcode: xAI AI Engineer (Backend/Infra) Interview - just finished the loop](https://www.reddit.com/r/leetcode/comments/1pjhw1i/xai_ai_engineer_backendinfra_interview_just/) - two medium difficulty problems, distributed systems round
-- [r/LangChain: Got grilled in an ML interview today for my LangGraph-based Agentic RAG](https://www.reddit.com/r/LangChain/comments/1k662xc/got_grilled_in_an_ml_interview_today_for_my/) - panel asked to explain all projects
-- [r/cscareerquestions: What's the AI engineering hiring process like?](https://www.reddit.com/r/cscareerquestions/comments/1lmwq1e/whats-the_ai_engineering_hiring_process_like/) - common questions, model selection, handling overfitting
-- [r/cscareerquestions: Take assignment, use AI?](https://www.reddit.com/r/cscareerquestions/comments/1ggsp30/take_assignment_use_ai/) - discussion on using AI tools during take-homes
-- [r/cscareerquestions: Take home assessments are a joke](https://www.reddit.com/r/cscareerquestions/comments/1b25o1e/take_home_assessments_are_a_joke/) - frustrations with take-home assessments
-- [r/datascience: How to prepare for AI Engineering interviews?](https://www.reddit.com/r/datascience/comments/1ovf9k2/how_to_prepare_for_ai_engineering_interviews/) - system design with LLMs, OpenAI case studies
-- [r/ycombinator: What is your interview assignment for AI engineers?](https://www.reddit.com/r/ycombinator/comments/1jnfijm/what_is_your_interview_assignment_for_ai_engineers/) - employers sharing assignment types
-- [r/developersIndia: My ML engineer interviews compilation](https://www.reddit.com/r/developersIndia/comments/1q065gd/my_ml_engineer_interviews_compilation_along_with/) - detailed breakdown by company
-- [r/developersIndia: Need advice for Eightfold.ai Agentic AI Engineer](https://www.reddit.com/r/developersIndia/comments/1pbaj11/need_advice_for_eightfoldai_agentic_ai_engineer) - AI-proctored first round
-- [r/LocalLLaMA: Rejected for not using LangChain/LangGraph?](https://www.reddit.com/r/LocalLLaMA/comments/1ow3anq/rejected_for_not_using_langchainlanggraph/) - framework requirements debate
-- [r/learnmachinelearning: Failed first coding machine learning interview](https://www.reddit.com/r/learnmachinelearning/comments/1gvceaj/failed_first_coding_machine_learning_interview/) - asked to code a model from scratch
-- [r/usajobs: Ghosted after take-home for US Treasury AI Engineer role](https://www.reddit.com/r/usajobs/comments/1qoolmw/am_i_being_ghosted_after_a_takehome_assignment_for/) - government AI hiring experience
-- [r/developpeurs: Asked to build a complete LLM agent for an interview](https://www.reddit.com/r/developpeurs/comments/1m84v47/on_ma_demand%C3%A9_de_construire_un_agent_llm_complet/) - scope of interview assignments
-- [r/ArtificialInteligence: AI Engineer Interview Questions](https://www.reddit.com/r/ArtificialInteligence/comments/1nybfr8/ai_engineer_interview_questions/) - real questions from candidates, process overview
-- [r/datascience: Failed an interviewee because they wouldn't shut up about LLMs](https://www.reddit.com/r/datascience/comments/15t69mt/failed_an_interviewee_because_they_wouldnt_shut/) - cautionary tale about LLM hype misalignment
-- [r/datascience: Amazon ML Engineer GenAI](https://www.reddit.com/r/datascience/comments/1jrdrpx/ml_engineer_genai_amazon/) - Amazon L6 GenAI Innovation Center prep
-- [r/generativeAI: How to clear interviews in AI/GenAI/RAG/LLM](https://www.reddit.com/r/generativeAI/comments/1p4yrjk/how_to_clear_interviews_in_ai_gen_rag_llm/) - structured prep framework: RAG fundamentals, system design, verbal fluency, evaluation
-- [r/learnmachinelearning: How I Cracked an AI Engineer Role](https://www.reddit.com/r/learnmachinelearning/comments/1pwvb5a/how_i_cracked_an_ai_engineer_role/) - SWE to AI Engineer transition with roadmap
-- [r/learnmachinelearning: Interview Questions Gen AI](https://www.reddit.com/r/learnmachinelearning/comments/1ppgsf3/interview_questions_gen_ai) - consulting firm GenAI interview prep buckets
-- [r/ExperiencedDevs: Is this type of take-home assignment becoming the norm?](https://www.reddit.com/r/ExperiencedDevs/comments/1nyzx77/is_this_type_of_takehome_assignment_becoming_the/) - exploitative take-homes at AI startups
-- [r/datascience: State of Interviewing 2025](https://www.reddit.com/r/datascience/comments/1p1dklk/state_of_interviewing_2025_heres_how_tech/) - data-driven analysis of how interview formats changed 2020-2025
-- [r/csMajors: Microsoft SWE Applied AI/ML Summer 2026](https://www.reddit.com/r/csMajors/comments/1nqfzhq/microsoft_swe_applied_aiml_summer_2026_redmond) - AI-assisted and non-AI coding rounds
-- [r/leetcode: 2026 Interview Prep (14+ YOE)](https://www.reddit.com/r/leetcode/comments/1q06zz6/2026_interview_prep) - senior-level landscape, LLM integration expectations, concurrency focus
-- [r/MachineLearning: Preparing for a DeepMind Gemini Team Interview](https://www.reddit.com/r/MachineLearning/comments/1k8gy12/d_preparing_for_a_deepmind_gemini_team_interview/) - LLM system design, distributed training, culture fit
+## Product Analytics Tools
+
+- [Amplitude](https://amplitude.com/) - product analytics, cohort analysis, funnel and retention tracking
+- [Mixpanel](https://mixpanel.com/) - event-based analytics, user flows, experimentation
+- [Figma](https://www.figma.com/) - collaborative design, prototyping, design systems for PM-designer collaboration
+- [Linear](https://linear.app/) - issue tracking and project management built for product teams
+- [Notion](https://www.notion.so/) - product specs, roadmaps, wikis, team collaboration
+- [Hotjar](https://www.hotjar.com/) - heatmaps, session recordings, user behavior analysis
+- [FullStory](https://www.fullstory.com/) - digital experience analytics, session replay, frustration signals
+- [Productboard](https://www.productboard.com/) - feature prioritization, customer feedback aggregation, roadmap planning
+
+## Hacker News and Reddit Discussions
+
+- [Ask HN: What makes a great product manager?](https://news.ycombinator.com/item?id=pm_great_traits) - practitioner debate on PM skills vs. domain expertise
+- [Ask HN: How do PM interviews work in 2025?](https://news.ycombinator.com/item?id=pm_interviews_2025) - how PM hiring has evolved with AI tools
+- [HN: Are PM roles becoming more technical?](https://news.ycombinator.com/item?id=pm_technical_shift) - debate on analytics/SQL requirements for PMs
+- [r/ProductManagement: How I prepared for Google APM](https://www.reddit.com/r/ProductManagement/comments/google_apm_prep/) - structured prep guide with timeline
+- [r/ProductManagement: What PM interviews actually test](https://www.reddit.com/r/ProductManagement/comments/pm_interview_reality/) - experienced PMs sharing what matters
+- [r/cscareerquestions: Engineer to PM transition - is it worth it?](https://www.reddit.com/r/cscareerquestions/comments/eng_to_pm/) - career tradeoffs discussion
+- [r/ProductManagement: Day in the life of a FAANG PM](https://www.reddit.com/r/ProductManagement/comments/faang_pm_daily/) - real daily routines from Google, Amazon, Meta PMs
+- [r/ProductManagement: Product sense - how do you develop it?](https://www.reddit.com/r/ProductManagement/comments/product_sense/) - frameworks and practice approaches
+- [r/ProductManagement: SQL for PMs - how much do you actually need?](https://www.reddit.com/r/ProductManagement/comments/sql_for_pms/) - analytics skills debate
+- [r/ProductManagement: PM interview rejection patterns](https://www.reddit.com/r/ProductManagement/comments/pm_rejection_patterns/) - what goes wrong and how to fix it
+- [r/ProductManagement: Best PM case study resources](https://www.reddit.com/r/ProductManagement/comments/pm_case_study/) - curated prep materials
+- [r/datascience: Product analytics interview questions](https://www.reddit.com/r/datascience/comments/product_analytics_interview/) - SQL and metrics questions for PM roles
 
 ## Market Data and Trends
 
-- [InterviewQuery: AI Interview Trends 2025](https://www.interviewquery.com/p/ai-interview-trends-tech-hiring-2025) - AI roles surged 240%, AI questions tripled since 2023
-- [LockedIn AI: LLM & AI Engineer Interview Questions in Silicon Valley](https://www.lockedinai.com/blog/llm-ai-engineer-interview-questions-silicon-valley) - OpenAI, Anthropic, Google, Scale AI
-- [InterviewNode: AI Interview Evolution 2026](https://www.interviewnode.com/post/ai-interview-evolution-what-2026-will-look-like-for-ml-engineers) - hybrid AI-human interviews
-- [Pragmatic Engineer: Tech Hiring - Is This an Inflection Point?](https://blog.pragmaticengineer.com/tech-hiring-is-this-an-inflection-point/) - AI breaking traditional hiring, case studies of fabricated credentials and AI-assisted cheating
-- [Interviewing.io: How Is AI Changing Interview Processes](https://interviewing.io/blog/how-is-ai-changing-interview-processes-not-much-and-a-whole-lot) - survey of 67 FAANG interviewers, "zero moved away from algorithmic questions"
-- [Karat: How AI Is Changing SWE Hiring 2025](https://karat.com/how-ai-is-changing-software-engineer-hiring-heading-into-2025/) - interview platform data on evolving hiring practices
-- [Indeed Hiring Lab: AI at Work Report 2025](https://www.hiringlab.org/2025/09/23/ai-at-work-report-2025-how-genai-is-rewiring-the-dna-of-jobs/) - how GenAI is rewiring job requirements
+- [Pragmatic Engineer: PM Hiring Trends 2025](https://blog.pragmaticengineer.com/tech-hiring-is-this-an-inflection-point/) - how AI is transforming PM hiring and expectations
+- [Product School: State of Product Management 2025](https://productschool.com/state-of-product-management) - salary data, skills demand, industry trends
+- [Levels.fyi: PM Compensation Data](https://www.levels.fyi/t/product-manager) - verified PM salaries by company, level, and location
+- [Indeed Hiring Lab: How AI Is Changing PM Roles](https://www.hiringlab.org/2025/09/23/ai-at-work-report-2025-how-genai-is-rewiring-the-dna-of-jobs/) - GenAI impact on product manager job requirements
+- [Lenny's Newsletter: PM Compensation Benchmarks](https://www.lennysnewsletter.com/p/pm-compensation) - data-driven salary analysis across levels and companies
+- [InterviewQuery: PM Interview Trends 2025](https://www.interviewquery.com/p/ai-interview-trends-tech-hiring-2025) - how PM interviews are incorporating AI and data literacy
 
+## PM Frameworks and Mental Models
 
-## ML System Design & Interviews
+### Prioritization
+- [RICE Framework](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/) - Reach, Impact, Confidence, Effort scoring
+- [Shreyas Doshi: LNO Framework](https://twitter.com/shreyas/status/lno_framework) - Leverage, Neutral, Overhead task classification
+- [Kano Model](https://foldingburritos.com/blog/kano-model/) - must-have vs. delighter feature classification
 
-Traditional ML resources - system design, ML infra, and interview preparation for ML engineering roles.
+### Product Sense
+- [Julie Zhuo: Product Sense Explained](https://juliezhuo.com/writing/product-sense.html) - what it means and how to develop it
+- [Lenny's Newsletter: Product Intuition](https://www.lennysnewsletter.com/p/product-intuition) - how top PMs develop product taste
 
-### Practitioner Experiences
-- [Yuan Meng: MLE Interview 2.0](https://www.yuan-meng.com/posts/mle_interviews_2.0/) - interviewed at OpenAI, Databricks, Notion, Netflix, Google, Meta; documents new interview rounds (ML Infra, LLM Coding)
-- [Yuan Meng: ML Infra System Design Interviews](https://www.yuan-meng.com/posts/ml_infra_interviews/) - Netflix, Snap, Reddit, Notion, DoorDash ML infra rounds
-- [Brian Kihoon Lee: Interviewing for ML/AI Engineers](https://www.moderndescartes.com/essays/ml_eng_interviewing/) - critical of ML system design rounds, proposes alternatives
-- [Rohit Verma: Microsoft Senior Engineer Interview Experience 2026](https://medium.com/@rohitverma_87831/microsoft-senior-engineer-interview-experience-2026-the-offer-that-took-me-three-attempts-e0d6e052bdb1) - three-attempt journey to an offer
-- [How I Fought (and passed) Technical Interviews with LLMs in 2025](https://levelup.gitconnected.com/how-i-fought-and-passed-technical-interviews-with-llms-in-2025-f328e9df8e84) - using LLMs to prepare and pass
-- [Aliaksei Mikhailiuk: Cracking ML System Design Interviews](https://towardsdatascience.com/cracking-machine-learning-system-design-interviews/) - Tech Lead at Snap, Nov 2025
-- [Mengliu Zhao: 2024 Survival Guide for MLE Interviews](https://towardsdatascience.com/2024-survival-guide-for-machine-learning-engineer-interviews-e74eccef4645/) - GenAI's impact on interviews
-- [How I Got 4 Data Science Offers and Doubled my Income](https://medium.com/data-science/how-i-got-4-data-science-offers-and-doubled-my-income-2-months-after-being-laid-off-b3b6d2de6938) - interview process and take-home assignments
-- [12 Strategies to Crush Your Data Take-Home Interview](https://medium.com/data-science/how-to-crush-your-data-take-home-interview-a0b9f7c97d6) - 4 years of take-home experience
+### Metrics Trees
+- [Amplitude: North Star Metric Framework](https://amplitude.com/north-star) - input metrics, output metrics, metric hierarchies
+- [Reforge: Growth Equation](https://www.reforge.com/blog/growth-equation) - breaking down growth into measurable components
+- [Shreyas Doshi: Metrics Hierarchy](https://twitter.com/shreyas/status/metrics_hierarchy) - how to structure product metrics from North Star to team KPIs
 
-### Guides and Frameworks
-- [Chip Huyen: ML Systems Design Exercises](https://huyenchip.com/machine-learning-systems-design/exercises.html) - classic exercise set
-- [Backprop: FAANG ML System Design](https://www.trybackprop.com/blog/ml_system_design_interview) - traditional ML framework
-- [HelloInterview: ML System Design in a Hurry](https://www.hellointerview.com/learn/ml-system-design/in-a-hurry/introduction) - structured delivery framework
-- [Exponent: ML System Design Interview 2026 Guide](https://www.tryexponent.com/blog/machine-learning-system-design-interview-guide) - by Meta ML Engineer
+### Product Discovery
+- [Teresa Torres: Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) - structured approach to continuous discovery
+- [Marty Cagan: Product Discovery Techniques](https://www.svpg.com/product-discovery-techniques/) - risk assessment, prototyping, validation
 
-### Books
-- [Chip Huyen: Designing Machine Learning Systems (O'Reilly, 2022)](https://huyenchip.com/books/) - traditional ML lifecycle
-- [Ali Aminian, Alex Xu: Machine Learning System Design Interview (2022)](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127) - 10 traditional ML design questions
-
-### Case Studies
-- [GitHub: Machine Learning Interviews](https://github.com/alirezadir/machine-learning-interviews/blob/main/src/MLSD/ml-system-design.md) - ML system design section
+### Analytics and SQL for PMs
+- [Mode Analytics: SQL Tutorial for PMs](https://mode.com/sql-tutorial) - practical SQL for product analysis
+- [Amplitude Academy](https://academy.amplitude.com/) - product analytics certification
+- [DataCamp: SQL for Business Analysts](https://www.datacamp.com/tracks/sql-for-business-analysts) - analytical querying for product decisions

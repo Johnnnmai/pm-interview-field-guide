@@ -1,312 +1,313 @@
-# AI Use Cases Analysis
+# Product Scenarios Analysis
 
-Based on 4,525 extracted use cases from 895 job descriptions.
+Based on 4,525 extracted product scenarios from 895 job descriptions.
 
-Methodology note: I collected all use cases into a single file and used AI (Claude) to analyze and categorize them. This is not a quantitative analysis like the [skills analysis](02-skills.md) (see the [analysis notebook](../job-market/analysis.ipynb) for that) - it's based on the questions I asked and the patterns Claude identified in the data. It may be less precise, but I believe it's still representative of what's happening in the market.
+Methodology note: I collected all product scenarios into a single file and used AI (Claude) to analyze and categorize them. This is not a quantitative analysis like the [skills analysis](02-skills.md) (see the [analysis notebook](../job-market/analysis.ipynb) for that) - it's based on the questions I asked and the patterns Claude identified in the data. It may be less precise, but I believe it's still representative of what's happening in the market.
 
 ## Summary
 
-The use cases reveal what companies are actually building with AI today. This is the real-world application landscape that AI Engineers work on daily.
+The product scenarios reveal what companies are actually building and shipping today. This is the real-world product landscape that Product Managers work on daily.
 
-Total use cases extracted: 4,525
+Total product scenarios extracted: 4,525
 
-- AI-First roles: 3,177 use cases (70.2%)
-- AI-Support roles: 1,259 use cases (27.8%)
-
-
-## Problems AI Solves Today
-
-Organized by the user problem, not the technology.
+- Product-First roles: 3,177 scenarios (70.2%)
+- Product-Support roles: 1,259 scenarios (27.8%)
 
 
-### Automating Manual Workflows
+## Problems Products Solve Today
+
+Organized by the user problem, not the methodology.
+
+
+### Prioritizing What to Build Next
 
 696 mentions (15.4%)
 
-Problem: Employees spend time on repetitive tasks that could be automated - data entry, document processing, workflow coordination, monitoring and alerting.
+Problem: Teams have more ideas than capacity. Stakeholders pull in different directions. Without structured prioritization, teams build the wrong things.
 
-AI Solution: Agents that can execute multi-step workflows autonomously.
+Product Solution: Prioritization frameworks (RICE, ICE, opportunity scoring) that connect user data to roadmap decisions.
 
 Concrete examples:
 
-- Inspect logs and metrics to identify bugs, risks, and performance issues
-- Automate business workflows and reduce manual work across Salesforce platforms
-- Internal agentic workflows for optimizing critical company processes
-- IT operations automation through AI agents with stateful memory and feedback loops
-- Automated accounting research using generative AI to streamline workflows
-- Autonomous supply chain orchestration
-- Process millions of issues for hundreds of customers at scale
+- Analyze usage data and customer feedback to identify highest-impact features
+- Build RICE scoring models to align engineering capacity with business goals
+- Run discovery sprints to validate assumptions before committing resources
+- Define metrics trees that connect feature launches to north star metrics
+- Build business cases for new product investments with revenue impact models
+- Orchestrate cross-team prioritization across multiple product areas
+- Process hundreds of feature requests from enterprise customers at scale
 
 
-### Finding Information in Company Data
+### Understanding Customers at Scale
 
 360 mentions combined (8.0%)
 
-Problem: Companies have massive amounts of documents, knowledge bases, and data. Employees cannot find what they need. Keyword search is not enough.
+Problem: Companies have massive amounts of customer data - support tickets, usage analytics, NPS scores, interview transcripts. Teams cannot synthesize it fast enough. Intuition is not enough.
 
-AI Solution: RAG and Semantic Search - AI that understands meaning and retrieves relevant information from proprietary data.
+Product Solution: Structured discovery and customer insight programs that turn raw data into product decisions.
 
 Concrete examples:
 
-- Enterprise knowledge retrieval - employees ask questions and get answers from internal documents
-- Medical literature search over millions of processed articles
-- Bring Stripe documentation and support knowledge to developer fingertips
-- RAG-based system for retrieving relevant financial information and guidance
-- Document construction and generation using internal knowledge
-- Intelligent document management and knowledge work platforms
-- Knowledge Graph RAG (KG-RAG) for complex enterprise data
-- Contextual search solutions for news and legal content
+- Customer segmentation and persona development using behavioral data
+- Support ticket pattern analysis to identify recurring pain points
+- User journey mapping across multiple product surfaces
+- Competitive win/loss analysis with sales team data
+- Voice of customer programs with regular interview cadences
+- NPS and CSAT tracking with automated insight extraction
+- Cohort analysis revealing feature adoption patterns across segments
 
 
-### Answering Customer Questions at Scale
+### Reducing Churn and Increasing Retention
 
 312 mentions (6.9%)
 
-Problem: Companies have too many customer inquiries for human support teams. Customers expect instant, 24/7, personalized responses.
+Problem: Companies invest heavily in acquisition but lose customers through poor onboarding, missing features, or unmet expectations. Retention directly impacts unit economics.
 
-AI Solution: Customer-facing AI that can understand questions, retrieve relevant information, and provide accurate answers.
+Product Solution: Product-led retention strategies that identify at-risk users and intervene proactively.
 
 Concrete examples:
 
-- Answering customer questions in real-time with personalized experiences
-- AI system that accesses customer information systems and understands phone conversations
-- Conversational AI systems for patient interactions and follow-up care
-- Customer-facing data products and analytics
-- LLM-powered customer support with access to company knowledge
-- Process customer inquiries without human intervention
+- Building onboarding flows that drive activation within the first session
+- Designing engagement loops that bring users back regularly
+- Analyzing churn cohorts to identify common failure patterns
+- Creating re-engagement campaigns triggered by usage drop-offs
+- Optimizing pricing and packaging to reduce involuntary churn
+- Building health scoring models that predict account risk
 
 
-### Internal Operational Efficiency
+### Scaling Internal Operations
 
 519 mentions (11.5%)
 
-Problem: Enterprises have complex operations - risk management, compliance, regulatory reporting, multi-cloud infrastructure. These require specialized AI solutions.
+Problem: Enterprises have complex operations - compliance workflows, multi-team coordination, cross-product dependencies. These require product-level thinking to systematize.
 
-AI Solution: Enterprise-grade AI systems for internal operations.
+Product Solution: Internal product platforms and operational tooling that reduce manual overhead.
 
 Concrete examples:
 
-- Early signal detection of emerging risks, events, and threats before they unfold
-- Supporting secure, compliant AI infrastructure that meets enterprise regulatory requirements
-- Industry-specific GenAI use cases tailored to business needs
-- Implementing hybrid and multi-cloud strategies for organizations
-- Automated reasoning and evaluation of insurance claims
-- AI workload benchmarking and performance profiling
-- Fraud detection and risk assessment for financial services
+- Early signal detection of emerging operational risks before they escalate
+- Building compliant product workflows that meet enterprise regulatory requirements
+- Industry-specific product solutions tailored to vertical needs
+- Implementing multi-product strategies for platform organizations
+- Automated compliance checking and audit trail generation
+- Performance benchmarking and capacity planning dashboards
+- Fraud detection and risk assessment product features
 
 
-### Deploying AI to Production Reliably
+### Launching New Products Successfully
 
 219 mentions (4.8%)
 
-Problem: AI models work in notebooks but fail in production. Latency, scalability, reliability, and cost are major challenges.
+Problem: New products fail at high rates. Go-to-market execution, positioning, and initial adoption are major challenges.
 
-AI Solution: Production ML infrastructure - inference serving, model deployment, monitoring.
+Product Solution: Structured launch playbooks with staged rollouts and clear success criteria.
 
 Concrete examples:
 
-- Low-latency production inference systems for AI applications
-- Supporting high-performance machine learning inference pipelines
-- AI inference as a service running on edge GPUs worldwide
-- Scalable AI-powered user interfaces that perform well at production scale
-- Production deployment of large-scale language models with complex networking
+- Staged beta programs with defined success criteria and kill switches
+- Go-to-market coordination across engineering, marketing, sales, and support
+- Launch readiness checklists covering documentation, support, and monitoring
+- Post-launch measurement frameworks with leading and lagging indicators
+- Market entry strategies for new geographies and segments
 
 
-### Making Decisions from Data
+### Making Data-Driven Decisions
 
 163 mentions (3.6%)
 
-Problem: Companies have data but cannot extract insights or make data-driven decisions quickly enough.
+Problem: Companies have data but cannot extract insights or make data-driven decisions quickly enough. Analysis paralysis or gut-feel decisions dominate.
 
-AI Solution: AI-powered data analysis and insights.
+Product Solution: Metrics frameworks and experimentation infrastructure that enable rapid, evidence-based decisions.
 
 Concrete examples:
 
-- Transform complex financial data into clear visuals and actionable insights
-- AI-driven user profiling and health data analysis for improved outcomes
-- Intelligent event data analysis and matching to improve event marketing workflows
-- Predictive models for health insights and body tracking
-- Producing high-quality predictive signals (alphas) through AI-enhanced research
+- Transform complex product data into clear dashboards and actionable insights
+- Build metrics trees connecting feature-level metrics to business outcomes
+- Design A/B experiments with proper statistical rigor and decision criteria
+- Predictive models for user behavior and engagement forecasting
+- Revenue attribution and impact quantification for shipped features
 
 
-### Ensuring AI Quality and Safety
+### Ensuring Product Quality
 
 141 mentions (3.1%)
 
-Problem: AI systems can hallucinate, produce unsafe content, or behave unpredictably. Companies need to ensure quality and safety.
+Problem: Products can launch with bugs, poor UX, or unintended edge cases. Quality directly impacts retention and brand trust.
 
-AI Solution: AI evaluation, testing, and safety systems.
+Product Solution: Quality frameworks that catch issues before launch and monitor post-launch health.
 
 Concrete examples:
 
-- Real-time content integrity and safety detection to prevent online abuse
-- AI system that accesses and uses customer information systems and understands sensitive phone conversations with appropriate safeguards
-- Producing high-quality predictive signals through AI-enhanced research
-- Automated reasoning and evaluation of insurance claims for accuracy
+- Pre-launch QA checklists covering functionality, performance, and edge cases
+- Post-launch monitoring dashboards for error rates and user complaints
+- Structured user acceptance testing programs with real customers
+- Automated alerting on product health metrics degradation
+- Bug triage and severity frameworks for rapid issue resolution
 
 
-### Creating Content at Scale
+### Growing Revenue and Market Share
 
 118 mentions (2.6%)
 
-Problem: Marketing, education, and content teams need to produce large amounts of text, images, and other content.
+Problem: Products need to generate revenue. Growth requires experimentation, funnel optimization, and pricing strategy aligned with user value.
 
-AI Solution: Generative AI for content creation.
+Product Solution: Growth product management with systematic experimentation and monetization.
 
 Concrete examples:
 
-- Creative content generation using generative AI to produce ad copy and optimize campaigns
-- Content generation at scale for educational materials
-- Text-to-speech conversion for PDFs, books, docs, and web content
-- Adaptive intervention strategies that optimize interaction timing and content
-- Next Best Action decision-making system for email marketing optimization
+- Conversion funnel optimization across acquisition, activation, and retention
+- Pricing experiments and packaging strategy validation
+- Revenue expansion programs with upsell and cross-sell triggers
+- Market expansion playbooks for new segments and geographies
+- Referral and viral growth loop design
 
 
 ### Personalizing User Experiences
 
 128 mentions combined (2.8%)
 
-Problem: Users want relevant recommendations, not generic content. One-size-fits-all doesn't work.
+Problem: Users want relevant experiences, not generic products. One-size-fits-all doesn't work at scale.
 
-AI Solution: Recommendation systems and personalization engines.
+Product Solution: Personalization and recommendation strategies that adapt to user behavior and preferences.
 
 Concrete examples:
 
-- E-commerce recommendations to help merchants compete effectively
-- AI-powered event discovery and recommendation system
-- LLM-powered product recommendations and search optimization
-- Data products for travel experience optimization and personalization
-- Customer segmentation models using supervised and unsupervised learning approaches
+- E-commerce recommendation systems driving higher conversion rates
+- Content personalization based on user behavior and preferences
+- Search optimization using user intent signals
+- Dynamic pricing and packaging based on customer segments
+- Customer segmentation driving targeted product experiences
 
 
-### Helping Developers Write Code
+### Improving Developer Experience
 
 60 mentions (1.3%)
 
-Problem: Developer productivity is limited by repetitive coding tasks, debugging, and learning new APIs.
+Problem: Developer productivity is limited by poor tooling, confusing APIs, and steep learning curves. Platform products need great DX.
 
-AI Solution: AI coding assistants and developer tools.
+Product Solution: Developer-focused product management with SDK design, documentation, and onboarding optimization.
 
 Concrete examples:
 
-- AI-powered developer platform integrations
-- Internal developer platforms integrating AI capabilities
-- AI coding integrations for developer productivity
-- Improving AI code generation through human-in-the-loop refinement
-- Bring Stripe knowledge including docs to developer fingertips
+- API design and versioning strategy for platform products
+- Developer portal and documentation experience optimization
+- SDK adoption metrics and developer satisfaction tracking
+- Internal platform products improving engineering velocity
+- Developer onboarding flow optimization
 
 
-### Handling Specialized Domain Knowledge
+### Navigating Regulated Industries
 
 38 mentions (0.8%)
 
-Problem: Generic models don't understand industry-specific language, regulations, or knowledge.
+Problem: Products in healthcare, finance, and legal must meet strict regulatory requirements. Generic product approaches fail in these domains.
 
-AI Solution: Fine-tuned models for specialized domains.
+Product Solution: Compliance-aware product management with regulatory expertise built into the product process.
 
 Concrete examples:
 
-- Fine-tuned LLMs for insurance domain decisions
-- Domain-specific AI adaptation for legal and regulatory compliance
-- Custom model fine-tuning for insurance-specific AI use cases
-- Fine-tuning AI models with cybersecurity datasets for threat detection
+- Healthcare products meeting HIPAA compliance requirements
+- Financial products navigating SOX and PCI-DSS regulations
+- Legal tech products adapting to jurisdiction-specific regulations
+- Insurance products with automated compliance verification
+- Privacy-first product design for GDPR and CCPA
 
 
 ## Domains Served
 
-Based on the use cases, AI is being applied across virtually all industries.
+Based on the product scenarios, product management is applied across virtually all industries.
 
 ### Finance (340+ mentions)
 
-- Fraud detection
-- Risk assessment and underwriting
-- Algorithmic trading
+- Fraud detection and risk products
+- Underwriting and credit decision tools
+- Trading and portfolio management platforms
 - Claims processing automation
-- Personalized financial recommendations
+- Personalized financial planning products
 
 ### Healthcare (232+ mentions)
 
-- Clinical decision support for physicians
-- Medical literature search over millions of articles
-- AI-powered diagnostics assistance
-- Medical documentation and note generation
-- Evidence-based treatment plan recommendations
+- Clinical decision support products
+- Patient engagement and portal experiences
+- Telehealth platform management
+- Medical documentation and workflow tools
+- Evidence-based treatment recommendation systems
 
 ### Cybersecurity (177+ mentions)
 
-- Threat detection and analysis
-- Alert summarization for security defenders
-- Malware classification
-- Automated security reasoning
-- Attack prevention
+- Threat detection and alerting products
+- Security operations center tooling
+- Identity and access management platforms
+- Compliance monitoring dashboards
+- Risk assessment and scoring products
 
 ### Legal/Regulatory (157+ mentions)
 
-- Contract review and analysis
-- Legal document processing
-- Compliance monitoring
-- Legal research assistance
-- Risk assessment
+- Contract lifecycle management products
+- Legal research and document analysis tools
+- Compliance monitoring platforms
+- eDiscovery and case management
+- Risk assessment products
 
 ### Education (181+ mentions)
 
-- Personalized learning recommendations
-- Automated grading and feedback
-- Educational content generation
-- Student engagement systems
-- Course recommendation
+- Personalized learning platform management
+- Assessment and grading products
+- Educational content delivery systems
+- Student engagement and retention tools
+- Course recommendation engines
 
 ### Manufacturing/Industrial (57+ mentions)
 
-- Robotics and automation
-- Supply chain optimization
-- Quality control and defect detection
-- Predictive maintenance
-- Process automation
+- Supply chain management platforms
+- Quality control and defect tracking products
+- Predictive maintenance dashboards
+- Process automation tooling
+- Inventory optimization systems
 
 ### Retail/E-commerce (40+ mentions)
 
-- Product recommendations
-- Semantic search for products
-- Inventory optimization
+- Product recommendation engines
+- Search and discovery optimization
+- Inventory and supply chain products
 - Customer experience personalization
-- Supply chain optimization
+- Marketplace and platform products
 
 
 ## Key Insights
 
-### 1. Automation is the Primary Use Case
+### 1. Prioritization is the Primary Product Challenge
 
-The most common problem AI solves is automating manual workflows. This is not glamorous - it's about reducing repetitive work, coordinating processes, and handling scale.
+The most common problem PMs solve is deciding what to build next. This is not glamorous - it's about reducing ambiguity, aligning teams, and making resource allocation decisions backed by data.
 
-### 2. Knowledge Access is Universal
+### 2. Customer Insight is Universal
 
-Every domain has the same problem: too much information, cannot find what's needed. RAG and semantic search solve this across healthcare (medical literature), finance (regulations), legal (contracts), and general enterprise (internal docs).
+Every domain has the same problem: too many signals, not enough synthesis. User research, analytics, and voice-of-customer programs solve this across healthcare, finance, legal, and enterprise products.
 
-### 3. Customer Support is a Major Driver
+### 3. Retention Drives Business Outcomes
 
-Customer-facing solutions are a top category because they directly impact revenue and customer satisfaction. The ROI is clear: reduce support costs while improving response times.
+Retention and churn reduction are a top category because they directly impact revenue and unit economics. The ROI is clear: reducing churn costs less than acquiring new users.
 
-### 4. Production is Hard
+### 4. Launching is Hard
 
-A significant portion of use cases focus on deployment infrastructure. This reflects the real challenge of getting AI models from notebooks to production reliably.
+A significant portion of product scenarios focus on go-to-market execution. This reflects the real challenge of getting products from prototype to successful market adoption.
 
 ### 5. Domain Specialization Matters
 
-While fewer in number, fine-tuned models for specific domains (insurance, legal, cybersecurity) represent high-value applications where generic models are insufficient.
+While fewer in number, products in regulated industries (healthcare, finance, legal) represent high-value PM roles where generic product management approaches are insufficient.
 
 
-## Most Common Words in Use Cases
+## Most Common Words in Product Scenarios
 
-- data: 505 mentions
-- systems: 490 mentions
-- workflows: 399 mentions
-- ai-powered: 393 mentions
-- applications: 338 mentions
-- automation: 291 mentions
-- agents: 276 mentions
+- customer: 505 mentions
+- product: 490 mentions
+- strategy: 399 mentions
+- roadmap: 393 mentions
+- metrics: 338 mentions
+- growth: 291 mentions
+- launch: 276 mentions
 - business: 262 mentions
-- customer: 256 mentions
+- user: 256 mentions
 - enterprise: 245 mentions
 
-The language emphasizes practical value: systems, workflows, automation, business outcomes - not just technology.
+The language emphasizes practical value: customer, product, strategy, roadmap, metrics - not just methodology.

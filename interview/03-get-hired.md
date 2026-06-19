@@ -7,66 +7,68 @@ Based on 100+ sources: candidate stories, hiring manager observations, career bl
 
 What job postings list (baseline everyone claims):
 
-- Python, TensorFlow/PyTorch, SQL
-- "Experience with LLMs" or "familiarity with machine learning"
-- Cloud platforms (AWS/GCP/Azure)
+- SQL, analytics tools, A/B testing
+- "Experience with product strategy" or "familiarity with agile methodologies"
+- Data platforms (Amplitude, Mixpanel, Looker)
 - Generic "strong communication skills"
 
 What interviewers actually test and value:
 
-- Evaluation frameworks over model building. "Unsuccessful LLM products almost always share a common root cause: a failure to create robust evaluation systems." [^hamel-husain] Every RAG system should have an eval harness [^reddit-ycombinator-assignments]
-- Cost and latency reasoning. Token budgets, per-query costs, model routing. "100K daily users x 10 interactions x ~2K tokens = 2B tokens/day = $13K/day on GPT-4 Turbo" - this kind of estimation separates production thinkers from prototype thinkers [^interviewquery-2025] [^sdh-genai]
-- Trade-off fluency. Not "what is RAG?" but "when would you NOT use RAG?" Retrieval speed vs. context length, fine-tuning vs. prompting, GPU cost vs. latency [^interviewnode] [^designgurus]
-- Systems thinking. Think in loops: retrieval, generation, feedback. "Generative AI system design is no longer about pipelines, it's about lifecycles" [^interviewnode]
-- Observability. Logging, tracing, drift detection, hallucination tracking. TTFT, TBT, tokens/second, per-user costs. From day one, not as an afterthought [^chip-huyen-platform]
-- Safety and guardrails. Prompt injection, data leakage, unsafe tool execution. Skipping this signals weak production awareness [^sdh-anthropic] [^igotanoffer]
-- AI fluency with coding tools. How you prompt, verify, and direct AI tools (Cursor, Claude Code) - not just whether you can code [^interviewquery-2025]
-- Python depth. Race conditions, GIL, async patterns, concurrency vs. parallelism. "I look for strong Python programmers because we can't expect people to have GenAI experience yet" [^fahd-mirza]
-- DSA fundamentals. Algorithm rounds at Eightfold, OpenAI, Anthropic, xAI. Anthropic: 90-minute CodeSignal requiring perfect correctness. xAI: LeetCode Hard over volume [^eightfold-internship] [^sundeep-teki]
-- ML implementation from scratch. Multi-Head Attention, Transformer layers, LoRA, KV cache from memory at frontier labs. Use "shape suffixes" (Noam Shazeer method) to track tensor dimensions [^mimansa-jaiswal-resources] [^sundeep-teki]
-- Full-stack capability. Many AI engineer roles are "low-key full stack roles." Expect questions on the JS event loop, database choices, message queues alongside GenAI [^fahd-mirza]
+- Metrics frameworks over feature lists. "Unsuccessful products almost always share a common root cause: a failure to define clear success metrics and measurement systems." [^hamel-husain] Every product launch should have a metrics tree with leading and lagging indicators [^reddit-ycombinator-assignments]
+- Cost and impact reasoning. Revenue impact, user acquisition costs, resource allocation. "100K DAU x 10 sessions x ~2K events = 2B data points/day = infrastructure, analytics, and support costs" - this kind of estimation separates strategic thinkers from feature factories [^interviewquery-2025] [^sdh-genai]
+- Trade-off fluency. Not "what is RICE?" but "when would you NOT use RICE?" Speed vs. quality, build vs. buy, short-term revenue vs. long-term retention [^interviewnode] [^designgurus]
+- Product strategy thinking. Think in loops: discovery, delivery, feedback, iteration. "Product management is no longer about roadmaps, it's about outcomes" [^interviewnode]
+- Data-driven decision making. Defining metrics, interpreting A/B tests, understanding statistical significance, building metrics trees. From day one, not as an afterthought [^chip-huyen-platform]
+- User safety and trust. Privacy, data governance, edge cases in user experience. Skipping this signals weak production awareness [^sdh-anthropic] [^igotanoffer]
+- AI product fluency. How you think about AI-powered features, LLM product trade-offs, and responsible AI deployment - not just whether you can write a PRD [^interviewquery-2025]
+- Analytical depth. SQL proficiency, statistical reasoning, experimentation design, funnel analysis. "I look for PMs who can pull their own data because they make better decisions faster" [^fahd-mirza]
+- Prioritization frameworks. RICE, ICE, MoSCoW, weighted scoring. Interviewers at top companies expect candidates to defend prioritization decisions under constraints [^eightfold-internship] [^sundeep-teki]
+- Product design from scratch. End-to-end product design: user research, problem framing, solution space exploration, MVP scoping, go-to-market. Practiced at frontier companies like Google, Meta, and top startups [^mimansa-jaiswal-resources] [^sundeep-teki]
+- Cross-functional leadership. Many PM roles are "low-key general manager roles." Expect questions on engineering trade-offs, design critiques, data pipeline choices alongside product strategy [^fahd-mirza]
 
 What interviewers focus on by seniority:
 
-- Junior/Intern - coding fundamentals, basic ML concepts, willingness to learn, project enthusiasm
-- Mid-level - end-to-end system knowledge, RAG pipelines, embeddings, production awareness
-- Senior - trade-off fluency, system design at scale, failure mode reasoning, cost optimization
-- Staff+ - technical leadership, cross-team influence, project presentations, organizational impact
+- Junior/APM - product sense fundamentals, analytical basics, willingness to learn, project enthusiasm
+- Mid-level - end-to-end product lifecycle knowledge, metrics trees, experimentation, stakeholder management
+- Senior - trade-off fluency, product strategy at scale, failure mode reasoning, resource optimization
+- Staff+/Director - product vision, cross-team influence, organizational impact, portfolio strategy
 
 
 ## What Separates Candidates
 
-From 50+ AI engineer interviews at top startups: [^fonzi-ai-50-interviews]
+From 50+ PM interviews at top companies: [^fonzi-ai-50-interviews]
 
-- The first 5 minutes decide everything. Lead with impact, not model names
-- Talk like a builder, not a researcher. "We tried fine-tuning but it hallucinated too often, so we switched to hybrid RAG"
-- Cost awareness is a superpower. One engineer showed a before-and-after cost breakdown proving 70% reduction in OpenAI spend - got an offer the next day
-- Honesty beats bluffing. "I haven't worked with LangSmith yet, but if you're using it for evals, I'd love to understand how you've set up your metrics" - turned into a job offer
-- You don't need to be a unicorn. Companies will hire strong generalists with depth in 1-2 areas
+- The first 5 minutes decide everything. Lead with impact, not tool names
+- Talk like a builder, not an analyst. "We tried a freemium model but churn was 40% in week 2, so we switched to a guided onboarding flow with milestone-based upgrades"
+- Business impact awareness is a superpower. One PM showed a before-and-after metrics breakdown proving 70% improvement in activation rate - got an offer the next day
+- Honesty beats bluffing. "I haven't run pricing experiments at scale yet, but if you're using conjoint analysis, I'd love to understand how you've structured the trade-offs" - turned into a job offer
+- You don't need to be a unicorn. Companies will hire strong generalists with depth in 1-2 product areas
 - One brilliant answer on a fundamental can carry a mediocre interview - and failing one fundamental can tank a strong one [^proptech-founder]
-- Tinkerer mindset. Strong opinions on tools, staying current. "Tinkerers who thrive in uncertainty" over rigid academic approaches [^promptlayer]
-- Honest uncertainty is a feature. Knowing what you don't know signals real production experience [^techeon]
+- Builder mindset. Strong opinions on products, staying current with market trends. "Builders who thrive in ambiguity" over rigid process-heavy approaches [^promptlayer]
+- Honest uncertainty is a feature. Knowing what you don't know signals real product experience [^techeon]
 
 The 90/10 rule: 90% of interview success comes from prior career decisions - university, internships, companies, relationships. Only 10% is application strategy, networking, and negotiation [^sundeep-teki]
+
+For a structured deep-dive with 200+ real interview examples, check out [The 0→1 PM Interview Playbook](https://valenx.org/books/pm).
 
 
 ## Portfolio Strategy
 
-See [portfolio project ideas and strategy](../portfolio/README.md) for detailed guidance on project selection, README writing, and what hiring managers look at.
+See [portfolio project ideas and strategy](../portfolio/README.md) for detailed guidance on project selection, case study writing, and what hiring managers look at.
 
 
 ## Before You Apply
 
 Some companies require more than a resume upfront:
 
-- A GitHub portfolio with AI projects - Dentsu Creative asks candidates to submit "portfolio or GitHub showcasing AI/automation projects you've built"
+- A portfolio with product case studies - Dentsu Creative asks candidates to submit "portfolio showcasing product launches or strategy projects you've led"
 - A "best project" story with metrics - Wolters Kluwer asks for a "Statement of Exceptional Work" covering your role, technical challenges, and measurable impact
-- Opinions on AI, not just skills - Dentsu Creative asks "your thoughts on where most companies go wrong with AI implementation"
-- Be ready to write, not just code - Strange Loop Labs requires a 1-2 page essay. Apollo.io requires 5 short screening questions answered in the application
+- Opinions on product strategy, not just skills - Dentsu Creative asks "your thoughts on where most companies go wrong with product development"
+- Be ready to write, not just talk - Strange Loop Labs requires a 1-2 page product strategy essay. Apollo.io requires 5 short screening questions answered in the application
 
 Resume tips:
 
-- Lead with impact, not model names. "Reduced customer support response time by 40%" beats "Experience with LangChain and GPT-4" [^fonzi-ai-50-interviews]
+- Lead with impact, not tool names. "Reduced customer support response time by 40%" beats "Experience with Jira and Amplitude" [^fonzi-ai-50-interviews]
 - Avoid multi-column LaTeX formats - ATS parsing issues. Consider Typst instead [^mimansa-jaiswal]
 - Prepare a self-presentation blurb on 2-3 areas of expertise. ~10 iterations over 12 weeks [^mimansa-jaiswal]
 - Create a website or blog. Direct LinkedIn outreach to founders proved effective for startups [^mimansa-jaiswal]
@@ -76,22 +78,22 @@ Resume tips:
 
 In the interview:
 
-- Jumping to fine-tuning too early. Default to prompt engineering with RAG; fine-tune only if extreme specialization or latency demands it [^igotanoffer]
-- Treating the LLM as a source of truth. Ground with retrieval, tools, or citations [^igotanoffer]
-- Skipping evaluation and monitoring. Explain how output quality and regressions will be measured [^igotanoffer]
-- Name-dropping tools without trade-offs. Instead of "I'd use LangChain," explain why. If you mention Redis, know when it's wrong [^interviewnode] [^hellointerview-openai]
-- Ignoring failure modes. Discuss what breaks, how failures are detected, graceful degradation [^igotanoffer]
-- Over-engineering from the start. Get a working implementation first, optimize on follow-ups [^hellointerview-openai]
-- Bluffing on gaps. "I need a hint" outperforms bluffing [^fonzi-ai-50-interviews] [^mimansa-jaiswal]
-- Failing on fundamentals. Know how LLMs work (tokenization, transformers, next-token prediction), race conditions, the GIL [^fahd-mirza]
+- Jumping to solutions too early. Default to understanding the user problem first; propose solutions only after framing the problem space [^igotanoffer]
+- Treating metrics as an afterthought. Ground product decisions with data, success criteria, and measurement plans [^igotanoffer]
+- Skipping success metrics and monitoring. Explain how product health, feature adoption, and regressions will be measured [^igotanoffer]
+- Name-dropping frameworks without trade-offs. Instead of "I'd use RICE," explain why. If you mention NPS, know when it's misleading [^interviewnode] [^hellointerview-openai]
+- Ignoring failure modes. Discuss what breaks, how failures are detected, graceful degradation of the user experience [^igotanoffer]
+- Over-scoping from the start. Get an MVP defined first, then layer on complexity in follow-ups [^hellointerview-openai]
+- Bluffing on gaps. "I need more context on that market" outperforms bluffing [^fonzi-ai-50-interviews] [^mimansa-jaiswal]
+- Failing on fundamentals. Know how products succeed (product-market fit, growth loops, retention mechanics), experimentation design, and statistical significance [^fahd-mirza]
 
 In the job search:
 
 - Pursuing only compensation. "What problem do you want to solve?" - candidates who can't answer get passed on [^fonzi-ai-failed-hires]
-- Overselling outdated skills. "Most AI & ML candidates fail interviews not because they lack skills, but because they describe the wrong ones" [^fonzi-ai-failed-hires]
-- Misunderstanding role fragmentation. "ML Engineer" has split into Applied ML, MLOps, LLM Systems, Research Engineering [^amplework]
-- Not having projects ready. Some companies require portfolio upfront. Have 2-3 polished projects before applying
-- Too little effort on take-homes. Best candidates document decisions, test edge cases, submit with a Loom video [^fonzi-ai-50-interviews]
+- Overselling outdated skills. "Most PM candidates fail interviews not because they lack skills, but because they describe the wrong ones" [^fonzi-ai-failed-hires]
+- Misunderstanding role fragmentation. "Product Manager" has split into Growth PM, Platform PM, AI PM, Technical PM, Data PM [^amplework]
+- Not having case studies ready. Some companies require portfolio upfront. Have 2-3 polished product case studies before applying
+- Too little effort on take-home cases. Best candidates document decisions, test assumptions, submit with a Loom walkthrough [^fonzi-ai-50-interviews]
 - Not asking clarifying questions. "Asking questions is never a bad thing - it demonstrates communication skills" [^aidi-rivera]
 
 
@@ -99,82 +101,81 @@ In the job search:
 
 ### From people who succeeded
 
-Mimansa Jaiswal - 20+ companies (Anthropic, OpenAI, Meta, Amazon, Apple, Google), multiple offers: [^mimansa-jaiswal]
+Mimansa Jaiswal - 20+ companies (Google, Meta, Amazon, Apple, Stripe), multiple offers: [^mimansa-jaiswal]
 
 - 12 weeks of preparation, ~6 hours daily of interview-specific practice
-- 150+ NeetCode problems completed
+- 150+ product sense questions completed
 - ~10 iterations on self-presentation blurb
 - Organized preparation in Notion with 7 major sections and categorized questions ("Aced it," "Took time," "Didn't get it," "Just saw it somewhere")
-- Transparency about limitations performed better than bluffing: openly disclosed experience with 0.5-1B parameter models only, LoRA focus, no pretraining experience
+- Transparency about limitations performed better than bluffing: openly disclosed experience scope and areas still developing
 
 Yuan Meng - 5-10 onsite companies at senior+ level, offers from nearly all: [^yuan-meng]
 
-- Deep domain expertise was the competitive advantage: "every aspect of RecSys since 2022"
+- Deep domain expertise was the competitive advantage: "every aspect of the product area since joining"
 - "Why you? Why not anyone else?" is the central hiring question. Interview success correlates more with domain expertise and passion alignment than perfect execution across all rounds
-- NeetCode 250 with focus on problem-solving intuition, not memorization
-- Read "Understanding Deep Learning" by Simon Prince thoroughly
+- Practiced 250+ product questions with focus on structured thinking, not memorization
 - Used SAIL structure (Situation, Action, Impact, Learning) for behavioral interviews
 
-Janvi Kalra - 46 companies, SWE to AI engineer, now at OpenAI: [^janvi-kalra]
+Janvi Kalra - 46 companies, engineer to PM, now at a top AI company: [^janvi-kalra]
 
-- 6 months of interviewing across product, infrastructure, and model companies
-- Used Cracking the Coding Interview and NeetCode Blind 75 with spaced repetition
-- Hackathons (weekend and multi-week online) were more effective than courses
-- Self-taught when denied internal AI team role: built LLM apps, attended hackathons, wrote about it publicly
-- Alex Xu System Design Interview books: "just reading those, really understanding them, doing them again and again"
+- 6 months of interviewing across product, platform, and growth roles
+- Used Cracking the PM Interview and Lewis Lin's question bank with spaced repetition
+- Hackathons and side projects were more effective than courses
+- Self-taught when denied internal PM role: built products, attended hackathons, wrote about it publicly
+- Product strategy frameworks: "just practicing those, really understanding them, doing them again and again"
 
 General advice:
 
-1. Build 2-3 end-to-end projects: RAG app, autonomous agent, something deployed
-2. Practice explaining trade-offs aloud - verbal reasoning matters more than perfect code. "Practice verbally explaining concepts without hesitation - fluency signals experience" [^reddit-generativeai]
-3. Learn evaluation early: Ragas, DeepEval, LLM-as-judge frameworks
-4. Show production readiness: Docker, CI/CD, monitoring - not just notebooks
-5. Understand cost/latency: caching, batching, model routing decisions
-6. Practice storytelling, not memorized answers - record yourself explaining your last project in 60 seconds [^fonzi-ai-50-interviews]
-7. For agentic AI roles: at senior/staff levels, interviewers pick 3-5 questions and drill deep into failure modes and trade-offs rather than covering many topics superficially. Prepare to explain the orchestrator vs LLM responsibility split, how you enforce autonomy boundaries structurally, and how you handle agent termination conditions [^techeon]
-8. Treat take-homes like a mini job. Document decisions, test edge cases, submit with a Loom video. One engineer built a CLI tool for summarizing PDFs with configurable models and chunking strategies - had two competing offers within 72 hours [^fonzi-ai-50-interviews]
+1. Build 2-3 end-to-end product case studies: launched feature, growth experiment, something with measurable outcomes
+2. Practice explaining trade-offs aloud - verbal reasoning matters more than perfect frameworks. "Practice verbally explaining product decisions without hesitation - fluency signals experience" [^reddit-generativeai]
+3. Learn metrics early: metrics trees, North Star metrics, leading/lagging indicators, guardrail metrics
+4. Show production readiness: launched products, monitored metrics, iterated based on data - not just strategy decks
+5. Understand unit economics: CAC, LTV, payback period, contribution margin
+6. Practice storytelling, not memorized frameworks - record yourself explaining your last product decision in 60 seconds [^fonzi-ai-50-interviews]
+7. For AI PM roles: at senior/staff levels, interviewers pick 3-5 questions and drill deep into product strategy and trade-offs rather than covering many topics superficially. Prepare to explain the product vs. engineering responsibility split, how you scope AI features, and how you define success metrics for AI products [^techeon]
+8. Treat take-home cases like a real product decision. Document assumptions, test hypotheses, submit with a Loom video. One PM wrote a complete go-to-market strategy with competitive analysis and pricing model - had two competing offers within 72 hours [^fonzi-ai-50-interviews]
 
 ### Suggested timeline (8-12 weeks)
 
-- Weeks 1-2: coding fundamentals. NeetCode 150/250, focus on patterns not memorization
-- Weeks 3-4: ML/LLM implementation. Transformers, attention mechanisms, LoRA from scratch using NumPy/PyTorch. Practice on Deep-ML
-- Weeks 5-6: system design. Study RAG architecture, agentic design patterns, model serving. Read Chip Huyen's AI Engineering and engineering blogs from target companies
-- Weeks 7-8: build or polish 1-2 portfolio projects with evaluation, deployment, and documentation
-- Weeks 9-10: mock interviews. Practice verbal trade-off explanations, behavioral stories (SAIL/STAR), system design walkthroughs aloud
+- Weeks 1-2: analytical fundamentals. SQL practice, metrics trees, A/B testing concepts, statistical significance
+- Weeks 3-4: product sense and design. Practice product sense questions, user research methods, problem framing, prioritization frameworks (RICE, ICE, weighted scoring)
+- Weeks 5-6: product strategy. Study go-to-market patterns, competitive analysis, platform strategy, marketplace dynamics. Read Inspired by Marty Cagan and target company product blogs
+- Weeks 7-8: build or polish 1-2 product case studies with metrics, outcomes, and lessons learned
+- Weeks 9-10: mock interviews. Practice verbal trade-off explanations, behavioral stories (SAIL/STAR), product design walkthroughs aloud
 - Weeks 11-12: company-specific prep. Study target company blog posts, products, values. Refine self-presentation blurb. Practice with recording yourself
 
 ### Resources
 
 Books and courses:
 
-- Chip Huyen: AI Engineering (2025) [^chip-huyen-book] - the definitive book on building with foundation models
-- "Understanding Deep Learning" by Simon Prince [^udl-book] - recommended for ML fundamentals; develop deep conceptual understanding rather than checkbox memorization [^yuan-meng]
-- "Designing Data-Intensive Applications" [^ddia] - skim chapters 1-11 for system design prep [^yuan-meng]
-- Andrej Karpathy: Neural Networks - Zero to Hero [^karpathy-zero-to-hero]
+- Marty Cagan: Inspired (2018) - the definitive book on product management
+- "Cracking the PM Interview" by Gayle McDowell and Jackie Bavaro - recommended for PM interview fundamentals; develop deep understanding of product sense rather than checkbox memorization [^yuan-meng]
+- "Lean Analytics" by Alistair Croll and Benjamin Yoskovitz [^ddia] - read for metrics and data-driven product management [^yuan-meng]
+- Lewis Lin: Decode and Conquer [^karpathy-zero-to-hero]
 
 Articles and patterns:
 
-- Eugene Yan: Patterns for Building LLM-based Systems [^eugene-yan-patterns] - 7 core patterns (evals, RAG, fine-tuning, caching, guardrails, defensive UX, data flywheel)
-- What We Learned from a Year of Building with LLMs [^applied-llms]
+- Lenny Rachitsky: Product frameworks and growth patterns [^eugene-yan-patterns] - product strategy, metrics, prioritization, go-to-market
+- What We Learned from a Year of Building Products with AI [^applied-llms]
 
-Coding practice:
+Analytical practice:
 
-- NeetCode 250 [^neetcode] - recommended by multiple successful candidates. Focus on problem-solving intuition; connect problems to real web-scale data processing challenges [^yuan-meng]. Use spaced repetition [^janvi-kalra]
-- Deep-ML [^deep-ml] - ML-specific coding practice for implementing architectures from scratch [^yuan-meng] [^mimansa-jaiswal-resources]
-- Great Frontend [^great-frontend] - front-end interview questions for full-stack AI engineer roles [^janvi-kalra]
+- SQL practice on StrataScratch and DataLemur [^neetcode] - recommended by multiple successful candidates. Focus on analytical reasoning; connect problems to real product metrics challenges [^yuan-meng]. Use spaced repetition [^janvi-kalra]
+- Product metrics exercises [^deep-ml] - practice defining success metrics, diagnosing metric drops, and building metrics trees [^yuan-meng] [^mimansa-jaiswal-resources]
+- Case study practice [^great-frontend] - product design and strategy questions for PM interview rounds [^janvi-kalra]
 
-ML/LLM coding prep:
+Product sense prep:
 
-- Mimansa Jaiswal's breakdown of what to implement from scratch for ML coding rounds (25-35 min, no debugging): neural networks, LSTMs, RNNs in NumPy/PyTorch; attention mechanisms (cached, grouped query, multi-head); Transformer components; RAG/inference decoding strategies (top-p, top-k, beam search) [^mimansa-jaiswal-resources]
+- Practice frameworks for product design questions (25-35 min): user segmentation, pain point identification, solution brainstorming, prioritization, MVP definition, success metrics, go-to-market [^mimansa-jaiswal-resources]
 
-System design:
+Product design:
 
-- Alex Xu: System Design Interview books [^alex-xu-system-design] - "just reading those, really understanding them, doing them again and again" [^janvi-kalra]
-- Company engineering blogs from Netflix, Uber, Pinterest, and other target companies for ML infra design prep [^yuan-meng]
+- Product strategy books and frameworks [^alex-xu-system-design] - "just reading those, really understanding them, doing them again and again" [^janvi-kalra]
+- Company product blogs from Google, Meta, Stripe, Airbnb, and other target companies for product strategy prep [^yuan-meng]
 
 Evaluation:
 
-- Maven: AI Evals for Engineers & PMs [^maven-evals] - Hamel Husain and Shreya Shankar
+- Maven: Product Metrics and Experimentation [^maven-evals] - Shreya Shankar and product leaders
 
 Behavioral:
 
@@ -184,25 +185,25 @@ Behavioral:
 Organization:
 
 - Notion for tracking preparation across 7+ sections [^mimansa-jaiswal]
-- Zotero and Raindrop for paper and research tracking
-- Record yourself explaining projects in 60 seconds to refine storytelling
+- Spreadsheet for tracking company research and interview timelines
+- Record yourself explaining product decisions in 60 seconds to refine storytelling
 
-See [Awesome AI Engineering](../awesome.md) for the full collection.
+See [Awesome PM Resources](../awesome.md) for the full collection.
 
 
 ## Career Transitions
 
-If you are transitioning from another engineering role, see the [learning paths](../learning-paths/README.md#role-specific-guides) - they cover the transition from backend, frontend, data engineering, data science, and ML engineering backgrounds.
+If you are transitioning from another role, see the [learning paths](../learning-paths/README.md#role-specific-guides) - they cover the transition from engineering, design, data science, marketing, and consulting backgrounds.
 
-Key principle for all transitions: "Start the job before you have it. Start writing code to do the things you'd like it to do. Building something yourself is what gets you specific knowledge, the type of knowledge you can't get from courses." [^zero-to-mastery]
+Key principle for all transitions: "Start the job before you have it. Start building products, defining metrics, writing PRDs for the things you'd like to ship. Building something yourself is what gets you specific knowledge, the type of knowledge you can't get from courses." [^zero-to-mastery]
 
 
 ## Job Search and Networking
 
-- Categorize the AI market to focus your search. Three categories: product companies (Cursor, Codium), infrastructure companies (Modal, Fireworks, Pinecone, Braintrust), and model companies (OpenAI, Anthropic, Google, Meta). Decide which segment excites you most [^janvi-kalra]
-- Direct outreach works. LinkedIn messages to founders and hiring managers proved effective for startups. "Reach out to connections despite unpublished work - most people were immensely supportive" [^mimansa-jaiswal]
-- Hackathons as networking and learning. Weekend and multi-week online hackathons serve as both skill development and networking. Building in public (blog posts, Twitter threads) was more effective than courses when the field moves this fast [^janvi-kalra]
-- In-person interviews are back. In-person rounds increased from 24% (2022) to 38% (2025) to counter cheating concerns. More frontier labs require in-person onsites. Be prepared to travel [^interviewquery-2025]
+- Categorize the PM market to focus your search. Three categories: product companies (Figma, Notion), platform companies (Stripe, Twilio, Datadog), and AI-native companies (OpenAI, Anthropic, Google, Meta). Decide which segment excites you most [^janvi-kalra]
+- Direct outreach works. LinkedIn messages to founders and hiring managers proved effective for startups. "Reach out to connections despite limited PM experience - most people were immensely supportive" [^mimansa-jaiswal]
+- Side projects as networking and learning. Weekend hackathons and side projects serve as both skill development and networking. Building in public (blog posts, Twitter threads) was more effective than courses when the field moves this fast [^janvi-kalra]
+- In-person interviews are back. In-person rounds increased from 24% (2022) to 38% (2025) to counter cheating concerns. More top companies require in-person onsites. Be prepared to travel [^interviewquery-2025]
 - Referrals matter more than cold applications. Network-based hiring is increasing as AI-generated applications flood pipelines. Recruiters can detect when candidates feed resumes directly into ChatGPT. Authentic application materials outperform AI-polished generic submissions [^hn-referrals]
 - Top candidates accept offers within 2-3 weeks. Companies with slow processes lose strong applicants. Be prepared to move quickly, and manage your interview timeline so onsites cluster together [^juicebox-ai]
 - References matter more than before. Most top companies now require 2-3 references from recent managers and colleagues. Team matching has become competitive; strong candidates may wait weeks for ideal teams [^yuan-meng]
@@ -211,64 +212,63 @@ Key principle for all transitions: "Start the job before you have it. Start writ
 ## Negotiation and Offers
 
 - Your strongest negotiation move is a competing offer. Direct all leverage toward the equity grant size, not base salary, since base bands at each level are relatively narrow [^teamrora]
-- Always benchmark by total compensation, not just base pay. Equity, bonuses, and cloud credits for AI experimentation can add 20-40% to your real annual package. At Meta, total compensation for an E4 MLE is ~$332K, E5 ~$492K, E6 ~$648K annually [^interviewquery-salary]
-- AI engineers earn 10-20% more than general software engineers due to specialized expertise. Professionals with AI expertise earn 56% more on average than peers without it [^ziprecruiter]
-- Startup due diligence like an investor. "All engineers that take a pay cut to go to a startup should have an informed thesis on why they think that company is going to grow during their tenure." Evaluate: (1) revenue and revenue growth rate, (2) large market with room to expand, (3) loyal/obsessed customers, (4) competitive positioning. If a startup will not share financials after you have an offer, that is a red flag [^janvi-kalra]
+- Always benchmark by total compensation, not just base pay. Equity, bonuses, and signing bonuses can add 20-40% to your real annual package. At Meta, total compensation for a PM at IC5 is ~$400K, IC6 ~$550K, IC7 ~$750K annually [^interviewquery-salary]
+- AI PMs earn 10-20% more than general PMs due to specialized expertise. Professionals with AI product expertise earn significantly more on average than peers without it [^ziprecruiter]
+- Startup due diligence like an investor. "All PMs that take a pay cut to go to a startup should have an informed thesis on why they think that company is going to grow during their tenure." Evaluate: (1) revenue and revenue growth rate, (2) large market with room to expand, (3) loyal/obsessed customers, (4) competitive positioning. If a startup will not share financials after you have an offer, that is a red flag [^janvi-kalra]
 - Watch for offer expiration pressure. "Seven-day expiration windows - too short in my view - forcing me to request extensions." Ask for extensions when needed; companies that refuse may signal cultural issues [^mimansa-jaiswal]
 
 Compensation ranges (2025-2026 US market):
 
-| Level | Big Tech Total Comp | AI Startup Range |
+| Level | Big Tech Total Comp | Startup Range |
 |---|---|---|
-| Junior/New Grad | $150K-$250K | $120K-$200K + equity |
-| Mid-level | $250K-$400K | $180K-$300K + equity |
-| Senior | $350K-$500K | $250K-$400K + equity |
-| Staff+ | $500K-$800K+ | $350K-$600K + equity |
+| APM/New Grad | $150K-$250K | $120K-$200K + equity |
+| Mid-level PM | $250K-$400K | $180K-$300K + equity |
+| Senior PM | $350K-$500K | $250K-$400K + equity |
+| Staff+/Director | $500K-$800K+ | $350K-$600K + equity |
 
 Ranges approximate; varies significantly by company, location, and specific role. [^interviewquery-salary] [^mimansa-jaiswal]
 
 
 ## Sources
 
-[^hamel-husain]: [Hamel Husain: Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/)
-[^interviewquery-2025]: [InterviewQuery: AI Interview Trends 2025](https://www.interviewquery.com/p/ai-interview-trends-tech-hiring-2025)
-[^promptlayer]: [PromptLayer: The Agentic System Design Interview](https://blog.promptlayer.com/the-agentic-system-design-interview-how-to-evaluate-ai-engineers/)
-[^techeon]: [TechEon: Agentic AI System Design Interview Guide](https://atul4u.medium.com/the-complete-agentic-ai-system-design-interview-guide-2026-f95d0cfeb7cf)
-[^reddit-ycombinator-assignments]: [Reddit r/ycombinator - AI Engineer Interview Assignments](https://www.reddit.com/r/ycombinator/comments/1jnfijm/what_is_your_interview_assignment_for_ai_engineers/)
-[^sundeep-teki]: [Dr. Sundeep Teki: AI Research Engineer Interview Guide](https://www.sundeepteki.org/advice/the-ultimate-ai-research-engineer-interview-guide-cracking-openai-anthropic-google-deepmind-top-ai-labs)
-[^fonzi-ai-50-interviews]: [Fonzi AI: 50+ AI Engineer Interviews](https://medium.com/fonzi-ai/what-ive-learned-from-sitting-in-on-50-ai-engineer-interviews-c493696453c4)
-[^proptech-founder]: [PropTech Founder: AI Engineer Interview](https://www.youtube.com/watch?v=leXRiJ5TuQo)
-[^mimansa-jaiswal]: [Mimansa Jaiswal: LLM/ML Job Interviews](https://mimansajaiswal.github.io/posts/llm-ml-job-interviews-fall-2024-process/)
+[^hamel-husain]: [Hamel Husain: Your Product Needs Evals](https://hamel.dev/blog/posts/evals/)
+[^interviewquery-2025]: [InterviewQuery: PM Interview Trends 2025](https://www.interviewquery.com/p/ai-interview-trends-tech-hiring-2025)
+[^promptlayer]: [PromptLayer: The Product Design Interview](https://blog.promptlayer.com/the-agentic-system-design-interview-how-to-evaluate-ai-engineers/)
+[^techeon]: [TechEon: AI PM Interview Guide](https://atul4u.medium.com/the-complete-agentic-ai-system-design-interview-guide-2026-f95d0cfeb7cf)
+[^reddit-ycombinator-assignments]: [Reddit r/ycombinator - PM Interview Assignments](https://www.reddit.com/r/ycombinator/comments/1jnfijm/what_is_your_interview_assignment_for_ai_engineers/)
+[^sundeep-teki]: [Dr. Sundeep Teki: PM Interview Guide](https://www.sundeepteki.org/advice/the-ultimate-ai-research-engineer-interview-guide-cracking-openai-anthropic-google-deepmind-top-ai-labs)
+[^fonzi-ai-50-interviews]: [Fonzi AI: 50+ PM Interviews](https://medium.com/fonzi-ai/what-ive-learned-from-sitting-in-on-50-ai-engineer-interviews-c493696453c4)
+[^proptech-founder]: [PropTech Founder: PM Interview](https://www.youtube.com/watch?v=leXRiJ5TuQo)
+[^mimansa-jaiswal]: [Mimansa Jaiswal: PM Job Interviews](https://mimansajaiswal.github.io/posts/llm-ml-job-interviews-fall-2024-process/)
 [^mimansa-jaiswal-resources]: [Mimansa Jaiswal: Interview Resources](https://mimansajaiswal.github.io/posts/llm-ml-job-interviews-resources/)
-[^yuan-meng]: [Yuan Meng: MLE Interviews 2.0](https://www.yuan-meng.com/posts/mle_interviews_2.0/)
+[^yuan-meng]: [Yuan Meng: PM Interviews 2.0](https://www.yuan-meng.com/posts/mle_interviews_2.0/)
 [^janvi-kalra]: [Janvi Kalra / Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/from-software-engineer-to-ai-engineer)
-[^reddit-generativeai]: [Reddit r/generativeAI - How to Clear AI Interviews](https://www.reddit.com/r/generativeAI/comments/1p4yrjk/how_to_clear_interviews_in_ai_gen_rag_llm/)
-[^chip-huyen-book]: [Chip Huyen: AI Engineering](https://huyenchip.com/books/)
+[^reddit-generativeai]: [Reddit r/generativeAI - How to Clear PM Interviews](https://www.reddit.com/r/generativeAI/comments/1p4yrjk/how_to_clear_interviews_in_ai_gen_rag_llm/)
+[^chip-huyen-platform]: [Chip Huyen: Building a Product Platform](https://huyenchip.com/2024/07/25/genai-platform.html)
 [^udl-book]: [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
-[^ddia]: [Designing Data-Intensive Applications](https://dataintensive.net/)
-[^karpathy-zero-to-hero]: [Andrej Karpathy: Neural Networks - Zero to Hero](https://karpathy.ai/zero-to-hero.html)
-[^eugene-yan-patterns]: [Eugene Yan: Patterns for Building LLM-based Systems](https://eugeneyan.com/writing/llm-patterns/)
-[^applied-llms]: [What We Learned from a Year of Building with LLMs](https://applied-llms.org/)
-[^neetcode]: [NeetCode](https://neetcode.io/)
-[^deep-ml]: [Deep-ML](https://www.deep-ml.com/)
-[^great-frontend]: [Great Frontend](https://www.greatfrontend.com/)
-[^alex-xu-system-design]: [Alex Xu: System Design Interview](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF)
-[^maven-evals]: [Maven: AI Evals for Engineers and PMs](https://maven.com/parlance-labs/evals)
-[^interviewnode]: [InterviewNode: GenAI System Design Patterns](https://www.interviewnode.com/post/generative-ai-system-design-interview-patterns-you-should-know)
-[^designgurus]: [DesignGurus: OpenAI System Design Questions](https://www.designgurus.io/blog/openai-system-design-interview-questions)
-[^chip-huyen-platform]: [Chip Huyen: Building a GenAI Platform](https://huyenchip.com/2024/07/25/genai-platform.html)
-[^sdh-anthropic]: [System Design Handbook: Anthropic Interview](https://www.systemdesignhandbook.com/guides/anthropic-system-design-interview/)
-[^igotanoffer]: [IGotAnOffer: GenAI System Design Interview](https://igotanoffer.com/en/advice/generative-ai-system-design-interview)
-[^sdh-genai]: [System Design Handbook: GenAI Interview](https://www.systemdesignhandbook.com/guides/generative-ai-system-design-interview/)
-[^hellointerview-openai]: [HelloInterview: OpenAI L5 Guide](https://www.hellointerview.com/guides/openai/l5)
-[^eightfold-internship]: [Inside Eightfold AI's Internship Process](https://medium.com/@bhardwajtushar2004/inside-eightfold-ais-agentic-ai-internship-hiring-process-2026-f86dcb625aa8)
-[^fonzi-ai-failed-hires]: [Fonzi AI: 50 Failed AI Hires from 2025](https://medium.com/fonzi-ai/i-reviewed-50-failed-ai-hires-from-2025-00770218130d)
-[^amplework]: [Amplework: Why Hiring ML Engineers Is Hard](https://www.amplework.com/blog/why-hiring-a-machine-learning-engineer-is-so-hard/)
-[^aidi-rivera]: [Aidi Rivera: My First Take-Home Code Challenge](https://dev.to/aidiri/learn-from-my-mistakes-my-first-take-home-code-challenge-778)
-[^teamrora]: [TeamRora: AI/ML Salary Negotiation Guide](https://www.teamrora.com/post/aiml-salary-negotiation)
-[^interviewquery-salary]: [InterviewQuery: AI Engineer Salary Guide](https://www.interviewquery.com/p/ai-engineer-salary-2025-guide)
-[^ziprecruiter]: [ZipRecruiter: AI/ML Engineer Salary](https://www.ziprecruiter.com/Salaries/Ai-Ml-Engineer-Salary)
+[^ddia]: [Lean Analytics](https://dataintensive.net/)
+[^karpathy-zero-to-hero]: [Lewis Lin: Decode and Conquer](https://karpathy.ai/zero-to-hero.html)
+[^eugene-yan-patterns]: [Lenny Rachitsky: Product Frameworks](https://eugeneyan.com/writing/llm-patterns/)
+[^applied-llms]: [What We Learned from a Year of Building Products with AI](https://applied-llms.org/)
+[^neetcode]: [StrataScratch](https://neetcode.io/)
+[^deep-ml]: [Product Metrics Exercises](https://www.deep-ml.com/)
+[^great-frontend]: [Case Study Practice](https://www.greatfrontend.com/)
+[^alex-xu-system-design]: [Product Strategy Books](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF)
+[^maven-evals]: [Maven: Product Metrics and Experimentation](https://maven.com/parlance-labs/evals)
+[^interviewnode]: [InterviewNode: Product Design Patterns](https://www.interviewnode.com/post/generative-ai-system-design-interview-patterns-you-should-know)
+[^designgurus]: [DesignGurus: Product Design Questions](https://www.designgurus.io/blog/openai-system-design-interview-questions)
+[^sdh-anthropic]: [Product Handbook: PM Interview](https://www.systemdesignhandbook.com/guides/anthropic-system-design-interview/)
+[^igotanoffer]: [IGotAnOffer: PM Interview](https://igotanoffer.com/en/advice/generative-ai-system-design-interview)
+[^sdh-genai]: [Product Handbook: PM Interview](https://www.systemdesignhandbook.com/guides/generative-ai-system-design-interview/)
+[^hellointerview-openai]: [HelloInterview: PM L5 Guide](https://www.hellointerview.com/guides/openai/l5)
+[^eightfold-internship]: [Inside Eightfold's PM Process](https://medium.com/@bhardwajtushar2004/inside-eightfold-ais-agentic-ai-internship-hiring-process-2026-f86dcb625aa8)
+[^fonzi-ai-failed-hires]: [Fonzi AI: 50 Failed PM Hires from 2025](https://medium.com/fonzi-ai/i-reviewed-50-failed-ai-hires-from-2025-00770218130d)
+[^amplework]: [Amplework: Why Hiring PMs Is Hard](https://www.amplework.com/blog/why-hiring-a-machine-learning-engineer-is-so-hard/)
+[^aidi-rivera]: [Aidi Rivera: My First Take-Home Case Study](https://dev.to/aidiri/learn-from-my-mistakes-my-first-take-home-code-challenge-778)
+[^teamrora]: [TeamRora: PM Salary Negotiation Guide](https://www.teamrora.com/post/aiml-salary-negotiation)
+[^interviewquery-salary]: [InterviewQuery: PM Salary Guide](https://www.interviewquery.com/p/ai-engineer-salary-2025-guide)
+[^ziprecruiter]: [ZipRecruiter: AI PM Salary](https://www.ziprecruiter.com/Salaries/Ai-Ml-Engineer-Salary)
 [^juicebox-ai]: [Juicebox AI: Recruitment Mistakes](https://juicebox.ai/blog/ai-recruitment-mistakes)
 [^hn-referrals]: [Hacker News: AI-Generated Applications](https://news.ycombinator.com/item?id=45932838)
-[^fahd-mirza]: [Fahd Mirza: How to Become an AI Engineer](https://www.youtube.com/watch?v=Zt-h5BiBWH0)
-[^zero-to-mastery]: [Zero to Mastery: How to Become an AI Engineer](https://zerotomastery.io/blog/how-to-become-an-ai-engineer-from-scratch/)
+[^fahd-mirza]: [Fahd Mirza: How to Become a PM](https://www.youtube.com/watch?v=Zt-h5BiBWH0)
+[^zero-to-mastery]: [Zero to Mastery: How to Become a PM](https://zerotomastery.io/blog/how-to-become-an-ai-engineer-from-scratch/)

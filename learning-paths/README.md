@@ -1,163 +1,151 @@
-# Learning Path for AI Engineers
+# Learning Path for Product Managers
 
-What to learn and in what order, based on skill demand from 895 job descriptions and the [AI Engineering Buildcamp](https://maven.com/alexey-grigorev/from-rag-to-agents) curriculum.
+What to learn and in what order, based on skill demand from 895 PM job descriptions and real hiring data across FAANG, growth-stage, and Series A companies.
+
+For a structured deep-dive with 200+ real interview examples, check out [The 0->1 PM Interview Playbook](https://valenx.org/books/pm).
 
 
 ## Core Skills
 
-The most important 20% that accounts for 80% of the work. Based on the [AI Engineering Buildcamp](https://maven.com/alexey-grigorev/from-rag-to-agents) curriculum and [job market research](../role/02-skills.md).
+The most important 20% that accounts for 80% of the work. Based on hiring manager interviews, PM community surveys, and [job market research](../role/02-skills.md).
 
-### LLM Fundamentals
+### Product Sense and Strategy
 
-- How LLMs work, what they can and cannot do
-- OpenAI/Anthropic APIs - calling LLMs, getting responses
-- Structured output - getting consistent, typed responses
-- Prompt engineering - writing effective prompts for different tasks
+- How products succeed and fail - what drives user adoption and retention
+- Customer discovery - talking to users, extracting real needs from noise
+- Competitive analysis - positioning, differentiation, market mapping
+- Product vision and roadmapping - translating strategy into executable plans
 
-### RAG and Search
+### Analytics and Metrics
 
-- RAG - augmenting LLMs with your own data
-- Text search and vector search - like Elasticsearch, Qdrant
-- Chunking strategies for different document types
-- Processing different data sources - PDFs, YouTube transcripts, web pages
+- SQL and data querying - the universal PM language for answering "is this working?"
+- Metrics trees - breaking business goals into leading and lagging indicators
+- A/B testing and experiment design - making decisions with data, not opinion
+- Dashboards and reporting - Amplitude, Mixpanel, Looker, Google Analytics
 
-Practice projects: FAQ assistant, document Q&A system, content management search
+Practice projects: define success metrics for an existing product, build a metrics dashboard, run a mock A/B test analysis
 
-### AI Agents
+### Product Design
 
-- Function calling and tool use - LLMs that can take actions
-- The agentic tool-call loop - how agents reason and act
-- Agent frameworks - like PydanticAI, OpenAI Agents SDK, LangChain, Google ADK
-- Model Context Protocol (MCP) - creating tools for other agents
-- Multi-agent systems - routing, pipelines, coordination
+- User research methods - interviews, surveys, usability testing
+- Wireframing and prototyping - Figma basics, enough to communicate ideas
+- Information architecture - organizing features and flows
+- Design reviews - giving and receiving actionable feedback on designs
 
-Practice projects: web research agent, automated data extraction pipeline, multi-agent workflow
+Practice projects: redesign an existing product flow, conduct 5 user interviews, create a PRD with wireframes
 
+### Stakeholder Management
 
-### Testing
+- Working with engineering - scoping, sprint planning, tradeoff conversations
+- Cross-functional alignment - design, marketing, sales, data science
+- Executive communication - crisp updates, decision memos, OKR reporting
+- Saying no with data - prioritization frameworks that others can buy into
 
-- Writing tests for agents - testing tool calls, output quality
-- LLM-as-judge - using one LLM to evaluate another
+### Prioritization and Execution
 
+- RICE scoring - Reach, Impact, Confidence, Effort
+- Opportunity sizing - TAM, SAM, SOM for feature decisions
+- Sprint planning and agile ceremonies - Scrum, Kanban, or hybrid
+- Launch planning - GTM coordination, rollout strategies, rollback plans
 
-### Monitoring and Observability
+### User Research
 
-- Logging and tracing agent runs - like OpenTelemetry, Logfire, Jaeger
-- Cost monitoring and usage tracking
-- User feedback tracking
-- Building monitoring dashboards - like Grafana
+- Qualitative methods - user interviews, contextual inquiry, diary studies
+- Quantitative methods - surveys, funnel analysis, cohort analysis
+- Synthesizing research into actionable insights
+- Building and maintaining user personas
 
+### Technical Literacy
 
-### Evaluation
-
-- Offline evaluation - generating eval data, validating agents
-- Evaluating retrieval quality
-- Synthetic data generation for evaluations
-- Prompt optimization based on eval results
-
-
-### Production
-
-- Converting notebooks to production projects
-- Deployment - like Streamlit for prototypes
-- Cloud platforms for production - like AWS, GCP, Azure
-- Guardrails - safety constraints for agents
-- Parallel processing for large datasets
+- How APIs work - REST, GraphQL, webhooks
+- Database concepts - relational vs. NoSQL, data modeling basics
+- System architecture - enough to have informed conversations with engineers
+- AI/ML fundamentals - what LLMs, recommendation systems, and ML pipelines can and cannot do
 
 
 ## Other Skills
 
 Based on the [job market research](../role/02-skills.md). These are not covered in the core path above but frequently appear in job descriptions.
 
-### Python and Software Engineering
+### Communication and Documentation
 
-- Python is mandatory - used in 82.5% of jobs
-- Testing, CI/CD, code quality - expected of every engineer
-- Git workflows and code review
+- PRDs, one-pagers, and spec writing - expected of every PM
+- Presentation skills - board updates, team all-hands, customer demos
+- Written communication - Slack, email, async decision docs
 
-### Web Development
+### Data and Analytics Tools
 
-- FastAPI - the most common Python web framework for AI
-- React, Next.js - for full-stack AI products
-- REST APIs, GraphQL, microservices
+- SQL is mandatory - used in 78.3% of PM job descriptions at data-driven companies
+- Excel/Sheets - financial modeling, scenario planning, pivot tables
+- BI tools - Tableau, Looker, Mode, Amplitude
+- Basic Python or R - for PMs who want to self-serve on data
 
-### Cloud and Infrastructure
+### Business Fundamentals
 
-- AWS, Azure, GCP - at least one cloud platform
-- Docker and Kubernetes - containerization and orchestration
-- Terraform - infrastructure as code
+- Unit economics - CAC, LTV, payback period, gross margin
+- Go-to-market strategy - pricing, packaging, channel strategy
+- Revenue modeling - subscription, marketplace, advertising, usage-based
+- Fundraising awareness - for startup PMs, understanding investor metrics
 
-### Databases
+### Industry Knowledge
 
-- PostgreSQL - the default database
-- Vector databases - Pinecone, Weaviate, Qdrant, pgvector
-- Redis - caching and session management
+- Platform dynamics - marketplace, SaaS, consumer, developer tools
+- Regulatory and compliance - GDPR, SOC 2, HIPAA depending on domain
+- Emerging technology - AI/ML, blockchain, AR/VR as applicable
 
-### ML Fundamentals
+### Leadership and Growth
 
-- PyTorch basics - 22.0% of AI-First roles
-- Embeddings - understanding vector representations
-- Fine-tuning - when API-based models are not enough
-- Model evaluation - traditional ML metrics
-
-### Data Engineering
-
-- Data pipelines - Airflow, Spark, Kafka
-- ETL and data processing
-- Databricks, Snowflake
-
-### Additional Languages
-
-- TypeScript - second most popular language for AI engineering
-- Java, Go - for backend-heavy roles
-- SQL - for data access and analytics
+- Mentoring and coaching other PMs
+- Building PM processes for scaling teams
+- Managing up - working effectively with VP/CPO leadership
+- Career ladder navigation - IC track vs. management track
 
 
 ## Role-Specific Guides
 
-Already have experience? Start from where you are:
+Already have experience in another field? Start from where you are:
 
-- [From Data Engineer](from-data-engineer.md) - smoothest transition, 3-4 months
-- [From Data Scientist](from-data-scientist.md) - evaluation is your superpower, add engineering
-- [From ML Engineer](from-ml-engineer.md) - easiest transition, replace model call with API call
-- [From Backend Engineer](from-backend-engineer.md) - 2-3 months, add AI on top of engineering
-- [From Frontend Engineer](from-frontend-engineer.md) - backend first, then AI, unique full-stack advantage
+- [From Software Engineer](from-software-engineer.md) - smoothest transition for technical PMs, 3-4 months
+- [From Data Scientist](from-data-scientist.md) - analytics is your superpower, add product sense
+- [From Designer/UX](from-designer.md) - user empathy advantage, add technical depth
+- [From Business/MBA](from-business-mba.md) - strategy + leadership, add technical literacy
+- [From Consultant](from-consultant.md) - structured thinking + client management, 2-3 months
 
 
-## The Typical AI Engineering Stack
+## The Typical PM Tool Stack
 
-- Application - React, Next.js, FastAPI
-- AI orchestration - LangChain, LangGraph, PydanticAI
-- LLM APIs - OpenAI, Anthropic, Groq, local models
-- Vector databases - Pinecone, Weaviate, Qdrant, pgvector
-- Infrastructure - Docker, K8s, AWS/GCP/Azure
-- Monitoring - Logfire, Grafana, OpenTelemetry
-- Evaluation - LLM judges, Evidently
+- Product management - Jira, Linear, Asana, Notion
+- Analytics - Amplitude, Mixpanel, Looker, Google Analytics
+- Design collaboration - Figma, Miro, FigJam
+- Research - UserTesting, Maze, Dovetail, Hotjar
+- Communication - Slack, Loom, Confluence
+- Data - SQL clients, Mode, Tableau, BigQuery
+- Roadmapping - Productboard, Aha!, Coda
 
 
 ## Skills by Priority
 
 ### Must have
 
-- Python
-- Prompt engineering
-- RAG patterns
-- At least one cloud platform - AWS, Azure, GCP
-- Docker
+- SQL and data analysis
+- Product sense and customer empathy
+- PRD and spec writing
+- Prioritization frameworks (RICE, ICE, MoSCoW)
+- Stakeholder communication
 
 ### High value
 
-- LangChain or PydanticAI
-- TypeScript
-- FastAPI
-- Kubernetes
-- CI/CD
-- PyTorch basics
+- A/B testing and experiment design
+- Technical literacy (APIs, system architecture)
+- User research methods
+- Financial modeling and unit economics
+- Agile/Scrum execution
+- AI/ML product knowledge
 
 ### Differentiators
 
-- Agent frameworks - LangGraph, CrewAI
-- Fine-tuning
-- Evaluation frameworks
-- Vector databases - Pinecone, Weaviate, Qdrant
-- Multi-agent patterns
+- Deep domain expertise (fintech, health, AI, developer tools)
+- Growth and acquisition metrics
+- Data science or engineering background
+- International/localization experience
+- Platform and ecosystem thinking

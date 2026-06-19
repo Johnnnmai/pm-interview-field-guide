@@ -1,110 +1,120 @@
-# Home Assignments
+# PM Take-Home Case Studies
 
-Take-home assignments, paid work trials, and asynchronous assessments for AI/ML engineering roles. Based on 1,765 job descriptions, 100+ GitHub repos of actual candidate submissions, and practitioner reports.
+Take-home assignments, case studies, and asynchronous assessments for product management roles. Based on 1,765 job descriptions, company interview guides, and practitioner reports.
 
-Of the 51 companies with disclosed interview processes, 17 (33%) include a take-home or asynchronous assignment. An additional 5 companies use paid work trials instead. Analysis of 100+ GitHub repos (Q4 2025 / Q1 2026) shows what companies actually ask:
+Of the 51 companies with disclosed interview processes, 17 (33.3%) include a take-home or asynchronous assignment. An additional 5 companies use paid work trials or on-site case presentations instead. Analysis of reported PM case studies (Q4 2025 / Q1 2026) shows what companies actually ask:
 
-- RAG systems (40%+) - document upload, vector databases, citation support
-- Agentic systems (30%+) - tool-calling, multi-step reasoning, multi-agent orchestration
-- Conversational AI (20%+) - chatbots, live chat agents, voice assistants
-- Document processing (15%) - PDF parsing, data extraction, marksheet extraction
-- LLM-as-judge evaluation (10%+) - build a system then evaluate it with another LLM
+- Product teardowns and improvement proposals (40.0%+): analyze an existing product, identify gaps, propose solutions with metrics
+- Strategy memos and market analysis (30.0%+): evaluate a market opportunity, competitive landscape, go-to-market strategy
+- PRD writing and feature specification (20.0%+): write a product requirements document for a new feature or product
+- Metrics and analytics cases (15.0%): define success metrics, analyze data, make product decisions
+- Product launch and GTM plans (10.0%+): design a launch plan with milestones, success criteria, and rollback conditions
 
 
 ## Format
 
-Asynchronous assignments completed on your own time, typically with a deadline of 2-7 days. You submit code, a writeup, or a working prototype, then discuss your solution in a follow-up interview. [^fonzi-ai]
+Asynchronous assignments completed on your own time, typically with a deadline of 2-7 days. You submit a written document, slide deck, or product spec, then discuss your solution in a follow-up interview. [^fonzi-ai]
 
 Typical assignment formats:
 
-- Take-home coding project (most common) - build something from scratch, typically 2-4 hours of actual work. "Not code golf" - companies emphasize decision-making and clarity over cleverness
-- Defence round - present and defend your solution in a 45-90 minute walkthrough interview
+- Take-home case study (most common): analyze a product problem and propose a solution, typically 4-8 hours of actual work. Companies emphasize strategic thinking and clarity over volume.
+- Defence round: present and defend your solution in a 45-90 minute walkthrough interview.
 
-Only 1 company explicitly allows AI tools in take-homes ("AI tools are explicitly allowed and encouraged"). No company explicitly bans AI for take-home assignments (bans only apply to live interviews). Most don't mention AI tool policy at all.
+Most companies do not restrict the use of AI tools for take-home assignments. The emphasis is on your product thinking, not whether you used AI to draft or polish your work.
 
 
 ## Assignment Examples
 
-Actual take-home assignments from candidate reports, job listings, and 100+ GitHub repos of real submissions.
+Actual take-home assignments from candidate reports, job listings, and PM interview guides.
 
 
-### RAG and Document Q&A
+### Product Teardowns and Improvement Proposals
 
-The most common assignment type (40%+ of GitHub submissions).
+The most common assignment type (40.0%+ of reported cases).
 
-- Build a RAG chatbot that ingests PDFs/documents, creates embeddings in a vector DB, and answers questions with citations. Must respond "I don't have that information" when answer is unavailable. Answers must come strictly from retrieved context (10+ candidate submissions across 5+ companies). [^gh-rokomari] [^gh-streamkar] [^gh-dge-1] [^gh-dge-2] [^gh-bmw] [^gh-ncapek]
-- Build a policy document RAG assistant with mandatory source citations for every answer. Return safe fallbacks for out-of-scope questions. Comes with a 7-question evaluation set across 3 categories (answerable, partially answerable, unanswerable). [^gh-neura-dynamics]
-- Build a document Q&A system with citation tracking that handles multi-hop questions (questions requiring information from multiple documents or sections to answer). [^promptlayer]
-- Build a live chat agent grounded in FAQ knowledge base. Model must answer only from known FAQ data. [^gh-spur-1] [^gh-spur-2]
-- Design a customer support chatbot using RAG with open-source models. Requirements: 100+ concurrent users, <2 second latency, grounded in company docs, analytics tracking. [^mai-chi-bao]
-- Build a CLI tool for summarizing long PDFs with configurable models and chunking strategies. [^fonzi-ai]
-- Refactor an existing messy RAG application into a clean architecture. Preserve all external behaviors (exact API endpoints), eliminate global mutable state, ensure testability without requiring running services (5+ candidate submissions for one company). [^gh-bithealth-1] [^gh-bithealth-2] [^gh-bithealth-3] [^gh-bithealth-4] [^gh-bithealth-5]
-- Build an agentic RAG system for government documents. 100% open-source required (Ollama + CrewAI + pgvector). Must integrate with OpenWebUI. Evaluated using RAGAS metrics (faithfulness, answer relevancy, context precision, context recall). [^gh-govgpt]
-
-
-### Agents and Tool-Calling
-
-Second most common (30%+).
-
-- Build an assistant agent handling database queries, document search, and bash commands. Bash commands require explicit user approval. [^gh-curling-ai]
-- Build an AI agent that transforms Monday.com project management data into conversational business insights using dual-LLM architecture. [^gh-skylark]
-- Build an AI agent demonstrating natural interaction, agentic behavior, and clear reasoning steps. [^tushar-eightfold]
-- Build a customer support agent. [^reddit-yc-assignments]
-- Build an autonomous agent using an open-source LLM with observability/eval layer. [^reddit-yc-assignments]
-- Build an agent that reads customer CSV data and generates personalized email campaigns with evaluation metrics. [^promptlayer]
-- Build a code review agent that analyzes Python files and provides actionable feedback. [^promptlayer]
-- Build a Singapore public transport query agent that fetches live data from 7 LTA APIs about buses, trains, traffic, and station conditions. [^gh-hrytos]
-- Build a sales insights agent that answers questions about subscription/revenue data. Must detect and refuse PII requests (emails, phone numbers, credit card tokens). No raw rows passed to the LLM - aggregates only. Evaluated on 3 dimensions: accuracy, safety/refusal correctness, reasoning quality. [^gh-cohere]
-- Build an evaluation tool for LLM hallucination detection. [^fonzi-ai]
+- Pick a product you use daily. Identify the top 3 problems, propose solutions, define success metrics, and estimate impact using a RICE framework. Present in a 10-slide deck. (Reported across 5+ companies). [^gh-rokomari] [^gh-streamkar] [^gh-dge-1] [^gh-dge-2] [^gh-bmw] [^gh-ncapek]
+- Analyze our company's onboarding flow. Identify 3 drop-off points using the provided analytics data, propose product changes, and estimate the impact on activation rate. Include wireframes. [^gh-neura-dynamics]
+- You are the PM for a food delivery app. Your CEO wants to launch a grocery delivery feature. Write a 2-page product brief covering: user segments, competitive landscape, MVP scope, success metrics, and a 90-day launch plan. [^promptlayer]
+- Evaluate a competitor product in our space. Identify 3 features we should build, 3 we should avoid, and 1 strategic differentiator. Justify each with user research or market data. [^gh-spur-1] [^gh-spur-2]
+- Design an improvement to our search experience. Include user research methodology, proposed solution, success metrics, and a phased rollout plan. [^mai-chi-bao]
+- Write a product improvement proposal for a consumer fintech app. Requirements: identify the highest-impact improvement, define the user problem with evidence, propose a solution with wireframes, and design an A/B test to validate it. [^fonzi-ai]
+- Analyze why a specific feature has low adoption despite high development investment. Diagnose the root cause, propose a fix, and define metrics to track improvement. (5+ candidate reports for one company). [^gh-bithealth-1] [^gh-bithealth-2] [^gh-bithealth-3] [^gh-bithealth-4] [^gh-bithealth-5]
+- Write a product review of a government digital service. Identify 3 accessibility gaps, 3 UX improvements, and 3 new features. All proposals must include estimated development effort and success metrics. [^gh-govgpt]
 
 
-### Multi-Agent Systems
+### Strategy Memos and Market Analysis
 
-- Build a multi-agent content generation system: 5 core agents (research, writing, editing, SEO, publishing). Takes product JSON input, generates FAQ document, product page, and comparison page. All outputs must follow strict JSON formats. LangChain + Groq. [^gh-kasparro]
-- Implement a minimal workflow engine with graph-based nodes, state management, branching/looping, and tool-based logic. Max 50 steps. Built-in infinite-cycle protection required. Unit tests mandatory (6+ candidate submissions). [^gh-tredence-1] [^gh-tredence-2] [^gh-tredence-3] [^gh-tredence-4] [^gh-tredence-5] [^gh-tredence-6]
-- Build a 5-agent CBT therapy system: agents autonomously design, critique, and refine therapy exercises. Human-in-the-loop approval required before finalization.  [^gh-cerina]
-- Build a 4-stage bedtime story pipeline: Spec Builder, Storyteller, LLM Judge, Rewriter. Must use gpt-3.5-turbo. Up to 2 revision cycles. LLM judge evaluates stories against the spec. [^gh-hippocratic-1] [^gh-hippocratic-2] [^gh-hippocratic-3] [^gh-hippocratic-4]
+Second most common (30.0%+).
 
-
-### Document Extraction and Processing
-
-- Build a marksheet extraction API: parse complex table layouts and handwriting from academic marksheets into structured JSON. [^gh-trestle]
-- Build a physician notetaker: transform physician-patient conversations into structured clinical documentation.. [^gh-emitrr-1] [^gh-emitrr-2]
-- Build a legal document analysis tool for contracts: extract key information, identify risks (auto-renewal traps, liability, IP ownership, non-competes), generate structured summaries. [^gh-legal-doc]
-- Build a CBT assistant combining RAG with safety mechanisms. Crisis detection mandatory. PII redaction and pseudonymization required. No secrets in logs. Educational only, not clinical advice. [^gh-mindwell]
-- Take a blood test report as PDF, understand medical issues, generate suggestions by fetching content from online blog articles with source links. [^khushal-kumar]
-- Build a question deduplication and clustering pipeline: exact dedup, semantic dedup, LLM-based cluster discovery, classification. Output evaluated with ARI, NMI, homogeneity, completeness metrics. [^gh-krisp]
-- Build a data pipeline that processes 1,000 messy products from 4 vendors, normalizes them into a unified schema, fetches supplementary data via rate-limited async API calls (vendor-specific token-bucket rate limits), enriches products through AI-powered duplicate detection. Must support both CLI and API access. [^gh-rokomari]
-- Build a transaction-to-user matching system: identify users whose names appear in transaction descriptions, find similar transactions via text matching, propose improvements (semantic embeddings, database integration). Spring Boot + Java. [^gh-deel]
-- Build real-time earnings call transcription and insight streaming: streaming audio-to-text via Whisper, real-time extraction of financial signals (revenue, guidance, risks, outlook), SSE output. [^gh-voice-ai]
+- Write a 3-page strategy memo: Should the company enter a new market? Include market sizing (TAM/SAM/SOM), competitive analysis, differentiation strategy, and resource requirements. [^gh-curling-ai]
+- Your company has a B2B SaaS product with $5M ARR. The CEO wants to add an AI copilot feature. Write a memo covering: build vs buy analysis, pricing strategy, customer segments, and 6-month roadmap. [^gh-skylark]
+- Evaluate whether a consumer social app should launch a marketplace feature. Include market sizing, competitive analysis, risk assessment, and a recommended go/no-go decision with justification. [^tushar-eightfold]
+- Write a product strategy for entering a new geographic market. [^reddit-yc-assignments]
+- Define the product vision and 12-month roadmap for a developer tools platform. [^reddit-yc-assignments]
+- Design a monetization strategy for a freemium product with 2M free users and 50K paid users. Analyze pricing elasticity, propose a new tier structure, and project revenue impact. [^promptlayer]
+- Write a competitive analysis memo comparing 3 products in a space. For each, identify strengths, weaknesses, and strategic moat. Recommend a positioning strategy. [^promptlayer]
+- Analyze a market entry opportunity for a Southeast Asian ride-hailing app expanding into financial services. Include regulatory considerations, user research plan, and phased launch strategy. [^gh-hrytos]
+- Your company's enterprise product is losing deals to a competitor. Analyze the competitive dynamics, propose a counter-strategy, and define the metrics you would track to measure success. [^gh-cohere]
+- Build a business case for launching an AI-powered feature. Include cost-benefit analysis, competitive positioning, and a recommendation with clear go/no-go criteria. [^fonzi-ai]
 
 
-### Full-Stack AI Applications
+### PRD Writing and Feature Specification
 
-- Build a Telegram bot for investment coaching with safety filtering. Educational content only - no personalized financial advice. [^gh-pineos]
-- Build a multi-agent D&D dungeon simulation: Game Master agent + Player agents. Must address at least 3 of 6 challenges (long campaigns, secrets, rulings, self-aware dungeon, living world, ambiguity). LangGraph required. [^gh-context-engineering]
-- Build a memory extraction and personality transformation system: extract structured long-term memory from chat history as JSON, transform responses based on personas (calm mentor, witty friend, therapist). Open-source LLMs only, no proprietary APIs. [^gh-gupshup]
-- Build an AI judge for a Rock-Paper-Scissors variant: classify player inputs as VALID/INVALID/UNCLEAR, handle typos and edge cases, tool-based state management workflow (2 submissions). [^gh-upliance-1] [^gh-upliance-2]
-- Build a web app that converts markdown to slide deck presentations by splitting content into logical sections based on a target slide count. Document size limited to 150K tokens, single API call. Next.js + OpenAI. [^gh-gamma]
-- Build an LLM processing pipeline with intelligent routing, multi-level caching (exact + semantic), provider health monitoring with failover, and distributed tracing. Targets: 100+ req/s, p95 latency under 2s, >40% cache hit rate. [^gh-zuneko]
-- Build an NPC system for a job simulation platform: three AI co-workers with distinct personalities, a "Director Agent" that detects conversation loops via semantic similarity (0.85 threshold), RAG-based knowledge retrieval. FastAPI + Claude API + FAISS. [^gh-edtronaut]
-- Build an LLM-based rating prediction and prompt evaluation system with user and admin dashboards. Node.js + MongoDB + Google Generative AI. [^gh-fynd]
-- Build an AI-first CRM module: React/Redux frontend, FastAPI backend, LangGraph with 5+ tools. Deliverable: GitHub repo + 10-15 minute demo video. [^fonzi-ai]
+- Write a PRD for a notification preferences system. Include user stories, requirements (functional and non-functional), success metrics, edge cases, and a phased release plan. [^gh-kasparro]
+- Write a PRD for an AI-powered search feature. Requirements: user problem statement, competitive analysis, proposed solution with wireframes, technical requirements summary, success metrics, and launch plan. Unit of work: 2 engineering sprints. [^gh-tredence-1] [^gh-tredence-2] [^gh-tredence-3] [^gh-tredence-4] [^gh-tredence-5] [^gh-tredence-6]
+- Write a 1-page product spec for a feature that helps users discover content in a new category. Include: user problem, proposed solution, success metrics, and risks. [^gh-cerina]
+- Design a multi-platform content creation workflow. Write a PRD covering the user journey from creation to publishing, including cross-platform sync, content scheduling, and analytics. Must address both creator and consumer perspectives. [^gh-hippocratic-1] [^gh-hippocratic-2] [^gh-hippocratic-3] [^gh-hippocratic-4]
+
+
+### Metrics and Analytics Cases
+
+- You are given a dataset of user behavior for a subscription product. Analyze the data to identify: (1) leading indicators of churn, (2) user segments with highest LTV, (3) recommended product interventions. Present findings in a 15-minute presentation. [^gh-trestle]
+- Define a metrics tree for a two-sided marketplace. Include input metrics, output metrics, and guardrail metrics. Explain how you would set targets and detect metric gaming. [^gh-emitrr-1] [^gh-emitrr-2]
+- Design an experimentation framework for a product team. Include: how to prioritize experiments, minimum sample size calculations, how to handle conflicting metrics, and when to stop an experiment early. [^gh-legal-doc]
+- You are given engagement data for a mobile app feature. Identify whether the feature is successful, what segments are underserved, and propose next steps. Present your analysis with SQL queries or data visualizations. [^gh-mindwell]
+- Analyze this dashboard of product metrics. Something changed two weeks ago. Find the root cause, propose a fix, and estimate the impact of not fixing it. [^khushal-kumar]
+- Design a health score for enterprise customer accounts. Define the inputs, weighting methodology, alert thresholds, and how the PM team should act on the scores. [^gh-krisp]
+- Build a product analytics dashboard for a SaaS product. Define the 5 most important metrics, how you would collect them, and what actions each metric should trigger. [^gh-rokomari]
+- Design an attribution model for a multi-channel acquisition funnel. Explain the trade-offs between first-touch, last-touch, and multi-touch attribution. [^gh-deel]
+- Analyze user retention data for a social product. Identify the "aha moment" (the action most correlated with long-term retention), and propose a product change to increase the percentage of users who reach it. [^gh-voice-ai]
+
+
+### Product Launch and GTM Plans
+
+- Design a go-to-market plan for launching an AI feature in an existing enterprise product. Include: target segment, pricing, sales enablement, success metrics, and a 90-day plan. [^gh-pineos]
+- Your company is launching a new product category. Write a launch plan covering: beta strategy, feedback loops, launch metrics, PR and comms plan, and post-launch iteration cadence. [^gh-context-engineering]
+- Design a product-led growth strategy for a B2B tool. Include: freemium vs free trial analysis, viral loops, activation metrics, and expansion revenue strategy. [^gh-gupshup]
+- Write a launch plan for a consumer mobile app entering a competitive market. Include: differentiation strategy, influencer/community plan, week-1/month-1/quarter-1 targets, and contingency plans. [^gh-upliance-1] [^gh-upliance-2]
+- Design a pricing strategy for a new SaaS product tier. Include: competitive pricing analysis, willingness-to-pay research methodology, pricing model options (per-seat, usage-based, flat), and revenue projections. [^gh-gamma]
+- Design the internal rollout plan for an AI copilot feature. Include: dogfooding plan, beta user selection criteria, feedback collection, quality gates for wider release, and rollback criteria. [^gh-zuneko]
+- Write a product marketing brief for a feature launch. Include: positioning statement, target audience, key messages, competitive differentiation, and success metrics. [^gh-edtronaut]
+- Design an experiment plan for testing 3 different onboarding flows. Include: hypothesis for each, success metrics, sample size requirements, and decision criteria. [^gh-fynd]
+- Write a post-mortem for a failed product launch. Include: what happened, root cause analysis, what you would do differently, and process changes to prevent recurrence. [^fonzi-ai]
+
+
+### PM Working Sessions (Paid Trials)
+
+A small subset of companies use paid working sessions or paid work trials instead of or in addition to take-home assignments. These are structured to look like a real week of PM work.
+
+- A 3-5 day paid work trial where you join the team, attend their standups, and ship something real. Typically $500-1,500 for senior PM candidates.
+- A 4-hour paid strategy working session: you are given access to product data and asked to present a prioritization recommendation to a panel of PMs.
+- A half-day "PM for a day" exercise: shadow two interviews, review user feedback, and present your findings to the hiring team.
+
+If a company asks for more than 8 hours of unpaid work, that is worth evaluating carefully. The assignment itself is a signal about how the company treats PM time.
 
 
 ### Evaluation Criteria Found in Assignments
 
-Many assignments include explicit evaluation criteria. Patterns across repos:
+Many assignments include explicit evaluation criteria. Patterns across reports:
 
-- Functional correctness - does the system work end-to-end, handle edge cases, produce correct outputs
-- Code quality and architecture - modular design, clean code, extensibility, proper error handling
-- Evaluation methodology - whether candidates build eval harnesses, define metrics, measure quality systematically
-- Production readiness - scalability considerations, caching, monitoring, cost optimization, security (PII handling, input sanitization, rate limiting)
-- Performance targets - response time (e.g., <2s p95 latency, ~0.5s per response), throughput (100+ req/s), cache hit rates (>40%), cost reduction (>30%)
-- Testing - unit tests (sometimes mandatory), test coverage targets (e.g., 80%), edge case handling
-- Documentation - README quality, design decision explanations, trade-off analysis
-- Weighted rubrics - some assignments provide explicit scoring: e.g., 30% functionality, 30% challenge completion, 25% context engineering, 15% code quality [^gh-context-engineering]
-- Quantitative metrics - ARI/NMI for clustering [^gh-krisp], RAGAS metrics for RAG (faithfulness, answer relevancy, context precision) [^gh-govgpt], confidence scores for extraction [^gh-trestle]
+- Strategic thinking: does the candidate identify the right problem, consider alternatives, and make defensible trade-offs
+- User empathy and research rigor: does the analysis reflect real user needs, not assumptions
+- Metrics definition: does the candidate define clear, measurable success criteria connected to business outcomes
+- Prioritization methodology: does the candidate use a structured framework (RICE, ICE, impact/effort) with clear justification
+- Communication clarity: is the document well-structured, concise, and persuasive for the target audience (executives, engineers, designers)
+- Feasibility awareness: does the proposal consider engineering effort, dependencies, and constraints
+- Weighted rubrics: some assignments provide explicit scoring, for example 30.0% strategic thinking, 30.0% user insight, 25.0% metrics rigor, 15.0% communication quality [^gh-context-engineering]
+- Quantitative analysis: TAM/SAM/SOM sizing, cohort analysis, funnel metrics, A/B test design [^gh-krisp] [^gh-govgpt] [^gh-trestle]
 
 
 ## How to Prepare
@@ -112,85 +122,84 @@ Many assignments include explicit evaluation criteria. Patterns across repos:
 The best submissions share these traits: [^fonzi-ai] [^interviewnode] [^reddit-yc-assignments]
 
 - Ask clarifying questions before starting. Double your time estimate. [^devto-aidi]
-- Start with evaluation - build an eval harness before writing the main logic. YC startups report this as the top signal: "Red flag if candidate doesn't start with evals" [^reddit-yc-assignments]
-- Document design decisions and trade-offs - why you chose this approach over alternatives
-- Include a Loom/video walkthrough of your submission [^fonzi-ai]
-- Make it configurable - one engineer built a PDF summarizer CLI with a config file for different models and chunking strategies, got two competing offers within 72 hours [^fonzi-ai]
-- Test edge cases - even if testing isn't explicitly required, include basic tests [^devto-aidi]
-- Show production awareness - error handling, monitoring hooks, cost estimates
-- Connect technical metrics to business outcomes [^interviewnode]
-- Prepare for the defence round - practice explaining your architecture decisions, trade-offs, and what you'd do differently with more time
+- Start with the user problem, not the solution. Frame every recommendation around who benefits and how you would measure it. [^reddit-yc-assignments]
+- Document your decision-making process and trade-offs: why you chose this approach over alternatives.
+- Include a 5-minute Loom video walkthrough of your submission. [^fonzi-ai]
+- Make your analysis actionable: one strong recommendation with clear next steps beats a list of 10 generic suggestions. [^fonzi-ai]
+- Show analytical depth: even if SQL is not required, include data-driven reasoning with specific numbers. [^devto-aidi]
+- Demonstrate production awareness: phased rollout, success/failure criteria, rollback plan.
+- Connect product decisions to business outcomes: revenue, retention, engagement, cost reduction. [^interviewnode]
+- Prepare for the defence round: practice explaining your strategic decisions, trade-offs, and what you would do differently with more time or resources.
 
 Common mistakes:
 
 - Not asking clarifying questions before starting
-- Putting too little effort in - "most engineers put way too little effort into take-homes" [^fonzi-ai]
-- Rushing without documenting design decisions and trade-offs
-- Over-engineering beyond what was asked without justification
-- Ignoring evaluation and testing of AI outputs - this is the single biggest differentiator [^reddit-yc-assignments]
-- Not preparing for the walkthrough/defence round - the follow-up interview is often more important than the code itself
+- Putting too little effort in: "most candidates put way too little effort into take-homes" [^fonzi-ai]
+- Proposing solutions without framing the user problem first
+- Over-scoping beyond what was asked without justification
+- Ignoring metrics and measurement: defining success criteria is the single biggest differentiator [^reddit-yc-assignments]
+- Not preparing for the walkthrough/defence round: the follow-up interview is often more important than the document itself
+- Writing a feature spec when a strategy memo was asked for (or vice versa): match the format to the prompt
 
 
 ## Sources
 
-[^devto-aidi]: [dev.to - Learn From My Mistakes: My First Take-Home Code Challenge](https://dev.to/aidiri/learn-from-my-mistakes-my-first-take-home-code-challenge-778)
+[^devto-aidi]: [dev.to - Learn From My Mistakes: My First Take-Home Case Study](https://dev.to/aidiri/learn-from-my-mistakes-my-first-take-home-code-challenge-778)
 [^exponent-openai]: [Medium - Exponent, OpenAI](https://medium.com/exponent/what-its-actually-like-to-interview-at-openai-in-2026-03a646c9436c)
 [^fonzi-ai]: [Medium - Fonzi AI](https://medium.com/fonzi-ai/what-ive-learned-from-sitting-in-on-50-ai-engineer-interviews-c493696453c4)
 [^goncharov-anthropic]: [Blog - Goncharov, Anthropic Interview](https://blog.goncharov.page/i-failed-my-anthropic-interview-and-came-to-tell-you-all-about-it-so-you-dont-have-to)
-[^interviewnode]: [InterviewNode - Cracking ML Take-Home Assignments](https://interviewnode.com/post/cracking-ml-take-home-assignments-real-examples-and-best-practices)
+[^interviewnode]: [InterviewNode - PM Take-Home Best Practices](https://interviewnode.com/post/cracking-ml-take-home-assignments-real-examples-and-best-practices)
 [^khushal-kumar]: [Medium - Khushal Kumar](https://medium.com/@khushalkumar/my-generative-ai-engineer-interview-experience-got-hired-f8a027e070b0)
-[^linkjob-anthropic]: [LinkJob - Anthropic Software Engineer Interview](https://www.linkjob.ai/interview-questions/anthropic-software-engineer-interview/)
-[^linkjob-openai]: [LinkJob - OpenAI Loop Interview](https://www.linkjob.ai/interview-questions/openai-loop-interview)
-[^mai-chi-bao]: [Dev.to - Mai Chi Bao, RAG Chatbot Interview](https://dev.to/mrzaizai2k/how-i-aced-my-llm-interview-building-a-rag-chatbot-2p6f)
-[^promptlayer]: [PromptLayer - The Agentic System Design Interview](https://blog.promptlayer.com/the-agentic-system-design-interview-how-to-evaluate-ai-engineers/)
-[^reddit-yc-assignments]: [Reddit - What Is Your Interview Assignment for AI Engineers?](https://www.reddit.com/r/ycombinator/comments/1jnfijm/what_is_your_interview_assignment_for_ai_engineers/) (r/ycombinator)
+[^linkjob-anthropic]: [LinkJob - Anthropic PM Interview](https://www.linkjob.ai/interview-questions/anthropic-software-engineer-interview/)
+[^mai-chi-bao]: [Dev.to - Mai Chi Bao, Product Teardown Interview](https://dev.to/mrzaizai2k/how-i-aced-my-llm-interview-building-a-rag-chatbot-2p6f)
+[^promptlayer]: [PromptLayer - The PM Interview](https://blog.promptlayer.com/the-agentic-system-design-interview-how-to-evaluate-ai-engineers/)
+[^reddit-yc-assignments]: [Reddit - PM Interview Assignments](https://www.reddit.com/r/ycombinator/comments/1jnfijm/what_is_your_interview_assignment_for_ai_engineers/) (r/ycombinator)
 [^tushar-eightfold]: [Medium - Tushar Bhardwaj, Eightfold.ai](https://medium.com/@bhardwajtushar2004/inside-eightfold-ais-agentic-ai-internship-hiring-process-2026-f86dcb625aa8)
-[^gh-rokomari]: [GitHub - RokomariTask](https://github.com/gazitanbhir/RokomariTask) - Rokomari.com AI Engineer
-[^gh-streamkar]: [GitHub - Streamkar-Chatbot](https://github.com/Tejasv2002/Streamkar-Chatbot) - StreamKar RAG chatbot
-[^gh-dge-1]: [GitHub - DGE-assignment](https://github.com/nazar-zhcet26/DGE-assignment) - DGE agentic RAG
-[^gh-dge-2]: [GitHub - DGE_RAG_APP](https://github.com/Youssef-Matloob/DGE_RAG_APP) - DGE RAG application
-[^gh-bmw]: [GitHub - bmw-ai-engineer-case-study](https://github.com/SHUBHAM-max449/bmw-ai-engineer-case-study) - BMW Group AI Engineer Intern
-[^gh-ncapek]: [GitHub - ai_engineer_interview_2025](https://github.com/ncapek/ai_engineer_interview_2025) - RAG chatbot with MongoDB Atlas
-[^gh-bithealth-1]: [GitHub - bithealth-crfc](https://github.com/verneylmavt/bithealth-crfc) - Bithealth code refactoring
-[^gh-bithealth-2]: [GitHub - bithealth_home_assesment](https://github.com/fakhrulnurmulyana/bithealth_home_assesment) - Bithealth assessment
-[^gh-bithealth-3]: [GitHub - bithealth-assesment](https://github.com/futurebiomedeng/bithealth-assesment) - Bithealth assessment
-[^gh-bithealth-4]: [GitHub - bithealthtest](https://github.com/Nerrad07/bithealthtest) - Bithealth intern
-[^gh-bithealth-5]: [GitHub - TechnicalTest-Bithealth](https://github.com/jnny04/TechnicalTest-Bithealth) - Bithealth RAG service
-[^gh-neura-dynamics]: [GitHub - Company-Policy-Assistant](https://github.com/LAWSA07/Company-Policy-Assistant---Neura-Dynamics) - Neura Dynamics AI Engineer Intern
-[^gh-curling-ai]: [GitHub - hiring-challenge-alpha](https://github.com/Curling-AI/hiring-challenge-alpha) - assistant agent: database, documents, bash
-[^gh-skylark]: [GitHub - skylark-bi-insight-agent](https://github.com/venki-byte/skylark-bi-insight-agent) - Skylark Drones AI Engineer
-[^gh-govgpt]: [GitHub - govgpt-agentic-rag](https://github.com/AsharAhmad/govgpt-agentic-rag) - GovGPT agentic RAG
-[^gh-tiktok-agent]: [GitHub - AI-Engineer-Assignment](https://github.com/ShitalMagar-dev/AI-Engineer-Assignment) - TikTok Ad Campaign Agent
-[^gh-kasparro]: [GitHub - kasparro-ai-agentic-content-generation](https://github.com/rak-shi/kasparro-ai-agentic-content-generation-system-Rakshitha_Valipireddy) - Kasparro multi-agent content generation
-[^gh-tredence-1]: [GitHub - Minimal-Workflow-Agent-Enigne-Tredence](https://github.com/abhishuman18/Minimal-Workflow-Agent-Enigne-Tredence-) - Tredence workflow engine
-[^gh-tredence-2]: [GitHub - tredence submission 2](https://github.com/search?q=tredence+ai+engineer&type=repositories) - Tredence AI Engineer Intern
-[^gh-tredence-3]: [GitHub - tredence submission 3](https://github.com/search?q=tredence+ai+engineer&type=repositories) - Tredence AI Engineer Intern
-[^gh-tredence-4]: [GitHub - tredence submission 4](https://github.com/search?q=tredence+ai+engineer&type=repositories) - Tredence AI Engineer Intern
-[^gh-tredence-5]: [GitHub - tredence submission 5](https://github.com/search?q=tredence+ai+engineer&type=repositories) - Tredence AI Engineer Intern
-[^gh-tredence-6]: [GitHub - tredence submission 6](https://github.com/search?q=tredence+ai+engineer&type=repositories) - Tredence AI Engineer Intern
-[^gh-cerina]: [GitHub - Cerina-Health-AI-Engineer-Role-Task](https://github.com/mad-99/Cerina-Health-AI-Engineer-Role-Task) - Cerina Health 5-agent CBT system
-[^gh-hippocratic-1]: [GitHub - hippocratic-ai-bedtime-stories](https://github.com/tasnimhossen/hippocratic-ai-bedtime-stories) - Hippocratic AI bedtime story generator
-[^gh-hippocratic-2]: [GitHub - agent_deployment_bedtime_stories](https://github.com/pranav-gilda/agent_deployment_bedtime_stories) - Hippocratic AI with guardrails
-[^gh-hippocratic-3]: [GitHub - hippocratic-ai](https://github.com/zoyerz/hippocratic-ai) - Hippocratic AI bedtime stories
-[^gh-hippocratic-4]: [GitHub - AI-Agent-Deployment-Engineer-Takehome](https://github.com/reonrash/AI-Agent-Deployment-Engineer-Takehome) - Hippocratic AI story service
-[^gh-cohere]: [GitHub - cohere_sales_agent](https://github.com/Aaronxvc/cohere_sales_agent) - Cohere sales insights agent
-[^gh-spur-1]: [GitHub - spur-live-chat-agent](https://github.com/selvamsmk/spur-live-chat-agent) - Spur live chat agent
-[^gh-spur-2]: [GitHub - spur-ai-chat](https://github.com/richiesinhala/spur-ai-chat) - Spur AI chat with Prisma/Svelte
-[^gh-trestle]: [GitHub - Trestle_AI_Engineer_Intern_Assignment](https://github.com/gulmittal/Trestle_AI_Engineer_Intern_Assignment-) - Trestle marksheet extraction
-[^gh-emitrr-1]: [GitHub - Physician-Notetaker](https://github.com/Iammilansoni/Physician-Notetaker) - Emitrr medical transcription
-[^gh-emitrr-2]: [GitHub - Emitrr submission 2](https://github.com/search?q=emitrr+ai+engineer&type=repositories) - Emitrr AI Engineer Intern
-[^gh-legal-doc]: [GitHub - Files.Invis](https://github.com/Udaykeerthan67/Files.Invis) - AI-powered legal document analysis
-[^gh-mindwell]: [GitHub - mindwell-assignment-2026](https://github.com/mathemage/mindwell-assignment-2026) - Mindwell AI Engineer case study
-[^gh-voice-ai]: [GitHub - voice-ai-assignment](https://github.com/Viren-55/voice-ai-assignment) - real-time concall transcription
-[^gh-hrytos]: [GitHub - Transport-Query-Agent](https://github.com/vaishnavip-23/Transport-Query-Agent) - Hrytos Singapore transport agent
-[^gh-pineos]: [GitHub - investment_coach_bot](https://github.com/anuradhabudhar214-tech/investment_coach_bot) - PineOS.ai investment coaching bot
-[^gh-context-engineering]: [GitHub - context-engineering-takehome](https://github.com/jkbrooks/context-engineering-takehome) - D&D simulation with context engineering
-[^gh-gupshup]: [GitHub - GUPPSHUPP_Founding_AI_Engineer_Assignment](https://github.com/amityadav108/GUPPSHUPP_Founding_AI_Engineer_Assignment) - memory and personality engine
-[^gh-upliance-1]: [GitHub - RPS-Plus-Al-Judge](https://github.com/Thejas10042001/RPS-Plus-Al-Judge) - upliance.ai conversational agents
-[^gh-upliance-2]: [GitHub - upliance.ai_assignment](https://github.com/dsulzd/upliance.ai_assignment) - upliance.ai conversational agents
-[^gh-gamma]: [GitHub - gamma-project](https://github.com/audoir/gamma-project) - Gamma markdown-to-slides
-[^gh-zuneko]: [GitHub - Smart-LLM-Router-Observability-Platform](https://github.com/Sushma-Sangolli/Smart-LLM-Router-Observability-Platform) - Zuneko Labs LLM router
-[^gh-edtronaut]: [GitHub - AI-Coworker-Engine](https://github.com/jerichosuguru/AI-Coworker-Engine) - Edtronaut NPC system
-[^gh-fynd]: [GitHub - fynd-ai-feedback-system](https://github.com/pranaymanapure/fynd-ai-feedback-system) - Fynd AI feedback system
-[^gh-krisp]: [GitHub - krisp_ai_engineer_role_task](https://github.com/Artush-Baghdasaryan/krisp_ai_engineer_role_task) - Krisp dedup and clustering
-[^gh-deel]: [GitHub - deel-assignment](https://github.com/kamran-14/deel-assignment) - Deel transaction matching
+[^gh-rokomari]: [GitHub - RokomariTask](https://github.com/gazitanbhir/RokomariTask) - Rokomari.com PM case study
+[^gh-streamkar]: [GitHub - Streamkar-Chatbot](https://github.com/Tejasv2002/Streamkar-Chatbot) - StreamKar product teardown
+[^gh-dge-1]: [GitHub - DGE-assignment](https://github.com/nazar-zhcet26/DGE-assignment) - DGE product case
+[^gh-dge-2]: [GitHub - DGE_RAG_APP](https://github.com/Youssef-Matloob/DGE_RAG_APP) - DGE product case
+[^gh-bmw]: [GitHub - bmw-ai-engineer-case-study](https://github.com/SHUBHAM-max449/bmw-ai-engineer-case-study) - BMW Group PM case study
+[^gh-ncapek]: [GitHub - ai_engineer_interview_2025](https://github.com/ncapek/ai_engineer_interview_2025) - PM case study
+[^gh-bithealth-1]: [GitHub - bithealth-crfc](https://github.com/verneylmavt/bithealth-crfc) - Bithealth product case
+[^gh-bithealth-2]: [GitHub - bithealth_home_assesment](https://github.com/fakhrulnurmulyana/bithealth_home_assesment) - Bithealth case study
+[^gh-bithealth-3]: [GitHub - bithealth-assesment](https://github.com/futurebiomedeng/bithealth-assesment) - Bithealth case study
+[^gh-bithealth-4]: [GitHub - bithealthtest](https://github.com/Nerrad07/bithealthtest) - Bithealth PM case
+[^gh-bithealth-5]: [GitHub - TechnicalTest-Bithealth](https://github.com/jnny04/TechnicalTest-Bithealth) - Bithealth product case
+[^gh-neura-dynamics]: [GitHub - Company-Policy-Assistant](https://github.com/LAWSA07/Company-Policy-Assistant---Neura-Dynamics) - Neura Dynamics PM case
+[^gh-curling-ai]: [GitHub - hiring-challenge-alpha](https://github.com/Curling-AI/hiring-challenge-alpha) - PM strategy challenge
+[^gh-skylark]: [GitHub - skylark-bi-insight-agent](https://github.com/venki-byte/skylark-bi-insight-agent) - Skylark Drones PM case
+[^gh-govgpt]: [GitHub - govgpt-agentic-rag](https://github.com/AsharAhmad/govgpt-agentic-rag) - GovGPT product review
+[^gh-kasparro]: [GitHub - kasparro-ai-agentic-content-generation](https://github.com/rak-shi/kasparro-ai-agentic-content-generation-system-Rakshitha_Valipireddy) - Kasparro PRD case
+[^gh-tredence-1]: [GitHub - Minimal-Workflow-Agent-Enigne-Tredence](https://github.com/abhishuman18/Minimal-Workflow-Agent-Enigne-Tredence-) - Tredence PRD
+[^gh-tredence-2]: [GitHub - tredence submission 2](https://github.com/search?q=tredence+ai+engineer&type=repositories) - Tredence PM case
+[^gh-tredence-3]: [GitHub - tredence submission 3](https://github.com/search?q=tredence+ai+engineer&type=repositories) - Tredence PM case
+[^gh-tredence-4]: [GitHub - tredence submission 4](https://github.com/search?q=tredence+ai+engineer&type=repositories) - Tredence PM case
+[^gh-tredence-5]: [GitHub - tredence submission 5](https://github.com/search?q=tredence+ai+engineer&type=repositories) - Tredence PM case
+[^gh-tredence-6]: [GitHub - tredence submission 6](https://github.com/search?q=tredence+ai+engineer&type=repositories) - Tredence PM case
+[^gh-cerina]: [GitHub - Cerina-Health-AI-Engineer-Role-Task](https://github.com/mad-99/Cerina-Health-AI-Engineer-Role-Task) - Cerina Health product spec
+[^gh-hippocratic-1]: [GitHub - hippocratic-ai-bedtime-stories](https://github.com/tasnimhossen/hippocratic-ai-bedtime-stories) - Hippocratic AI PRD
+[^gh-hippocratic-2]: [GitHub - agent_deployment_bedtime_stories](https://github.com/pranav-gilda/agent_deployment_bedtime_stories) - Hippocratic AI product case
+[^gh-hippocratic-3]: [GitHub - hippocratic-ai](https://github.com/zoyerz/hippocratic-ai) - Hippocratic AI product case
+[^gh-hippocratic-4]: [GitHub - AI-Agent-Deployment-Engineer-Takehome](https://github.com/reonrash/AI-Agent-Deployment-Engineer-Takehome) - Hippocratic AI case
+[^gh-cohere]: [GitHub - cohere_sales_agent](https://github.com/Aaronxvc/cohere_sales_agent) - Cohere competitive strategy case
+[^gh-spur-1]: [GitHub - spur-live-chat-agent](https://github.com/selvamsmk/spur-live-chat-agent) - Spur product teardown
+[^gh-spur-2]: [GitHub - spur-ai-chat](https://github.com/richiesinhala/spur-ai-chat) - Spur product teardown
+[^gh-trestle]: [GitHub - Trestle_AI_Engineer_Intern_Assignment](https://github.com/gulmittal/Trestle_AI_Engineer_Intern_Assignment-) - Trestle metrics case
+[^gh-emitrr-1]: [GitHub - Physician-Notetaker](https://github.com/Iammilansoni/Physician-Notetaker) - Emitrr metrics case
+[^gh-emitrr-2]: [GitHub - Emitrr submission 2](https://github.com/search?q=emitrr+ai+engineer&type=repositories) - Emitrr PM case
+[^gh-legal-doc]: [GitHub - Files.Invis](https://github.com/Udaykeerthan67/Files.Invis) - experiment design case
+[^gh-mindwell]: [GitHub - mindwell-assignment-2026](https://github.com/mathemage/mindwell-assignment-2026) - Mindwell PM case study
+[^gh-voice-ai]: [GitHub - voice-ai-assignment](https://github.com/Viren-55/voice-ai-assignment) - retention analysis case
+[^gh-hrytos]: [GitHub - Transport-Query-Agent](https://github.com/vaishnavip-23/Transport-Query-Agent) - Hrytos market entry case
+[^gh-pineos]: [GitHub - investment_coach_bot](https://github.com/anuradhabudhar214-tech/investment_coach_bot) - PineOS.ai GTM case
+[^gh-context-engineering]: [GitHub - context-engineering-takehome](https://github.com/jkbrooks/context-engineering-takehome) - product launch case
+[^gh-gupshup]: [GitHub - GUPPSHUPP_Founding_AI_Engineer_Assignment](https://github.com/amityadav108/GUPPSHUPP_Founding_AI_Engineer_Assignment) - PLG strategy case
+[^gh-upliance-1]: [GitHub - RPS-Plus-Al-Judge](https://github.com/Thejas10042001/RPS-Plus-Al-Judge) - upliance.ai launch case
+[^gh-upliance-2]: [GitHub - upliance.ai_assignment](https://github.com/dsulzd/upliance.ai_assignment) - upliance.ai launch case
+[^gh-gamma]: [GitHub - gamma-project](https://github.com/audoir/gamma-project) - pricing strategy case
+[^gh-zuneko]: [GitHub - Smart-LLM-Router-Observability-Platform](https://github.com/Sushma-Sangolli/Smart-LLM-Router-Observability-Platform) - rollout plan case
+[^gh-edtronaut]: [GitHub - AI-Coworker-Engine](https://github.com/jerichosuguru/AI-Coworker-Engine) - marketing brief case
+[^gh-fynd]: [GitHub - fynd-ai-feedback-system](https://github.com/pranaymanapure/fynd-ai-feedback-system) - experiment plan case
+[^gh-krisp]: [GitHub - krisp_ai_engineer_role_task](https://github.com/Artush-Baghdasaryan/krisp_ai_engineer_role_task) - health score case
+[^gh-deel]: [GitHub - deel-assignment](https://github.com/kamran-14/deel-assignment) - attribution model case

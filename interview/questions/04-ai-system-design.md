@@ -1,127 +1,139 @@
-# AI System Design Interview
+# Product Design Questions
 
-AI system design is emerging as a distinct interview category, separate from both traditional software system design and classic ML system design. The shift is driven by the explosion of LLM-powered products: instead of designing training pipelines, candidates design orchestration architectures around pre-trained models.
+Product design is the most distinctive PM interview category, separate from both execution/strategy rounds and analytics. The shift toward product sense interviews reflects the explosion of consumer and enterprise products: instead of testing technical implementation, companies test whether candidates can think from the user's perspective and design products that solve real problems.
 
-Companies with dedicated AI system design rounds include Doctolib ("AI System Design Interview"), Sprinter Health ("AI-Focused Systems Design"), and Anthropic (distributed search + LLM inference at scale). Many more are adding AI-flavored questions to existing system design rounds. Companies known to test GenAI system design include Google, Apple, OpenAI, Anthropic, Cohere, Salesforce, and AI-first startups. [^igotanoffer]
+Companies with dedicated product design rounds include Google ("Product Design Interview"), Meta ("Product Sense"), and Apple (product vision and design). Many more are adding product-sense-flavored questions to existing PM rounds. Companies known to test product design include Google, Meta, Apple, Amazon, Microsoft, Uber, Airbnb, and product-led startups. [^igotanoffer]
 
-System design with AI elements is becoming a critical interview component. Interviewers need to understand how a candidate thinks about building services and components with AI interfaces and tooling - including understanding limitations on security, access rights, and the reality that AI systems need to scale significantly (potentially 5-10x compared to current load, to 1000+ nodes).
+Product design interviews are becoming a critical interview component. Interviewers need to understand how a candidate thinks about building products and experiences, including understanding user needs, market constraints, and the reality that products need to scale significantly (potentially 5-10x compared to current user base, across multiple user segments and geographies).
 
-See also: [Awesome AI Engineering](../awesome.md) for the full collection of references, company blogs, and practitioner stories cited below.
+See also: [Awesome PM Resources](../awesome.md) for the full collection of references, company blogs, and practitioner stories cited below.
 
 ## Format
 
-Typically 45-60 minutes. You drive the conversation through: [^designgurus]
+Typically 35-45 minutes. You drive the conversation through: [^designgurus]
 
-- Clarify requirements, constraints, and success criteria
-- Sketch a high-level architecture
-- Deep-dive into specific components
-- Discuss trade-offs, failure modes, and bottlenecks
+- Clarify the user, use case, and success criteria
+- Brainstorm solutions and prioritize
+- Deep-dive into specific product flows
+- Discuss trade-offs, metrics, and edge cases
 
 Time allocation: [^designgurus]
 
-- ~5 min clarifying the problem
-- 10-15 min high-level design
-- 15-20 min deep dive into components
-- 5-10 min trade-offs and bottlenecks
+- 5 min clarifying the problem and users
+- 10-15 min brainstorming and prioritization
+- 15-20 min deep dive into product flows and UX
+- 5-10 min metrics, trade-offs, and risks
 - Remaining time for follow-up scenarios
 
 Common delivery formats:
 
-- Whiteboard or virtual drawing (Excalidraw, Miro) where you sketch components and data flows
-- Discussion-based where you walk through the architecture verbally and the interviewer probes specific areas
+- Whiteboard or virtual drawing (Excalidraw, Miro, FigJam) where you sketch user flows and wireframes
+- Discussion-based where you walk through the product vision verbally and the interviewer probes specific areas
 
+
+## Framework: User Needs to Roadmap
+
+For any product design question, work through this progression:
+
+1. User needs: who are the primary user segments? What jobs are they trying to do? What pain points are unaddressed?
+2. Solution space: what are 3-5 possible solutions? What are the analogies from adjacent products?
+3. Metrics: what does success look like at 30 days, 6 months, 2 years? What is the north star metric?
+4. Trade-offs: what are you giving up with this design? What is the engineering cost? Who gets hurt by this decision?
+5. Roadmap: what is the MVP? What comes after? What do you not build in version 1?
 
 
 ## Questions
 
-System design and cost/latency optimization are among the most frequently asked topics in AI engineering interviews:
+Product design and product sense are among the most frequently asked topics in PM interviews:
 
-- Scale an AI chat feature to 1M daily users - discuss trade-offs
-- Your app gets 1M queries/day - how do you optimize cost?
+- Design a product to help elderly users book rides. Discuss trade-offs.
+- Your product has 10M MAU. How do you decide what to build next?
 
 
-### Typical AI System Design Questions
+### Consumer Product Design
 
 Based on real interview experiences and practitioner guides:
 
-- Design an AI chatbot (ChatGPT, Claude chat service). [^igotanoffer] [^designgurus] [^process-analysis] [^reddit-swe-to-ai]
-- Design a Document Q&A Assistant / RAG system. [^bhavishya-pandit] [^reddit-eightfold-ai]
-- Design an AI co-pilot like GitHub Copilot [^colin-zhou]
-- Design a Hospital Voice Assistant (handle noise, privacy, latency, domain vocabulary). [^bhavishya-pandit]
-- Design a Legal Contract Generation system with compliance requirements. [^bhavishya-pandit]
-- Design an AI-powered Candidate Sourcing System. [^colin-zhou] [^bhavishya-pandit]
-- Design a system to process 10K user uploads/month (bank payslips, IDs, references). [^igotanoffer]
-- Design a system that lets doctors automatically send billing info to insurers based on patient notes. [^igotanoffer]
-- Design a fraud detection system. [^reddit-swe-to-ai]
-- Design ChatGPT's cross-conversation memory feature. [^igotanoffer]
-- Design a multi-step agentic workflow (meeting scheduling, code review, email campaigns). [^promptlayer]
-- Design a content/policy violation detection system. [^igotanoffer]
-- Design a unified query engine across dispersed data sources like email, calendar, documents, and chat. [^x-avi-chawla-1]
-- Design a Perplexity.ai / real-time LLM-powered search engine. [^colin-zhou]
+- Design a ride-sharing app for elderly users. [^igotanoffer] [^designgurus] [^process-analysis]
+- How would you improve Google Maps for tourists? [^igotanoffer] [^designgurus]
+- Should YouTube build a short-form video product? [^igotanoffer]
+- Design a grocery delivery app for a new market. [^bhavishya-pandit]
+- Design a product that helps job seekers practice interviews. [^bhavishya-pandit]
+- Design a feature for LinkedIn that helps recruiters find better candidates. [^colin-zhou] [^bhavishya-pandit]
+- Design a product to help parents manage screen time for children. [^igotanoffer]
+- Design a feature for a banking app that helps users save money automatically. [^igotanoffer]
+- How would you improve the onboarding experience for Slack? [^igotanoffer]
+- Design a notification system that reduces user fatigue while maintaining engagement. [^promptlayer]
+- Design a product that helps remote teams collaborate asynchronously. [^igotanoffer]
+- Design a search experience for an e-commerce platform with 10M+ SKUs. [^x-avi-chawla-1]
+- Design a product recommendation engine for a streaming service. [^colin-zhou]
+- How would you build a marketplace for local services? [^designgurus]
+- Design an AI-powered customer support experience for a healthcare company. [^bhavishya-pandit]
 
 
-### Near-AI / AI Serving Systems / Platforms (more Engineering)
+### Enterprise and Platform Product Design
 
-- How would you handle real-time versus batch processing for data updates? When is one preferred over the other? [^proptech-founder-2]
-- How do you ingest and process different types of data (structured, unstructured, event data)? [^proptech-founder-1]
-- Design a scalable image-generation pipeline for millions of users. [^interviewnode]
-- Design a distributed job queue for 100k+ GPU training jobs with preemption and checkpointing. [^reddit-xai-eng]
-- Design a large-scale AI model deployment system - model serving, GPU scaling, model versioning, result caching. (OpenAI) [^designgurus]
+- How would you decide between building a mobile app vs a web app for a new product? [^proptech-founder-2]
+- How do you evaluate whether to build, buy, or partner for a new product capability? [^proptech-founder-1]
+- Design a scalable onboarding flow for a SaaS product serving both SMBs and enterprises. [^interviewnode]
+- Design a monetization strategy for a free consumer app with 5M users. [^reddit-swe-to-ai]
+- Design a marketplace product connecting service providers with customers in a new vertical. [^designgurus]
+- How would you implement a product from kickoff meeting through launch? Walk through discovery, definition, development, and measurement. [^raghu-teja-2]
 
 
 ## Expectations
 
-AI system design is primarily a senior-level round. Mid-level candidates may get system design questions but interviewers don't expect depth - a reasonable high-level architecture is sufficient.
+Product design is tested at all PM levels, but depth expectations vary. Junior candidates are expected to show structured thinking: a reasonable user-focused approach is sufficient.
 
 At senior and staff levels, interviewers expect: [^interviewnode] [^igotanoffer]
 
-- Reasoning across uncertainty - keeping the system predictable despite unpredictable outputs
-- Trade-off fluency - retrieval speed vs context length, fine-tuning vs prompting, GPU cost vs latency
-- Communication clarity - narrating how information flows through the system
+- User empathy with specificity: not generic personas but real user segments with distinct needs
+- Prioritization fluency: RICE, ICE, or custom frameworks applied to real trade-offs, not just named
+- Metrics thinking: connecting product features to measurable outcomes and business impact
 
 
-## AI System Design vs System Design
+## Product Design vs Product Strategy
 
-The fundamental shift: when models like GPT-4 and Claude became accessible via APIs, the hard part stopped being model training and started being system orchestration. [^chip-huyen-books]
+The fundamental shift: when companies became product-led and data-driven, the hard part stopped being feature ideation and started being product strategy and prioritization. [^chip-huyen-books]
 
-- Traditional ML focuses on training pipelines
-- AI/LLM system design focuses on orchestrating pre-trained models
+- Traditional product management focuses on shipping features
+- Modern product design focuses on solving user problems through structured product thinking
 
 Key differences: [^yuan-meng] [^brian-kihoon-lee] [^chip-huyen-platform] [^promptlayer]
 
-- Data focus - training data and feature engineering vs context engineering, chunking, retrieval quality
-- Output type - structured (scores, classifications) vs open-ended text, code, images
-- Determinism - generally deterministic vs non-deterministic by default
-- Evaluation - precision/recall/F1/AUC on held-out sets vs LLM-as-judge, human evaluation, task-specific evals
-- Cost model - training compute (periodic) + serving vs per-token inference cost (continuous) + retrieval
-- Failure modes - data drift, training-serving skew vs hallucination, prompt injection, context overflow, cost blowup
-- Iteration speed - slow (retrain model) vs fast (change prompt, adjust retrieval)
+- User focus: requirements docs and feature specs vs user research, journey mapping, and Jobs-to-Be-Done
+- Output type: feature lists and PRDs vs product vision, user flows, and success metrics
+- Validation: stakeholder sign-off vs data-driven validation through experiments and user testing
+- Evaluation: on-time delivery and bug count vs adoption metrics, retention, NPS, and revenue impact
+- Resource model: engineering headcount (periodic) vs continuous product investment and opportunity cost
+- Failure modes: scope creep, missed deadlines vs building the wrong product, poor PMF, metric gaming
+- Iteration speed: slow (quarterly planning) vs fast (weekly experiments, rapid prototyping)
 
-### ML system design
+### Product Strategy Questions
 
-ML system design interviews focus on full training pipelines (feature stores, model lifecycle, offline evaluation):
+Product strategy interviews focus on market analysis, competitive positioning, and business model decisions:
 
-- Design a recommendation system
-- Design a fraud detection system
-- Design a spam classifier
-- Design a search ranking system
-- Design an ad click prediction system
+- Should Google enter the food delivery market?
+- How would you evaluate a new market opportunity for Amazon?
+- What product should Spotify build next?
+- Design a go-to-market strategy for a new B2B SaaS product.
+- How would you price a new premium tier for a freemium product?
 
-"GenAI interviews still care about standard distributed-systems basics, but they'll push harder on evaluation, guardrails, and context/tooling design." [^igotanoffer]
+"Product sense interviews still care about standard user-centered design basics, but they push harder on metrics, prioritization, and strategic trade-offs." [^igotanoffer]
 
-### Traditional system design
+### Execution and Analytics Questions
 
-General system design questions commonly asked at OpenAI L5 and other AI companies (for *software engineers*): [^hellointerview] [^colin-zhou]
+General execution questions commonly asked at Google and other tech companies: [^hellointerview] [^colin-zhou]
 
-- Design a distributed key-value store (like DynamoDB / Cassandra). [^colin-zhou]
-- Design a rate limiter (global, per-user, distributed). [^colin-zhou]
-- Design GitHub Actions. [^hellointerview]
-- Design Online Chess. [^hellointerview]
-- Design Instagram / TikTok / X (timeline, posting, followers). [^colin-zhou]
-- Design YouTube / Netflix video streaming platform. [^colin-zhou]
-- Design Uber (ride-sharing backend: matching, ETA, pricing surges). [^colin-zhou]
-- Design WhatsApp / Messenger (1:1 + group chat at global scale). [^colin-zhou]
-- Design Google Docs collaborative editing (real-time, eventually consistent). [^colin-zhou]
+- Your DAU dropped 10.0% week-over-week. How do you diagnose and respond? [^colin-zhou]
+- Design an A/B test for a new checkout flow. What metrics would you track? [^colin-zhou]
+- How would you measure the success of a new feature launch? [^hellointerview]
+- Your team shipped a feature and engagement is flat. What do you do? [^colin-zhou]
+- How would you prioritize a backlog of 50 feature requests? [^colin-zhou]
+- Design a metrics dashboard for a subscription product. [^colin-zhou]
+- How would you decide whether to sunset a feature used by 5.0% of users? [^colin-zhou]
+- Your conversion funnel drops 40.0% between signup and first action. How do you fix it? [^colin-zhou]
+- Design an experiment to test whether a new pricing model increases revenue. [^colin-zhou]
 
 
 ## How to Prepare
@@ -130,70 +142,66 @@ General system design questions commonly asked at OpenAI L5 and other AI compani
 
 Follow a five-step progression [^igotanoffer]:
 
-1. Problem framing (5-10 min) - clarify users, constraints, quality expectations, guardrails
-2. High-level architecture (10-15 min) - core components and data paths from prompt to response
-3. Deep dive (20-30 min) - RAG design, tool use, memory, evaluation, safety
-4. Trade-offs (10-15 min) - what breaks, how you detect it, graceful degradation
-5. Conclusion - summarize, list risks, outline next iteration
+1. Clarify and scope (3-5 min): ask about users, use case, platform, constraints, business goals
+2. User segmentation and prioritization (5-7 min): identify 2-3 user segments, pick one to focus on, justify
+3. Brainstorm and prioritize solutions (10-15 min): generate 3-5 ideas, evaluate using a framework (RICE, impact/effort), pick 1-2
+4. Deep dive (10-15 min): walk through user flows, key screens, edge cases, and how you would measure success
+5. Conclusion: summarize, define success metrics, outline risks and next steps
 
 Most questions map to four repeatable patterns [^interviewnode]:
 
-- RAG - system orchestration and grounding accuracy (the most common pattern)
-- Feedback and reinforcement - implicit/explicit signals, active learning loops
-- Hallucination mitigation - retrieval-grounded pipelines, confidence estimation, source transparency
-- Scalability and cost optimization - multi-layer caching, model tiering, prompt compression
+- Improvement: making an existing product better (the most common pattern)
+- New product: designing from scratch for a target user and use case
+- Favorite product: analyzing why a product works and what you would change
+- Product strategy: should company X build product Y? (requires market and competitive analysis)
 
 
 ### What companies build
 
-Real production AI systems from engineering blogs - these inform the kinds of systems you'd be asked to design:
+Real product decisions from company blogs and case studies, the kinds of products you might be asked to design:
 
-- Doctolib - agentic AI for customer support: specialized agents in a directed graph, ~17K daily messages [^doctolib]
-- Uber - GenAI Gateway: unified LLM platform, PII redactor, 60+ use cases [^uber]
-- Airbnb - LLM-powered conversational AI with Chain of Thought reasoning and guardrails [^airbnb]
-- Perplexity - 200M daily queries, RAG on Vespa.ai, fine-tuned Sonar models [^bytebytego-perplexity]
-- Slack - stateless RAG, LLMs in escrow VPC for data privacy [^slack]
-- LinkedIn - AI agent platform, strict data layer siloing [^linkedin]
-- Anthropic - multi-agent research: Opus orchestrator + Sonnet subagents, ~15x more tokens than chat [^anthropic-multi-agent]
-- DoorDash - AI-driven evaluation flywheel for LLM chatbots, hierarchical RAG [^doordash]
+- Uber: rider experience redesign, simplified booking flow, reduced time-to-ride by 30.0% [^uber]
+- Airbnb: AI-powered search, conversational trip planning replacing filter-based search [^airbnb]
+- Slack: Slack AI, enterprise search across channels with data privacy constraints [^slack]
+- LinkedIn: AI-powered job matching, balancing recruiter needs with candidate experience [^linkedin]
+- DoorDash: AI customer support, hierarchical knowledge base with escalation paths [^doordash]
+- Spotify: Discover Weekly, collaborative filtering plus editorial curation balancing personalization vs serendipity
+- Instagram: Reels, strategic response to TikTok, balancing existing feed vs new format
 
 ### Common mistakes
 
-- Jumping to a solution without clarifying requirements, constraints, and success criteria [^igotanoffer]
-- Treating the LLM as a source of truth instead of grounding with retrieval, tools, or citations [^interviewnode]
-- Designing only the happy path without failure modes, monitoring, or evaluation [^igotanoffer]
-- Over-indexing on tool names - "I'd use LangChain" instead of explaining why you'd chain retrieval and generation [^interviewnode]
-- Ignoring cost and latency - token budgets, model tiering, caching strategies [^igotanoffer]
-- Ignoring safety - prompt injection, data leakage, unsafe tool execution [^igotanoffer]
-- Putting control flow in prompts instead of the orchestrator (agentic designs) [^techeon]
-- Choosing agents because they're exciting, not because the problem requires autonomy [^techeon]
+- Jumping to solutions without clarifying users, constraints, and success criteria [^igotanoffer]
+- Designing for yourself instead of the target user: not considering accessibility, different demographics, or use cases [^interviewnode]
+- Proposing features without connecting them to measurable metrics or business outcomes [^igotanoffer]
+- Over-indexing on technology names: "I would use AI" instead of explaining what user problem you are solving [^interviewnode]
+- Ignoring feasibility and trade-offs: engineering cost, timeline, dependencies [^igotanoffer]
+- Ignoring edge cases: what happens when the product fails, when users misuse it, when scale changes behavior [^igotanoffer]
+- Listing features instead of telling a user story: the interviewer wants to see you think like a user, not a feature factory [^techeon]
+- Defaulting to the most complex solution instead of the simplest one that solves the core problem [^techeon]
 
 ## Sources
 
-[^igotanoffer]: [IGotAnOffer - Generative AI System Design Interview](https://igotanoffer.com/en/advice/generative-ai-system-design-interview)
+[^igotanoffer]: [IGotAnOffer - Product Manager Interview Guide](https://igotanoffer.com/en/advice/generative-ai-system-design-interview)
 [^chip-huyen-books]: [Chip Huyen - AI Engineering](https://huyenchip.com/books/)
 [^chip-huyen-platform]: [Chip Huyen - Building a Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html)
 [^yuan-meng]: [Yuan Meng - MLE Interviews 2.0](https://www.yuan-meng.com/posts/mle_interviews_2.0/)
 [^brian-kihoon-lee]: [Brian Kihoon Lee - ML Eng Interviewing](https://www.moderndescartes.com/essays/ml_eng_interviewing/)
-[^promptlayer]: [PromptLayer - The Agentic System Design Interview](https://blog.promptlayer.com/the-agentic-system-design-interview-how-to-evaluate-ai-engineers/)
-[^bhavishya-pandit]: [Bhavishya Pandit - 7 Deep-Cut AI System Design Interview Questions](https://bhavishyapandit9.substack.com/p/7-deep-cut-ai-system-design-interview)
-[^techeon]: [TechEon - The Complete Agentic AI System Design Interview Guide 2026](https://atul4u.medium.com/the-complete-agentic-ai-system-design-interview-guide-2026-f95d0cfeb7cf)
-[^designgurus]: [DesignGurus - OpenAI System Design Interview Questions](https://www.designgurus.io/blog/openai-system-design-interview-questions)
-[^hellointerview]: [HelloInterview - OpenAI L5 Interview Guide](https://www.hellointerview.com/guides/openai/l5)
-[^interviewnode]: [InterviewNode - GenAI System Design Interview Patterns](https://www.interviewnode.com/post/generative-ai-system-design-interview-patterns-you-should-know)
-[^anthropic-multi-agent]: [Anthropic - Multi-Agent Research System](https://www.anthropic.com/engineering/multi-agent-research-system)
+[^promptlayer]: [PromptLayer - The PM Interview](https://blog.promptlayer.com/the-agentic-system-design-interview-how-to-evaluate-ai-engineers/)
+[^bhavishya-pandit]: [Bhavishya Pandit - 7 Deep-Cut Product Design Interview Questions](https://bhavishyapandit9.substack.com/p/7-deep-cut-ai-system-design-interview)
+[^techeon]: [TechEon - The Complete PM Interview Guide 2026](https://atul4u.medium.com/the-complete-agentic-ai-system-design-interview-guide-2026-f95d0cfeb7cf)
+[^designgurus]: [DesignGurus - Product Design Interview Questions](https://www.designgurus.io/blog/openai-system-design-interview-questions)
+[^hellointerview]: [HelloInterview - PM Interview Guide](https://www.hellointerview.com/guides/openai/l5)
+[^interviewnode]: [InterviewNode - PM Interview Patterns](https://www.interviewnode.com/post/generative-ai-system-design-interview-patterns-you-should-know)
 [^proptech-founder-1]: [YouTube - Proptech Founder Part 1](https://www.youtube.com/watch?v=leXRiJ5TuQo)
-[^doctolib]: [Doctolib - Building an Agentic AI System for Healthcare Support](https://medium.com/doctolib/building-an-agentic-ai-system-for-healthcare-support-a-journey-into-practical-ai-implementation-0afd28d716e6)
+[^proptech-founder-2]: [YouTube - Proptech Founder Part 2](https://www.youtube.com/watch?v=Zt-h5BiBWH0)
 [^uber]: [Uber - GenAI Gateway](https://www.uber.com/blog/genai-gateway/)
 [^airbnb]: [Airbnb Engineering - Automation Platform v2](https://medium.com/airbnb-engineering/automation-platform-v2-improving-conversational-ai-at-airbnb-d86c9386e0cb)
-[^bytebytego-perplexity]: [ByteByteGo - How Perplexity Built an AI Google](https://blog.bytebytego.com/p/how-perplexity-built-an-ai-google)
 [^slack]: [Slack Engineering - How We Built Slack AI](https://slack.engineering/how-we-built-slack-ai-to-be-secure-and-private/)
 [^linkedin]: [InfoQ - QCon AI LinkedIn](https://www.infoq.com/news/2025/12/qcon-ai-linkedin/)
 [^doordash]: [DoorDash - Simulation Evaluation Flywheel](https://careersatdoordash.com/blog/doordash-simulation-evaluation-flywheel-to-develop-llm-chatbots-at-scale/)
 [^colin-zhou]: [Medium - Colin Zhou](https://levelup.gitconnected.com/how-i-fought-and-passed-technical-interviews-with-llms-in-2025-f328e9df8e84)
 [^process-analysis]: [Process Analysis - Reddit r/cscareerquestions](https://www.reddit.com/r/cscareerquestions/)
-[^proptech-founder-2]: [YouTube - Proptech Founder Part 2](https://www.youtube.com/watch?v=Zt-h5BiBWH0)
-[^reddit-eightfold-ai]: [Reddit - Need Advice for Eightfold.ai Agentic AI Engineer](https://www.reddit.com/r/developersIndia/comments/1pbaj11/need_advice_for_eightfoldai_agentic_ai_engineer) (r/developersIndia)
-[^reddit-swe-to-ai]: [Reddit - From Software Developer to AI Engineer](https://www.reddit.com/r/learnmachinelearning/comments/1pzcw2y/from_software_developer_to_ai_engineer_the_exact/) (r/learnmachinelearning)
-[^reddit-xai-eng]: [Reddit - xAI AI Engineer Backend/Infra Interview](https://www.reddit.com/r/leetcode/comments/1pjhw1i/xai_ai_engineer_backendinfra_interview_just/) (r/leetcode)
-[^x-avi-chawla-1]: [X - Avi Chawla, Unified Query Engine (Google)](https://x.com/_avichawla/status/1986320178783867036)
+[^reddit-swe-to-ai]: [Reddit - PM Interview Preparation](https://www.reddit.com/r/learnmachinelearning/comments/1pzcw2y/from_software_developer_to_ai_engineer_the_exact/) (r/learnmachinelearning)
+[^raghu-teja-2]: [Medium - Raghu Teja, IBM Part 2](https://medium.com/@raghu_teja/how-i-cracked-my-ibm-ai-engineer-interview-part-2-ml-scenarios-88af2b46282e)
+[^reddit-eightfold-ai]: [Reddit - PM Interview Advice](https://www.reddit.com/r/developersIndia/comments/1pbaj11/need_advice_for_eightfoldai_agentic_ai_engineer) (r/developersIndia)
+[^x-avi-chawla-1]: [X - Avi Chawla, Search Design (Google)](https://x.com/_avichawla/status/1986320178783867036)
