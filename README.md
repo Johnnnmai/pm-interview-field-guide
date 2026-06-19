@@ -1,106 +1,151 @@
-# Product Management Field Guide
+<p align="center">
+  <h1 align="center">PM Interview Field Guide</h1>
+  <p align="center">Data-driven field guide to product management roles, skills, and interviews.<br/>Built from 2,445 real job descriptions, 100+ interview experiences, and 200+ practitioner sources.</p>
+</p>
 
-Data-driven field guide to product management roles, skills, and interviews.
+<p align="center">
+  <a href="https://github.com/Johnnnmai/pm-interview-field-guide/stargazers"><img src="https://img.shields.io/github/stars/Johnnnmai/pm-interview-field-guide?style=social" alt="GitHub Stars"></a>
+  <a href="https://github.com/Johnnnmai/pm-interview-field-guide/network/members"><img src="https://img.shields.io/github/forks/Johnnnmai/pm-interview-field-guide?style=social" alt="GitHub Forks"></a>
+  <a href="#license"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://github.com/Johnnnmai/pm-interview-field-guide/commits/main"><img src="https://img.shields.io/github/last-commit/Johnnnmai/pm-interview-field-guide" alt="Last Commit"></a>
+</p>
+
+<p align="center">
+  <a href="#-the-pm-role">Role Analysis</a> · <a href="#-interview-prep">Interview Prep</a> · <a href="#-career-transitions">Career Transitions</a> · <a href="#-portfolio">Portfolio</a> · <a href="#-resources">Resources</a>
+</p>
+
+---
 
 Everything here is based on real data: 2,445 actual job descriptions, real interview experiences, and real stories from practitioners. This is not AI-generated filler dumped into a repo - every insight comes from analyzing actual data and synthesizing patterns from it.
 
-My vision for this repo is to become the go-to resource for product management careers. Like [data-science-interviews](https://github.com/alexeygrigorev/data-science-interviews) but built for PMs:
+This repo exists to become **the** go-to resource for product management careers - role analysis, interview questions, career transition paths, portfolio strategy, and curated resources. All in one place. All backed by data.
 
-- role analysis
-- job market data
-- interview questions (product sense, metrics, execution, strategy)
-- learning paths for career switchers
-- and more
+> Star this repo to keep an eye on updates. Visit [valenx.org](https://valenx.org/) for more PM career resources.
 
-It's a work in progress, and I'm actively adding more content. Your input is very welcome - feedback and contributions help shape what goes in here.
+---
 
-Star this repo to keep an eye on updates. To get notified about new content, visit [valenx.org](https://valenx.org/).
+### 📘 Sponsored by
 
+**[The 0→1 PM Interview Playbook](https://valenx.org/books/pm)** — Frameworks for Product Sense, Strategy, and Cross-Functional Leadership Interviews. Built from 200+ real PM interview loops at Google, Amazon, Meta, Apple.
 
-### Recommended Resource
+<a href="https://valenx.org/books/pm"><img src="https://img.shields.io/badge/Amazon_Kindle-$9.99-orange?style=for-the-badge&logo=amazon" alt="Get on Amazon"></a> <a href="https://www.amazon.com/dp/B0GWWJQ2S3"><img src="https://img.shields.io/badge/Free_with-Kindle_Unlimited-blue?style=for-the-badge&logo=amazon" alt="Free with KU"></a>
 
-[The 0→1 PM Interview Playbook](https://valenx.org/books/pm) - Frameworks for Product Sense, Strategy, and Cross-Functional Leadership Interviews. Built from 200+ real PM interview loops at Google, Amazon, Meta, Apple. Covers AI product sense, metrics cases, and execution depth for 2025-2026 hiring patterns.
+---
 
-Available on [Amazon Kindle](https://www.amazon.com/dp/B0GWWJQ2S3) ($9.99) or [free with Kindle Unlimited](https://www.amazon.com/dp/B0GWWJQ2S3).
+## 📋 Table of Contents
 
-
-## The Product Manager Role
-
-- [My vision of the role](role/01-my-vision.md) - how I see product management, comparison with PMM/TPM/PgM roles, the PM lifecycle
-- [Skills analysis](role/02-skills.md) - top PM skills, product areas, analytics platforms, frameworks like RICE and metrics trees
-- [Responsibilities](role/03-responsibilities.md) - patterns extracted from 5,694+ job responsibilities
-- [Use cases](role/04-use-cases.md) - 4,525 real product scenarios showing what companies build and ship
-- [Reality vs. job postings](role/05-reality-vs-postings.md) - what candidates experience vs. what's advertised
+| Section | What's Inside | Files |
+|---------|--------------|-------|
+| [The PM Role](#-the-pm-role) | Role definition, skills analysis, responsibilities, use cases | 5 guides |
+| [Interview Prep](#-interview-prep) | Process, 6 question categories, hiring patterns, trends | 12 guides |
+| [Career Transitions](#-career-transitions) | 5 paths: SWE, Data Science, Design, MBA, Consulting → PM | 5 guides |
+| [Portfolio](#-portfolio) | Project ideas: teardowns, PRDs, growth experiments, case studies | 1 guide |
+| [Resources](#-resources) | Books, courses, podcasts, blogs, communities, tools | 260+ links |
+| [Job Market Data](#-job-market-data) | 2,445 structured job descriptions (YAML) | 6,177 files |
 
 
-## Interview Preparation
+## 🎯 The PM Role
 
-- [Interview process](interview/01-interview-process.md) - common patterns, step counts, time estimates, AI use in hiring, key takeaways
-- [Interview questions](interview/02-questions.md) - consolidated from 100+ sources
-  - [Product sense](interview/questions/01-theory.md) - product strategy, metrics definition, prioritization frameworks, company-specific questions
-  - [Analytics and SQL](interview/questions/02-coding.md) - analytics round formats, SQL problems, metrics implementation exercises
-  - [Project deep dive](interview/questions/03-project-deep-dive.md) - presentation rounds, follow-up probes, what interviewers evaluate
-  - [Product design](interview/questions/04-ai-system-design.md) - product design for end-to-end user experiences
-  - [Behavioral](interview/questions/05-behavioral.md) - values, leadership, problem-solving
-  - [Home assignments](interview/questions/06-home-assignments.md) - take-home assignments and paid work trials from 100+ GitHub repos
-- [Skills that get you hired](interview/03-get-hired.md) - baseline expectations, differentiators, and portfolio strategy
-- [After the interview](interview/04-after-the-interview.md) - handling offers, rejections, and salary negotiation
-- [Interview trends](interview/05-trends.md) - realistic assessments, AI cheating, AI-proctored rounds
-- [Company-by-company data](interview/data/) - individual interview process descriptions for 51 companies, linked to source job postings
+What product managers actually do, based on 895 job descriptions.
 
+| Guide | Description |
+|-------|-------------|
+| [My vision of the role](role/01-my-vision.md) | How I see product management, PM vs TPM vs PMM vs PGM, the Discovery-to-Delivery lifecycle |
+| [Skills analysis](role/02-skills.md) | Top PM skills, product areas, analytics platforms, frameworks like RICE and metrics trees |
+| [Responsibilities](role/03-responsibilities.md) | Patterns extracted from 5,694+ job responsibilities |
+| [Use cases](role/04-use-cases.md) | 4,525 real product scenarios showing what companies build and ship |
+| [Reality vs. job postings](role/05-reality-vs-postings.md) | What candidates experience vs. what's advertised |
 
-## Learning Paths
-
-- [General learning path](learning-paths/) - what to learn and in what order
-- [From Software Engineer](learning-paths/from-software-engineer.md) - technical depth is your superpower, add product thinking
-- [From Data Scientist](learning-paths/from-data-scientist.md) - analytical and statistical skills transfer, add strategy
-- [From Designer](learning-paths/from-designer.md) - user empathy transfers directly, add business and analytics
-- [From Business/MBA](learning-paths/from-business-mba.md) - business strategy foundation, add execution and shipping
-- [From Consultant](learning-paths/from-consultant.md) - 2-3 months, add product execution on top of strategy
+**Key finding:** 93.1% of PM roles require skills beyond product sense. Analytics/SQL is mandatory in 82.5% of roles. Only 4.4% are pure research/strategy - the market wants people who ship.
 
 
-## Portfolio
+## 💼 Interview Prep
 
-- [Project ideas](portfolio/) - real project examples that demonstrate product management skills
+Consolidated from 100+ sources: candidate stories, hiring managers, career blogs, and interview guides.
+
+| Guide | Description |
+|-------|-------------|
+| [Interview process](interview/01-interview-process.md) | Common patterns, step counts, time estimates, key takeaways |
+| [Getting hired](interview/03-get-hired.md) | Baseline expectations, differentiators, and what separates candidates |
+| [Interview trends](interview/05-trends.md) | Realistic assessments, AI tools in hiring, market shifts |
+| [After the interview](interview/04-after-the-interview.md) | Handling offers, rejections, and salary negotiation |
+| [Company data](interview/data/) | Individual interview processes for 51 companies |
+
+### Question Bank (6 categories)
+
+| Category | What It Covers |
+|----------|---------------|
+| [Product Sense & Strategy](interview/questions/01-theory.md) | Product lifecycle, metrics, prioritization, company-specific frameworks |
+| [Analytical Rounds](interview/questions/02-coding.md) | SQL, A/B testing, metrics analysis, experiment design |
+| [Project Deep Dive](interview/questions/03-project-deep-dive.md) | Presentation rounds, follow-up probes, evaluation criteria |
+| [Product Design](interview/questions/04-ai-system-design.md) | End-to-end product design, user flows, trade-offs |
+| [Behavioral](interview/questions/05-behavioral.md) | Amazon LP, Google Googliness, leadership, problem-solving |
+| [Take-Home Case Studies](interview/questions/06-home-assignments.md) | Product teardowns, strategy memos, PRD exercises |
 
 
-## Job Market Data
+## 🔄 Career Transitions
+
+5 paths into product management, each with timeline, what transfers, and what to learn.
+
+| From | Timeline | Your Superpower |
+|------|----------|----------------|
+| [Software Engineer](learning-paths/from-software-engineer.md) | 3-4 months | Technical depth, shipping experience |
+| [Data Scientist](learning-paths/from-data-scientist.md) | 3-4 months | Analytics, experimentation, metrics |
+| [Designer](learning-paths/from-designer.md) | 3-5 months | User empathy, design thinking |
+| [Business / MBA](learning-paths/from-business-mba.md) | 2-4 months | Strategy, leadership, stakeholders |
+| [Consultant](learning-paths/from-consultant.md) | 2-3 months | Structured thinking, client management |
+
+
+## 🗂️ Portfolio
+
+[Project ideas and strategy](portfolio/) - real project examples that demonstrate product management skills:
+
+- Product teardowns and competitive analysis
+- Growth experiment designs (A/B tests, feature launches)
+- Strategy memos and market analysis
+- PRD writing samples
+- Metrics dashboards and user research case studies
+
+
+## 📊 Job Market Data
 
 2,445 job descriptions scraped from builtin.com covering LA, NY, London, Amsterdam, Berlin, and India.
 
 - [Structured job descriptions](job-market/data_structured/) - YAML files grouped by scrape date
-- [Raw extracted postings](job-market/data_raw/) - original extracted data grouped by scrape date
+- [Raw extracted postings](job-market/data_raw/) - original extracted data
 
 
-## Awesome Product Management
+## 📚 Resources
 
-Curated collection of resources compiled while researching content for this field guide:
+[Awesome Product Management](awesome.md) - 260+ curated resources:
 
 - Practitioner interview stories
-- Product design case studies
-- Company product blogs
-- Books and courses
-- Case study collections
-
-See [awesome.md](awesome.md) for the list.
-
-
-## Coming Soon
-
-- Salary analysis and compensation data
-- Community-contributed interview experiences
+- Product design case studies and frameworks
+- Company product blogs (Airbnb, Spotify, Netflix, Figma)
+- Books, courses, and podcasts
+- Interview question collections
+- PM communities and tools
 
 
-## Webinars
+## 🎓 Webinars
 
-A 4-part event series on product management careers, hosted through [Maven](https://maven.com/) and [AI Shipping Labs](https://aishippinglabs.com/):
+A 4-part event series on product management careers:
 
-1. [A Day of a Product Manager](webinars/01-a-day-of-pm.md) - the practical reality of the role ([Maven](https://maven.com/), [AI Shipping Labs](https://aishippinglabs.com/)) - recording available
-2. [Defining the PM Role](webinars/02-defining-the-role.md) - what companies actually hire for, based on 2,400+ job descriptions ([Maven](https://maven.com/)) - recording available
-3. [The Interview Process](webinars/03-the-interview-process.md) - real hiring trends, technical questions, and live case challenges ([Maven](https://maven.com/)) - March 3, 2026
-4. [Take-Home Assignments](webinars/04-take-home-assignments.md) - analyzing real assignments and building production-ready product cases ([Maven](https://maven.com/)) - March 9, 2026
+1. [A Day of a Product Manager](webinars/01-a-day-of-ai-engineer.md) - the practical reality of the role
+2. [Defining the PM Role](webinars/02-defining-the-role.md) - what companies actually hire for
+3. [The Interview Process](webinars/03-the-interview-process.md) - real hiring trends and live case challenges
+4. [Take-Home Case Studies](webinars/04-take-home-assignments.md) - analyzing real assignments
 
-Have questions? [Submit them here](https://app.sli.do/event/vJEZ6h5zbFRAzPfrANZxZd) - all questions will be covered during the events or afterwards.
+
+## 🤝 Contributing
+
+Contributions are welcome. If you have interview experiences, resources, or corrections to share:
+
+1. Open an issue or pull request
+2. Follow the [styling guide](STYLING.md) for content formatting
+3. Include sources for any data or claims
+
+See [CONTRIBUTING.md](.github/CONTRIBUTING.md) for details.
 
 
 ## About This Guide
@@ -108,3 +153,14 @@ Have questions? [Submit them here](https://app.sli.do/event/vJEZ6h5zbFRAzPfrANZx
 Adapted from the [AI Engineering Field Guide](https://github.com/alexeygrigorev/ai-engineering-field-guide) by Alexey Grigorev. The original data-driven methodology - analyzing thousands of real job descriptions and interview experiences - is preserved here and reframed for the product management career path.
 
 PM adaptation by an Amazon AI/Robotics Lead PM with hiring loop experience across Google, Amazon, Meta, and Apple.
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  <a href="https://valenx.org/books/pm"><b>📘 Get The 0→1 PM Interview Playbook →</b></a>
+</p>
