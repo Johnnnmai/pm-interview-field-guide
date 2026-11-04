@@ -31,15 +31,15 @@ Everything here is based on real data: 2,445 actual job descriptions, real inter
 
 This repo exists to become the go-to resource for product management careers - role analysis, interview questions, career transition paths, portfolio strategy, and curated resources. All in one place. All backed by data.
 
-Star this repo to keep an eye on updates. Visit [valenx.org](https://valenx.org/) for more PM career resources.
+Star this repo to keep an eye on updates. Visit [valenx.org](https://valenx.org/?utm_source=github&utm_medium=readme&utm_content=pm-interview-field-guide_L34) for more PM career resources.
 
 ---
 
 ### 📘 Sponsored by
 
-[The 0→1 PM Interview Playbook](https://valenx.org/books/pm) - Frameworks for Product Sense, Strategy, and Cross-Functional Leadership Interviews. Built from 200+ real PM interview loops at Google, Amazon, Meta, Apple.
+[The 0→1 PM Interview Playbook](https://valenx.org/books/pm?utm_source=github&utm_medium=readme&utm_content=pm-interview-field-guide_L40) - Frameworks for Product Sense, Strategy, and Cross-Functional Leadership Interviews. Built from 200+ real PM interview loops at Google, Amazon, Meta, Apple.
 
-<a href="https://valenx.org/books/pm"><img src="https://img.shields.io/badge/Amazon_Kindle-$9.99-orange?style=for-the-badge&logo=amazon" alt="Get on Amazon"></a> <a href="https://www.amazon.com/dp/B0GWWJQ2S3"><img src="https://img.shields.io/badge/Free_with-Kindle_Unlimited-blue?style=for-the-badge&logo=amazon" alt="Free with KU"></a>
+<a href="https://valenx.org/books/pm?utm_source=github&utm_medium=readme&utm_content=pm-interview-field-guide_L42"><img src="https://img.shields.io/badge/Amazon_Kindle-$9.99-orange?style=for-the-badge&logo=amazon" alt="Get on Amazon"></a> <a href="https://www.amazon.com/dp/B0GWWJQ2S3"><img src="https://img.shields.io/badge/Free_with-Kindle_Unlimited-blue?style=for-the-badge&logo=amazon" alt="Free with KU"></a>
 
 ---
 
@@ -191,7 +191,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 ---
 
 <p align="center">
-  <a href="https://valenx.org/books/pm">📘 The 0→1 PM Interview Playbook</a>
+  <a href="https://valenx.org/books/pm?utm_source=github&utm_medium=readme&utm_content=pm-interview-field-guide_L194">📘 The 0→1 PM Interview Playbook</a>
   <br/><br/>
   If this helped, <a href="https://github.com/Johnnnmai/pm-interview-field-guide/stargazers">leave a ⭐</a>
 </p>
